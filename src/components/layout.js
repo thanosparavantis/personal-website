@@ -8,16 +8,16 @@ export default class Layout extends React.Component {
     super(props)
 
     this.state = {
-      navbarOpened: false
-    };
+      navbarOpened: false,
+    }
 
-    this.navbarToggleClickHandler = this.navbarToggleClickHandler.bind(this);
-    this.navbarLinkClickHandler = this.navbarLinkClickHandler.bind(this);
+    this.navbarToggleClickHandler = this.navbarToggleClickHandler.bind(this)
+    this.navbarLinkClickHandler = this.navbarLinkClickHandler.bind(this)
   }
 
   navbarToggleClickHandler(event) {
     this.setState((state, props) => ({
-      navbarOpened: !state.navbarOpened
+      navbarOpened: !state.navbarOpened,
     }))
   }
 
@@ -29,7 +29,8 @@ export default class Layout extends React.Component {
 
   render() {
     return <Page loader="spin" color={"#A9A9A9"} size={4}>
-      <Navbar onToggleClick={this.navbarToggleClickHandler} onLinkClick={this.navbarLinkClickHandler} isOpened={this.state.navbarOpened} />
+      <Navbar onToggleClick={this.navbarToggleClickHandler} onLinkClick={this.navbarLinkClickHandler}
+              isOpened={this.state.navbarOpened}/>
       {this.props.children}
     </Page>
   }
