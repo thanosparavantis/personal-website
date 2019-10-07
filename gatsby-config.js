@@ -18,12 +18,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-github-api`,
-      options: {
-        token: "97767f0578bc2ebbcd2560eb516cfe16a72a1f66",
-      }
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Thanos Paravantis`,

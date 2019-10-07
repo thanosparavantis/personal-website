@@ -2,8 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Helmet } from "react-helmet"
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
-import "react-vertical-timeline-component/style.min.css"
 
 export default () => {
   const data = useStaticQuery(graphql`

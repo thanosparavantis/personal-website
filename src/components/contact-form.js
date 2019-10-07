@@ -8,7 +8,9 @@ export default class ContactForm extends React.Component {
     super(props)
 
     this.state = {
-      showSuccess: false, showFailure: false, loading: false,
+      showSuccess: false,
+      showFailure: false,
+      loading: false,
     }
 
     this.inputHandler = this.inputHandler.bind(this)
@@ -92,14 +94,14 @@ export default class ContactForm extends React.Component {
             First Name
           </label>
 
-          <input type="text" name="first_name" id="first_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Thanos" value={this.state.first_name} onChange={this.inputHandler} required/>
+          <input type="text" name="first_name" id="first_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Thanos" value={this.state.first_name || ""} onChange={this.inputHandler} required/>
         </div>
         <div className="flex flex-col lg:w-1/2">
           <label htmlFor="last_name" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
             Last Name
           </label>
 
-          <input type="text" name="last_name" id="last_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Paravantis" value={this.state.last_name} onChange={this.inputHandler} required/>
+          <input type="text" name="last_name" id="last_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Paravantis" value={this.state.last_name || ""} onChange={this.inputHandler} required/>
         </div>
       </div>
 
@@ -107,13 +109,13 @@ export default class ContactForm extends React.Component {
         E-mail address
       </label>
 
-      <input type="email" name="email" id="email" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="thanosparavantis@gmail.com" value={this.state.email} onChange={this.inputHandler}/>
+      <input type="email" name="email" id="email" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="thanosparavantis@gmail.com" value={this.state.email || ""} onChange={this.inputHandler}/>
 
       <label htmlFor="message" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
         Message
       </label>
 
-      <textarea name="message" id="message" className="mb-8 p-2 h-48 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Write your message here..." onChange={this.inputHandler} value={this.state.message} required/>
+      <textarea name="message" id="message" className="mb-8 p-2 h-48 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Write your message here..." onChange={this.inputHandler} value={this.state.message || ""} required/>
 
       {this.state.showSuccess ? (
         <div className="mb-5 text-center text-green-700 font-bold">
