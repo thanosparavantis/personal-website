@@ -21,7 +21,7 @@ export default () => {
             }
           }
         }
-     }`} render={data => <div>
+     }`} render={data => <div className="mt-16 md:mt-0 md:pl-20">
     <Helmet>
       <title>Thanos Paravantis</title>
     </Helmet>

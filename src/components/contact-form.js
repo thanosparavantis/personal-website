@@ -88,15 +88,15 @@ export default class ContactForm extends React.Component {
 
   render() {
     return <div className="flex flex-col">
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex flex-col lg:mr-5 lg:w-1/2">
+      <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:mr-5 md:w-1/2">
           <label htmlFor="first_name" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
             First Name
           </label>
 
           <input type="text" name="first_name" id="first_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Thanos" value={this.state.first_name || ""} onChange={this.inputHandler} required/>
         </div>
-        <div className="flex flex-col lg:w-1/2">
+        <div className="flex flex-col md:w-1/2">
           <label htmlFor="last_name" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
             Last Name
           </label>
