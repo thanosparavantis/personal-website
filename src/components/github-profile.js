@@ -17,7 +17,13 @@ export default class GithubProfile extends React.Component {
   }
 
   componentDidMount() {
-    Axios.all([this.getIdentityData(), this.getRepositoryData()])
+    this.cancelSource = Axios.CancelToken.source()
+    const cancelToken = this.cancelSource.token
+
+    Axios.all([
+      this.getIdentityData(cancelToken),
+      this.getRepositoryData(cancelToken),
+    ])
       .then(Axios.spread((identityResponse, repositoryResponse) => {
         this.setState({
           identityData: identityResponse.data,
@@ -33,12 +39,22 @@ export default class GithubProfile extends React.Component {
       })
   }
 
-  getIdentityData() {
-    return Axios.get("https://api.github.com/users/thanosparavantis")
+  componentWillUnmount() {
+    this.cancelSource.cancel()
   }
 
-  getRepositoryData() {
-    return Axios.get("https://api.github.com/users/thanosparavantis/repos")
+  getIdentityData(cancelToken) {
+    return Axios.get(
+      "https://api.github.com/users/thanosparavantis",
+      { cancelToken: cancelToken },
+    )
+  }
+
+  getRepositoryData(cancelToken) {
+    return Axios.get(
+      "https://api.github.com/users/thanosparavantis/repos",
+      { cancelToken: cancelToken },
+    )
   }
 
   render() {

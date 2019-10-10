@@ -66,24 +66,28 @@ export default class ContactForm extends React.Component {
 
   submitHandler() {
     this.toggleLoading()
+    this.cancelSource = Axios.CancelToken.source()
+    const cancelToken = this.cancelSource.token
 
     Axios.post("https://formcarry.com/s/8-s5znRbPKu", {
       first_name: this.state.first_name,
       last_name: this.state.last_name,
       email: this.state.email,
       message: this.state.message,
-    }).then(response => {
-      if (response.status === 200) {
-        this.showSuccess()
-        this.resetInput()
-      } else {
-        this.showFailure()
-      }
+    }, { cancelToken: cancelToken }).then(response => {
+      this.showSuccess()
+      this.resetInput()
     }).catch(error => {
       this.showFailure()
     }).finally(() => {
       this.toggleLoading()
     })
+  }
+
+  componentWillUnmount() {
+    if (this.cancelSource) {
+      this.cancelSource.cancel()
+    }
   }
 
   render() {

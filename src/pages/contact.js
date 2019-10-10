@@ -10,9 +10,10 @@ export default () => <div>
     <h1 className="font-bold text-xl mb-2">
       Contact
     </h1>
-    <p className="mb-5 leading-relaxed text-gray-800">
-      You can send me a message using this form, and I will get back to you via e-mail.
-    </p>
+    <div className="mb-5 leading-relaxed text-gray-800">
+      <p className="mb-3">You can send me a personalized message and I will get back to you via e-mail as soon as I can.</p>
+      <p>Alternatively, feel free to send an e-mail at <a href="mailto:thanosparavantis@gmail.com" className="underline text-orange-600 hover:text-orange-700">thanosparavantis@gmail.com</a>.</p>
+    </div>
     <ContactForm/>
   </div>
 </div>
