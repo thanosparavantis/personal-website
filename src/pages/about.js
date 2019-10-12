@@ -6,21 +6,28 @@ import { Helmet } from "react-helmet"
 export default () => {
   const data = useStaticQuery(graphql`
       query {
-          image1: file(relativePath: { eq: "me03.jpg" }) {
+          image1: file(relativePath: { eq: "about_01.jpg" }) {
               childImageSharp {
                   fluid(quality: 100) {
                       ...GatsbyImageSharpFluid
                   }
               }
           },
-          image2: file(relativePath: { eq: "papei.png" }) {
+          image2: file(relativePath: { eq: "about_02.jpg" }) {
               childImageSharp {
                   fluid(quality: 100) {
                       ...GatsbyImageSharpFluid
                   }
               }
           },
-          image3: file(relativePath: { eq: "conference.jpg" }) {
+          image3: file(relativePath: { eq: "about_03.jpg" }) {
+              childImageSharp {
+                  fluid(quality: 100) {
+                      ...GatsbyImageSharpFluid
+                  }
+              }
+          },
+          image4: file(relativePath: { eq: "about_04.jpg" }) {
               childImageSharp {
                   fluid(quality: 100) {
                       ...GatsbyImageSharpFluid
@@ -35,11 +42,8 @@ export default () => {
       <title>About - Thanos Paravantis</title>
     </Helmet>
     <div className="max-w-2xl mx-auto my-24 px-5 md:pl-20 md:my-12">
-      <Img fluid={data.image1.childImageSharp.fluid} className="shadow-lg rounded mb-8" alt="Thanos Paravantis" title="Thanos Paravantis"/>
-
-      <h1 className="text-gray-900 font-bold text-xl mb-4">
-        About
-      </h1>
+      <Img fluid={data.image1.childImageSharp.fluid} className="h-64 shadow-lg rounded mb-8" alt="Thanos Paravantis" title="Thanos Paravantis"/>
+      <h1 className="text-gray-900 font-bold text-xl mb-4">About</h1>
 
       <div className="leading-loose text-gray-900">
         <p className="mb-3">Hello I'm Thanos, welcome to my personal website. I was born in Athens Greece and I am studying computer science at the University of Piraeus, senior year.</p>
@@ -49,13 +53,8 @@ export default () => {
         <p>My vision is to master the field of computer science and write practical applications to solve elemental problems.</p>
       </div>
 
-      <div className="relative shadow-lg h-32 overflow-hidden rounded-lg mt-20 mb-8">
-        <div className="z-10 absolute bg-black opacity-50 w-full h-full"></div>
-        <Img fluid={data.image2.childImageSharp.fluid} className="h-full" alt="Decentralized 2018" title="Decentralized 2018"/>
-        <h1 className="z-10 absolute top-0 text-white w-full h-full flex flex-col items-center justify-center text-center font-bold text-2xl">
-          Education
-        </h1>
-      </div>
+      <Img fluid={data.image2.childImageSharp.fluid} className="h-64 hadow-lg rounded mt-20 mb-8" alt="Thanos Paravantis" title="Thanos Paravantis"/>
+      <h1 className="text-gray-900 font-bold text-xl mb-4">Education</h1>
 
       <h2 className="text-green-800 font-bold mb-1">Bachelor’s in Computer Science</h2>
       <div className="text-sm font-bold text-gray-900 md:flex md:items-center">
@@ -87,13 +86,8 @@ export default () => {
         <p>The University of Michigan</p>
       </div>
 
-      <div className="relative shadow-lg h-32 overflow-hidden rounded-lg mt-20 mb-8">
-        <div className="z-10 absolute bg-black opacity-50 w-full h-full"></div>
-        <Img fluid={data.image3.childImageSharp.fluid} className="h-full" alt="Decentralized 2018" title="Decentralized 2018"/>
-        <h1 className="z-10 absolute top-0 text-white w-full h-full flex flex-col items-center justify-center text-center font-bold text-2xl">
-          Work Experience
-        </h1>
-      </div>
+      <Img fluid={data.image3.childImageSharp.fluid} className="h-64 shadow-lg rounded mt-20 mb-8" alt="Thanos Paravantis" title="Thanos Paravantis"/>
+      <h1 className="text-gray-900 font-bold text-xl mb-4">Work Experience</h1>
 
       <h2 className="text-green-800 font-bold mb-1">Minecraft Server</h2>
       <div className="text-sm font-bold text-gray-900 md:flex md:items-center">
@@ -117,13 +111,9 @@ export default () => {
         A company running one of the largest gaming networks in the game “Minecraft”. Major contributor in a large “mini-game” called “Bawk Bawk Battles” which is still available in the network to this day.
       </p>
 
-      <div className="relative shadow-lg h-32 overflow-hidden rounded-lg mt-20 mb-8">
-        <div className="z-10 absolute bg-black opacity-50 w-full h-full"></div>
-        <Img fluid={data.image3.childImageSharp.fluid} className="h-full" alt="Decentralized 2018" title="Decentralized 2018"/>
-        <h1 className="z-10 absolute top-0 text-white w-full h-full flex flex-col items-center justify-center text-center font-bold text-2xl">
-          Achievements and Conferences
-        </h1>
-      </div>
+      <Img fluid={data.image4.childImageSharp.fluid} className="h-64 shadow-lg rounded mt-20 mb-8" alt="Thanos Paravantis" title="Thanos Paravantis"/>
+      <h1 className="text-gray-900 font-bold text-xl mb-4">Achievements and Conferences</h1>
+
       <div className="text-gray-900">
         <p className="mb-4">Attended Google Developer's Group Athens Meetup, September 2019.</p>
         <p className="mb-4">Attended Career’s Day organized by University of Piraeus, April 2019.</p>
