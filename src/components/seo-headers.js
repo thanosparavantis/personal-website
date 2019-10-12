@@ -1,7 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import social from "../images/social.png"
 
-export default class SeoHeader extends React.Component {
+export default class SeoHeaders extends React.Component {
   render() {
     return <Helmet>
       <meta name="description" content="A computer science student and passionate programmer, interested in web development, machine learning, software engineering."/>
@@ -10,8 +11,8 @@ export default class SeoHeader extends React.Component {
       <meta property="og:title" content="Thanos Paravantis"/>
       <meta property="og:description" content="A computer science student and passionate programmer, interested in web development, machine learning, software engineering."/>
       <meta property="og:type" content="website"/>
-      <meta property="og:url" content="https://thanosparavantis.com/"/>
-      <meta property="og:image" content="social.png"/>
+      <meta property="og:url" content="https://thanosparavantis.com"/>
+      <meta property="og:image" content={social}/>
       <meta property="og:image:type" content="image/jpeg"/>
       <meta property="og:image:width" content="1200"/>
       <meta property="og:image:height" content="630"/>
@@ -19,7 +20,7 @@ export default class SeoHeader extends React.Component {
       <meta name="twitter:title" content="Thanos Paravantis"/>
       <meta name="twitter:creator" content="@thparavantis"/>
       <meta name="twitter:description" content="A computer science student and passionate programmer, interested in web development, machine learning, software engineering."/>
-      <meta name="twitter:image" content="social.jpg"/>
+      <meta name="twitter:image" content={social}/>
     </Helmet>
   }
 }

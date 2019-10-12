@@ -1,16 +1,7 @@
 import React from "react"
-import { graphql, Link, StaticQuery, useStaticQuery } from "gatsby"
+import { graphql, Link, StaticQuery } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faArrowCircleLeft,
-  faArrowCircleRight,
-  faBars,
-  faEnvelopeOpenText,
-  faHome,
-  faQuestionCircle,
-  faShareAlt,
-  faCode
-} from "@fortawesome/free-solid-svg-icons"
+import { faArrowCircleLeft, faArrowCircleRight, faBars, faCode, faEnvelopeOpenText, faHome, faQuestionCircle } from "@fortawesome/free-solid-svg-icons"
 import Img from "gatsby-image"
 
 class NavbarLink extends React.Component {

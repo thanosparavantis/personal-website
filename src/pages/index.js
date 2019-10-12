@@ -4,7 +4,6 @@ import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import { Helmet } from "react-helmet"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 export default () => {
