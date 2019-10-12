@@ -29,5 +29,11 @@ module.exports = {
         icon: `src/images/logo.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-89442805-3",
+      }
+    },
   ],
 }

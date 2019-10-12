@@ -53,7 +53,7 @@ export default () => {
         <p>My vision is to master the field of computer science and write practical applications to solve elemental problems.</p>
       </div>
 
-      <Img fluid={data.image2.childImageSharp.fluid} className="h-64 hadow-lg rounded mt-20 mb-8" alt="Thanos Paravantis" title="Thanos Paravantis"/>
+      <Img fluid={data.image2.childImageSharp.fluid} className="h-64 hadow-lg rounded mt-20 mb-8" alt="Picture of a library" title="Picture of a library"/>
       <h1 className="text-gray-900 font-bold text-xl mb-4">Education</h1>
 
       <h2 className="text-green-800 font-bold mb-1">Bachelor’s in Computer Science</h2>
@@ -86,7 +86,7 @@ export default () => {
         <p>The University of Michigan</p>
       </div>
 
-      <Img fluid={data.image3.childImageSharp.fluid} className="h-64 shadow-lg rounded mt-20 mb-8" alt="Thanos Paravantis" title="Thanos Paravantis"/>
+      <Img fluid={data.image3.childImageSharp.fluid} className="h-64 shadow-lg rounded mt-20 mb-8" alt="Picture of a desk with notes" title="Picture of a desk with notes"/>
       <h1 className="text-gray-900 font-bold text-xl mb-4">Work Experience</h1>
 
       <h2 className="text-green-800 font-bold mb-1">Minecraft Server</h2>
@@ -111,7 +111,7 @@ export default () => {
         A company running one of the largest gaming networks in the game “Minecraft”. Major contributor in a large “mini-game” called “Bawk Bawk Battles” which is still available in the network to this day.
       </p>
 
-      <Img fluid={data.image4.childImageSharp.fluid} className="h-64 shadow-lg rounded mt-20 mb-8" alt="Thanos Paravantis" title="Thanos Paravantis"/>
+      <Img fluid={data.image4.childImageSharp.fluid} className="h-64 shadow-lg rounded mt-20 mb-8" alt="Thanos Paravantis speaking at Crowdhackathon #Agrifood" title="Thanos Paravantis speaking at Crowdhackathon #Agrifood"/>
       <h1 className="text-gray-900 font-bold text-xl mb-4">Achievements and Conferences</h1>
 
       <div className="text-gray-900">

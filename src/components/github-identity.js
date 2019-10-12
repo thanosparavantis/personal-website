@@ -6,7 +6,7 @@ export default class GithubIdentity extends React.Component {
   render() {
     const data = this.props.source
 
-    return <a href={data.html_url} className="flex flex-col items-center justify-center text-center p-10 hover:bg-gray-100 focus:bg-gray-200" title={"Visit " + data.name + "'s profile on GitHub"}>
+    return <a href={data.html_url} className="flex flex-col p-10 hover:bg-gray-100 focus:bg-gray-200 focus:shadow-outline" title={"Visit " + data.name + "'s profile on GitHub"}>
       <h1 className="text-xl font-bold text-gray-900">
         Projects on GitHub
       </h1>
