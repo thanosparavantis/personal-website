@@ -5,6 +5,7 @@ import social from "../images/social.png"
 export default class SeoHeaders extends React.Component {
   render() {
     return <Helmet>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="description" content="A computer science student and passionate programmer, interested in web development, machine learning, software engineering."/>
       <meta name="robots" content="index, follow"/>
       <meta name="keywords" content="thanos paravanits, computer science, programming, web development, machine learning, development, software, backend, frontend"/>

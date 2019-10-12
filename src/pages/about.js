@@ -96,7 +96,7 @@ export default () => {
         <p>Athens, Greece</p>
       </div>
       <p className="leading-loose text-gray-900 mt-3">
-        Managed a Minecraft server with custom coded plugins and assembled a small team of moderators that helped administrate the server.
+        Managed a Minecraft server with custom coded plugins and assembled a small team of moderators that helped maintain the server.
       </p>
 
       <h2 className="text-green-800 font-bold mt-8 mb-1">Junior Developer</h2>

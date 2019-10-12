@@ -29,10 +29,12 @@ export default class Layout extends React.Component {
   }
 
   render() {
-    return <Page loader="spin" color={"#A9A9A9"} size={4}>
+    return <div>
       <SeoHeaders/>
-      <Navbar onToggleClick={this.navbarToggleClickHandler} onLinkClick={this.navbarLinkClickHandler} isOpened={this.state.navbarOpened}/>
-      {this.props.children}
-    </Page>
+      <Page loader="spin" color={"#A9A9A9"} size={4}>
+        <Navbar onToggleClick={this.navbarToggleClickHandler} onLinkClick={this.navbarLinkClickHandler} isOpened={this.state.navbarOpened}/>
+        {this.props.children}
+      </Page>
+    </div>
   }
 }

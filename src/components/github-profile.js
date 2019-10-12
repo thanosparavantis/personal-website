@@ -58,13 +58,14 @@ export default class GithubProfile extends React.Component {
   }
 
   render() {
+
     if (this.state.loading) {
-      return <div className="p-5 bg-gray-300 text-center">
+      return <div className="mx-5 p-5 bg-gray-300 text-center">
         <FontAwesomeIcon icon={faSpinner} spin className="mr-2"/>
         Loading data from GitHub
       </div>
     } else if (this.state.error) {
-      return <div className="p-5 bg-gray-300 text-center font-bold text-red-700">
+      return <div className="mx-5 p-5 bg-gray-300 text-center font-bold text-red-700">
         Something went wrong, please try again later.
       </div>
     } else {
