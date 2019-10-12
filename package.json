@@ -2,7 +2,7 @@
   "name": "thanosparavantis.com",
   "private": true,
   "description": "My personal website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -42,12 +42,5 @@
   "devDependencies": {
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
