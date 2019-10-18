@@ -5,7 +5,7 @@ export default class GithubRepositories extends React.Component {
   render() {
     const data = this.props.source
 
-    let sorted = data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+    let sorted = data.sort((a, b) => b.stargazers_count - a.stargazers_count);
 
     return <div>
       {sorted.map((repo, index) => <GitHubRepository source={repo} key={index}/>)}
