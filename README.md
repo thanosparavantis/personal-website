@@ -1,3 +1,5 @@
+![Website Logo](https://thanosparavantis.com/social.png)
+
 # thanosparavantis.com
 This repository houses the source code that powers my personal website.
 It's a static simple website that includes some basic information about myself and works as a portfolio to showcase my work.
