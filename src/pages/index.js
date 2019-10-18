@@ -29,9 +29,10 @@ export default () => {
     <Helmet>
       <title>Thanos Paravantis</title>
     </Helmet>
+
     <BackgroundImage Tag="div" fluid={data.background.childImageSharp.fluid}>
-      <div className="absolute w-screen h-screen bg-white opacity-75"></div>
-      <div className="p-5 relative flex flex-col items-center justify-center w-full h-screen">
+      <div className="absolute bg-white opacity-75 w-screen h-screen"></div>
+      <div className="relative h-screen p-5 flex flex-col items-center justify-center text-center">
         <Img fluid={data.profilePhoto.childImageSharp.fluid} alt="Profile photo" title="Profile picture of Thanos Paravantis" className="mb-10 rounded-full shadow-xl flex-shrink-0 w-1/2 md:w-1/4 lg:w-1/6"/>
         <h1 className="text-xl font-bold mb-2 md:text-2xl lg:text-3xl">Thanos Paravantis</h1>
         <h2 className="text-lg tracking-tighter uppercase font-bold text-gray-700 lg:text-xl">Senior in Computer Science</h2>
@@ -51,5 +52,6 @@ export default () => {
         </div>
       </div>
     </BackgroundImage>
-  </div>}/>
+  </div>
+  }/>
 }
