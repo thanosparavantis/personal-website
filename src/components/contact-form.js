@@ -2,6 +2,7 @@ import React from "react"
 import Axios from "axios"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSpinner } from "@fortawesome/free-solid-svg-icons"
+import ReCAPTCHA from "react-google-recaptcha/lib/esm/recaptcha-wrapper"
 
 export default class ContactForm extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export default class ContactForm extends React.Component {
     }
 
     this.inputHandler = this.inputHandler.bind(this)
+    this.captchaHandler = this.captchaHandler.bind(this)
     this.submitHandler = this.submitHandler.bind(this)
   }
 
@@ -30,12 +32,19 @@ export default class ContactForm extends React.Component {
     })
   }
 
+  captchaHandler(value) {
+    this.setState({
+      captcha: value,
+    })
+  }
+
   resetInput() {
     this.setState({
       first_name: "",
       last_name: "",
       email: "",
       message: "",
+      captcha: "",
     })
   }
 
@@ -50,6 +59,7 @@ export default class ContactForm extends React.Component {
       && this.state.last_name
       && this.state.email
       && this.state.message
+      && this.state.captcha
   }
 
   showSuccess() {
@@ -70,10 +80,11 @@ export default class ContactForm extends React.Component {
     const cancelToken = this.cancelSource.token
 
     Axios.post("https://formcarry.com/s/8-s5znRbPKu", {
-      first_name: this.state.first_name,
-      last_name: this.state.last_name,
-      email: this.state.email,
-      message: this.state.message,
+      "first_name": this.state.first_name,
+      "last_name": this.state.last_name,
+      "email": this.state.email,
+      "message": this.state.message,
+      "g-recaptcha-response": this.state.captcha,
     }, { cancelToken: cancelToken }).then(response => {
       this.showSuccess()
       this.resetInput()
@@ -120,6 +131,10 @@ export default class ContactForm extends React.Component {
       </label>
 
       <textarea name="message" id="message" className="mb-8 p-2 h-48 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Write your message here..." onChange={this.inputHandler} value={this.state.message || ""} required/>
+
+      <div className="mb-5">
+        <ReCAPTCHA sitekey="6LdMY74UAAAAAM3EIrRzslKtYWc2OKGriLEuu53y" onChange={this.captchaHandler}/>
+      </div>
 
       {this.state.showSuccess ? (
         <div className="mb-5 text-center text-green-700 font-bold">
