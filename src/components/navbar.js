@@ -26,13 +26,13 @@ class ExpandedNavbar extends React.Component {
       <h1 className="h-20 flex items-center justify-center flex-shrink-0 font-bold text-lg px-10 md:h-32">
         thanosparavantis.com
       </h1>
-      <div className="flex flex-col mb-8 flex-shrink-0">
+      <div className="flex flex-col flex-shrink-0">
         <NavbarLink href="/" title="Home" icon={faHome} onClick={this.props.onLinkClick}/>
         <NavbarLink href="/about/" title="About" icon={faQuestionCircle} onClick={this.props.onLinkClick}/>
         <NavbarLink href="/projects/" title="Projects" icon={faCode} onClick={this.props.onLinkClick}/>
         <NavbarLink href="/contact/" title="Contact" icon={faEnvelopeOpenText} onClick={this.props.onLinkClick}/>
       </div>
-      <button onClick={this.props.onToggleClick} className="flex items-center justify-center flex-shrink-0 px-5 h-16 bg-green-900 hover:bg-yellow-600 focus:bg-yellow-700 mt-auto">
+      <button onClick={this.props.onToggleClick} className="flex items-center justify-center flex-shrink-0 px-5 h-16 bg-green-900 hover:bg-yellow-600 focus:bg-yellow-700 md:mt-auto">
         <FontAwesomeIcon icon={faArrowCircleLeft} className="mr-3" size="lg"/>
         <div className="font-bold">Minimize</div>
       </button>
@@ -52,7 +52,7 @@ class MinimizedNavbar extends React.Component {
                 }
             },
         }`} render={data => <div>
-      <nav className="w-20 z-10 hidden fixed left-0 top-0 flex-col h-full bg-green-800 text-white shadow-lg md:flex">
+      <nav className="w-20 z-10 hidden fixed left-0 top-0 flex-col h-full bg-green-800 text-white shadow-lg overflow-auto md:flex">
         <h1 className="h-32 flex flex-shrink-0 items-center justify-center px-5">
           <Img fluid={data.logo.childImageSharp.fluid} className="w-10" alt="Website Logo" title="Website Logo"/>
         </h1>
