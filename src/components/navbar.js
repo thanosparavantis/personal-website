@@ -62,7 +62,7 @@ class MinimizedNavbar extends React.Component {
           <NavbarLink href="/projects/" title="Projects" icon={faCode} isSmall={true} onClick={this.props.onLinkClick}/>
           <NavbarLink href="/contact/" title="Contact" icon={faEnvelopeOpenText} isSmall={true} onClick={this.props.onLinkClick}/>
         </div>
-        <button onClick={this.props.onToggleClick} className="px-5 h-16 mt-auto flex items-center justify-center flex-shrink-0 bg-green-900 hover:bg-yellow-600 focus:bg-yellow-700">
+        <button onClick={this.props.onToggleClick} aria-label="Expand Navigation" className="px-5 h-16 mt-auto flex items-center justify-center flex-shrink-0 bg-green-900 hover:bg-yellow-600 focus:bg-yellow-700" >
           <FontAwesomeIcon icon={faArrowCircleRight} size="lg"/>
         </button>
       </nav>
@@ -70,7 +70,7 @@ class MinimizedNavbar extends React.Component {
         <Link to="/" className="flex items-center justify-center font-bold text-sm px-5">
           thanosparavantis.com
         </Link>
-        <button onClick={this.props.onToggleClick} className="h-16 px-5 ml-auto flex items-center justify-center flex-shrink-0 bg-green-900 hover:bg-yellow-600 focus:bg-yellow-700">
+        <button onClick={this.props.onToggleClick} aria-label="Expand Navigation" className="h-16 px-5 ml-auto flex items-center justify-center flex-shrink-0 bg-green-900 hover:bg-yellow-600 focus:bg-yellow-700">
           <FontAwesomeIcon icon={faBars} size="lg"/>
         </button>
       </nav>
