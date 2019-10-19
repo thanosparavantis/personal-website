@@ -2,7 +2,7 @@ import React from "react"
 import Axios from "axios"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSpinner } from "@fortawesome/free-solid-svg-icons"
-import ReCAPTCHA from "react-google-recaptcha/lib/esm/recaptcha-wrapper"
+import ReCAPTCHA from "react-google-recaptcha"
 
 export default class ContactForm extends React.Component {
   constructor(props) {
@@ -14,6 +14,7 @@ export default class ContactForm extends React.Component {
       loading: false,
     }
 
+    this.captchaRef = React.createRef()
     this.inputHandler = this.inputHandler.bind(this)
     this.captchaHandler = this.captchaHandler.bind(this)
     this.submitHandler = this.submitHandler.bind(this)
@@ -46,6 +47,8 @@ export default class ContactForm extends React.Component {
       message: "",
       captcha: "",
     })
+
+    this.captchaRef.current.reset()
   }
 
   toggleLoading() {
@@ -65,11 +68,13 @@ export default class ContactForm extends React.Component {
   showSuccess() {
     this.setState({
       showSuccess: true,
+      showFailure: false,
     })
   }
 
   showFailure() {
     this.setState({
+      showSuccess: false,
       showFailure: true,
     })
   }
@@ -85,7 +90,9 @@ export default class ContactForm extends React.Component {
       "email": this.state.email,
       "message": this.state.message,
       "g-recaptcha-response": this.state.captcha,
-    }, { cancelToken: cancelToken }).then(response => {
+    }, {
+      cancelToken: cancelToken,
+    }).then(response => {
       this.showSuccess()
       this.resetInput()
     }).catch(error => {
@@ -132,8 +139,11 @@ export default class ContactForm extends React.Component {
 
       <textarea name="message" id="message" className="mb-8 p-2 h-48 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Write your message here..." onChange={this.inputHandler} value={this.state.message || ""} required/>
 
-      <div className="mb-5">
-        <ReCAPTCHA sitekey="6LdMY74UAAAAAM3EIrRzslKtYWc2OKGriLEuu53y" onChange={this.captchaHandler}/>
+      <label className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight">
+        Captcha
+      </label>
+      <div className="mb-8">
+        <ReCAPTCHA sitekey="6LdMY74UAAAAAM3EIrRzslKtYWc2OKGriLEuu53y" onChange={this.captchaHandler} ref={this.captchaRef}/>
       </div>
 
       {this.state.showSuccess ? (

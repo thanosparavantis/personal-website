@@ -28,7 +28,7 @@ export default () => {
     </Helmet>
 
     <BackgroundImage Tag="div" fluid={data.background.childImageSharp.fluid}>
-      <div className="md:h-screen p-5 flex flex-col items-center justify-center text-center" style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}>
+      <div className="min-h-screen p-5 flex flex-col items-center justify-center text-center" style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}>
         <Img fluid={data.profilePhoto.childImageSharp.fluid} alt="Profile photo" title="Profile picture of Thanos Paravantis" className="mb-10 rounded-full shadow-xl flex-shrink-0 w-1/2 md:w-1/4 lg:w-1/6"/>
         <h1 className="text-xl font-bold mb-2 md:text-2xl lg:text-3xl">
           Thanos Paravantis
