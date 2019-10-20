@@ -1,4 +1,4 @@
-![Website Logo](https://thanosparavantis.com/social.png)
+![Website Logo](https://i.imgur.com/dqMQe8f.png)
 
 # thanosparavantis.com
 This repository houses the source code that powers my personal website.
