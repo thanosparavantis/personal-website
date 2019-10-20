@@ -58,7 +58,6 @@ export default class GithubProfile extends React.Component {
   }
 
   render() {
-
     if (this.state.loading) {
       return <div className="mx-5 p-5 bg-gray-300 text-center">
         <FontAwesomeIcon icon={faSpinner} spin className="mr-2"/>

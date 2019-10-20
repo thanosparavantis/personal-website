@@ -2,7 +2,7 @@ import React from "react"
 import Navbar from "../components/navbar"
 import { isMobile } from "is-mobile"
 import Page from "react-page-loading"
-import SeoHeaders from "./seo-headers"
+import SeoTags from "./seo-tags"
 
 export default class Layout extends React.Component {
   constructor(props) {
@@ -29,12 +29,14 @@ export default class Layout extends React.Component {
   }
 
   render() {
-    return <div>
-      <SeoHeaders/>
-      <Page loader="spin" color={"#A9A9A9"} size={4}>
-        <Navbar onToggleClick={this.navbarToggleClickHandler} onLinkClick={this.navbarLinkClickHandler} isOpened={this.state.navbarOpened}/>
-        {this.props.children}
-      </Page>
-    </div>
+    return (
+      <div>
+        <SeoTags/>
+        <Page loader="spin" color={"#A9A9A9"} size={4}>
+          <Navbar onToggleClick={this.navbarToggleClickHandler} onLinkClick={this.navbarLinkClickHandler} isOpened={this.state.navbarOpened}/>
+          {this.props.children}
+        </Page>
+      </div>
+    )
   }
 }

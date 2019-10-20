@@ -1,12 +1,12 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import GithubProfile from "../components/github-profile"
+import SeoTags from "../components/seo-tags"
 
-export default () => <div>
-  <Helmet>
-    <title>Projects - Thanos Paravantis</title>
-  </Helmet>
-  <div className="max-w-2xl mx-auto my-24 md:pl-20 md:my-12">
-    <GithubProfile/>
+export default () => (
+  <div>
+    <SeoTags title="Projects - Thanos Paravantis"/>
+    <div className="max-w-2xl mx-auto my-24 md:pl-20 md:my-12">
+      <GithubProfile/>
+    </div>
   </div>
-</div>
+)
