@@ -119,15 +119,15 @@ export default () => {
           <Img fluid={image4} className="h-64 shadow-lg rounded mt-20 mb-8" alt="Thanos Paravantis speaking at Crowdhackathon #Agrifood" title="Thanos Paravantis speaking at Crowdhackathon #Agrifood"/>
           <h1 className="text-gray-900 font-bold text-xl mb-4">Achievements and Conferences</h1>
 
-          <div className="text-gray-900">
-            <p className="mb-4">Attended Google Developer's Group Athens Meetup, September 2019.</p>
-            <p className="mb-4">Attended Career’s Day organized by University of Piraeus, April 2019.</p>
-            <p className="mb-4">Attended Job Fair Athens 2019 in Zappeion Megaron.</p>
-            <p className="mb-4">4th place award at Crowdhackathon #Agrifood, April 2019, team “UNI3.14”.</p>
-            <p className="mb-4">Attended Developers Day 2018 in Dais Sports Center.</p>
-            <p className="mb-4">Attended Decentralized 2018 in Divani Caravel Hotel.</p>
-            <p>2nd place award at Recycling Competition organized by Municipality of Athens, April 2013.</p>
-          </div>
+          <ul className="list-inside list-disc text-gray-900">
+            <li className="mb-4">Attended <span className="font-bold text-green-800">Decentralized 2019</span> in Divani Caravel Hotel.</li>
+            <li className="mb-4">Attended <span className="font-bold text-green-800">Google Developer's Group Athens Meetup</span>, September 2019.</li>
+            <li className="mb-4">Attended <span className="font-bold text-green-800">Job Fair Athens 2019</span> in Zappeion Megaron.</li>
+            <li className="mb-4">4th place award at <span className="font-bold text-green-800">Crowdhackathon #Agrifood</span>, April 2019, team “UNI3.14”.</li>
+            <li className="mb-4">Attended <span className="font-bold text-green-800">Developers Day 2018</span> in Dais Sports Center.</li>
+            <li className="mb-4">Attended <span className="font-bold text-green-800">Decentralized 2018</span> in Divani Caravel Hotel.</li>
+            <li>2nd place award at <span className="font-bold text-green-800">Recycling Competition</span> organized by Municipality of Athens, April 2013.</li>
+          </ul>
         </div>
       </div>
     )
