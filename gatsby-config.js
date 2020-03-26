@@ -11,6 +11,7 @@ module.exports = {
     seoKeywords: `thanos paravanits, computer science, programming, web development, machine learning, development, software, backend, frontend`,
     seoUrl: `https://thanosparavantis.com`,
     seoTwitterUsername: `@thanosparavantis`,
+    facebookLink: `https://www.facebook.com/thanosparavantis/`,
     twitterLink: `https://twitter.com/thparavantis`,
     linkedinLink: `https://www.linkedin.com/in/thanosparavantis`,
     githubLink: `https://github.com/thanosparavantis`,

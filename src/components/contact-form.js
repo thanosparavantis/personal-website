@@ -1,5 +1,4 @@
 import React from "react"
-import Axios from "axios"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSpinner } from "@fortawesome/free-solid-svg-icons"
 import ReCAPTCHA from "react-google-recaptcha"
@@ -80,18 +79,22 @@ export default class ContactForm extends React.Component {
   }
 
   submitHandler() {
+    const msgWithBreaks = this.state.message.replace(/(?:\r\n|\r|\n)/g, "<br />")
     this.toggleLoading()
-    this.cancelSource = Axios.CancelToken.source()
-    const cancelToken = this.cancelSource.token
 
-    Axios.post("https://formcarry.com/s/8-s5znRbPKu", {
-      "first_name": this.state.first_name,
-      "last_name": this.state.last_name,
-      "email": this.state.email,
-      "message": this.state.message,
-      "g-recaptcha-response": this.state.captcha,
-    }, {
-      cancelToken: cancelToken,
+    fetch("https://formcarry.com/s/8-s5znRbPKu", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        "first_name": this.state.first_name,
+        "last_name": this.state.last_name,
+        "email": this.state.email,
+        "message": msgWithBreaks,
+        "g-recaptcha-response": this.state.captcha,
+      }),
     }).then(response => {
       this.showSuccess()
       this.resetInput()
@@ -102,12 +105,6 @@ export default class ContactForm extends React.Component {
     })
   }
 
-  componentWillUnmount() {
-    if (this.cancelSource) {
-      this.cancelSource.cancel()
-    }
-  }
-
   render() {
     return <div className="flex flex-col">
       <div className="flex flex-col md:flex-row">
@@ -116,14 +113,14 @@ export default class ContactForm extends React.Component {
             First Name
           </label>
 
-          <input type="text" name="first_name" id="first_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Thanos" value={this.state.first_name || ""} onChange={this.inputHandler} required/>
+          <input type="text" name="first_name" id="first_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" value={this.state.first_name || ""} onChange={this.inputHandler} required/>
         </div>
         <div className="flex flex-col md:w-1/2">
           <label htmlFor="last_name" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
             Last Name
           </label>
 
-          <input type="text" name="last_name" id="last_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Paravantis" value={this.state.last_name || ""} onChange={this.inputHandler} required/>
+          <input type="text" name="last_name" id="last_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" value={this.state.last_name || ""} onChange={this.inputHandler} required/>
         </div>
       </div>
 
@@ -131,13 +128,13 @@ export default class ContactForm extends React.Component {
         E-mail address
       </label>
 
-      <input type="email" name="email" id="email" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="thanosparavantis@gmail.com" value={this.state.email || ""} onChange={this.inputHandler}/>
+      <input type="email" name="email" id="email" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" value={this.state.email || ""} onChange={this.inputHandler}/>
 
       <label htmlFor="message" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
         Message
       </label>
 
-      <textarea name="message" id="message" className="mb-8 p-2 h-48 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" placeholder="Write your message here..." onChange={this.inputHandler} value={this.state.message || ""} required/>
+      <textarea name="message" id="message" className="mb-8 p-2 h-48 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" onChange={this.inputHandler} value={this.state.message || ""} required/>
 
       <label className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight">
         Captcha
@@ -165,7 +162,7 @@ export default class ContactForm extends React.Component {
           </span> : <span>
               Send
           </span>}
-      </button>) : (<button className="p-3 rounded text-white text-lg font-bold bg-orange-600 hover:bg-orange-500" onClick={this.submitHandler}>
+      </button>) : (<button className="p-3 rounded text-white text-lg font-bold bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800 focus:outline-none focus:shadow-outline" onClick={this.submitHandler}>
         Send
       </button>)}
     </div>

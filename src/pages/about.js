@@ -58,7 +58,7 @@ export default () => {
             <p>My vision is to master the field of computer science and write practical applications to solve elemental problems.</p>
           </div>
 
-          <Img fluid={image2} className="h-64 hadow-lg rounded mt-20 mb-8" alt="Picture of a library" title="Picture of a library"/>
+          <Img fluid={image2} className="h-64 shadow-lg rounded mt-20 mb-8" alt="Picture of a library" title="Picture of a library"/>
           <h1 className="text-gray-900 font-bold text-xl mb-4">Education</h1>
 
           <h2 className="text-green-800 font-bold mb-1">Bachelor’s in Computer Science</h2>
@@ -120,6 +120,7 @@ export default () => {
           <h1 className="text-gray-900 font-bold text-xl mb-4">Achievements and Conferences</h1>
 
           <ul className="list-inside list-disc text-gray-900">
+            <li className="mb-4">Attended <span className="font-bold text-green-800">Developers Day 2019</span> in Dais Sports Center.</li>
             <li className="mb-4">Attended <span className="font-bold text-green-800">Decentralized 2019</span> in Divani Caravel Hotel.</li>
             <li className="mb-4">Attended <span className="font-bold text-green-800">Google Developer's Group Athens Meetup</span>, September 2019.</li>
             <li className="mb-4">Attended <span className="font-bold text-green-800">Job Fair Athens 2019</span> in Zappeion Megaron.</li>

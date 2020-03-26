@@ -2,7 +2,7 @@ import React from "react"
 import GitHubRepository from "./github-repository"
 
 const GitHubRepositories = ({ source }) => {
-  let sorted = source.sort((a, b) => b.stargazers_count - a.stargazers_count)
+  const sorted = source.sort((a, b) => b.stargazers_count - a.stargazers_count)
 
   return (
     <div>
