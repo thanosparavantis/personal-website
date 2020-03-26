@@ -10,7 +10,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby clean && gatsby build && gh-pages -d public -b production"
+    "deploy": "gatsby clean && gatsby build && gh-pages --dist public --branch master --remote production"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
