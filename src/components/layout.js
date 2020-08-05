@@ -3,6 +3,7 @@ import Navbar from "../components/navbar"
 import { isMobile } from "is-mobile"
 import Page from "react-page-loading"
 import SeoTags from "./seo-tags"
+import { Helmet } from "react-helmet"
 
 export default class Layout extends React.Component {
   constructor(props) {
@@ -32,7 +33,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <SeoTags/>
-        <Page loader="spin" color={"#A9A9A9"} size={4}>
+        <Page loader="spin" color="#A9A9A9" size={4}>
           <Navbar onToggleClick={this.navbarToggleClickHandler} onLinkClick={this.navbarLinkClickHandler} isOpened={this.state.navbarOpened}/>
           {this.props.children}
         </Page>
