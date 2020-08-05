@@ -5,12 +5,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop -H 0.0.0.0",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby clean && gatsby build && gh-pages --dist public --branch master --remote production"
+    "develop": "gatsby develop",
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
