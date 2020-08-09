@@ -21,9 +21,11 @@ export default function ActivityItem({ item }) {
 
   return (
     <a href={item.link} target="_blank" rel="noopener noreferrer" className="block mt-5 bg-gray-200 hover:bg-gray-300 shadow p-5 focus:outline-none focus:shadow-outline" title="Click here to see more about this">
-      <div className="flex flex-wrap items-center font-bold mb-2">
-        <FontAwesomeIcon icon={icon} className={`mr-2 ${color}`}/>
-        <div className={`${color}`}>{item.title}</div>
+      <div className="flex flex-col md:flex-row font-bold mb-2">
+        <div className="flex items-center">
+          <FontAwesomeIcon icon={icon} className={`mr-2 ${color}`}/>
+          <div className={`${color}`}>{item.title}</div>
+        </div>
         <div className="mx-2 hidden md:block">&middot;</div>
         <TimeAgo date={item.pubDate} className="text-gray-800 text-sm"/>
       </div>

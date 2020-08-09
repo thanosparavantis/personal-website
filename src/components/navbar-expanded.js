@@ -1,5 +1,5 @@
 import NavbarLink from "./navbar-link"
-import { faArrowCircleLeft, faCode, faEnvelopeOpenText, faHome, faQuestionCircle, faRss, faSkiing } from "@fortawesome/free-solid-svg-icons"
+import { faArrowCircleLeft, faCode, faEnvelopeOpenText, faHome, faQuestionCircle, faRss } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 

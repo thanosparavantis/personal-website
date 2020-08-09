@@ -4,7 +4,7 @@ import { faCode } from "@fortawesome/free-solid-svg-icons"
 import TimeAgo from "react-timeago/lib"
 
 const GitHubRepository = ({ source }) => (
-  <a href={source.html_url} className="mt-5 rounded block p-10 bg-gray-200
+  <a href={source.html_url} className="mt-5 rounded block p-5 md:p-10 bg-gray-200
    hover:bg-gray-300 focus:bg-gray-300 focus:outline-none shadow
    focus:shadow-outline active:bg-gray-400" title={"Visit " + source.name + " on GitHub"}>
     <h1 className="uppercase font-bold text-sm text-green-800">

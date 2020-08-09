@@ -102,7 +102,7 @@ export default function ActivityPage() {
     return (
       <div>
         <SeoTags title="Activity - Thanos Paravantis"/>
-        <div className="max-w-2xl mx-auto my-24 px-5 md:pl-20 md:my-12">
+        <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:pl-20 md:my-12">
           <h1 className="font-bold text-xl mb-2 text-gray-900">
             Activity
           </h1>

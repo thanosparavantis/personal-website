@@ -1,6 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebookF, faGithub, faLinkedinIn, faMediumM, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faFacebookF, faGithub, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { graphql, StaticQuery } from "gatsby"
 
 const query = graphql`
