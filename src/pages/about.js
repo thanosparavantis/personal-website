@@ -91,7 +91,7 @@ export default () => {
           </div>
           <div>
             <a href="https://www.hau.gr/" rel="noopener noreferrer" className="text-gray-700 font-bold text-sm underline hover:text-gray-900">
-              Visit organisation website
+              Visit organization website
             </a>
           </div>
 
@@ -106,7 +106,7 @@ export default () => {
           <div className="text-sm font-bold text-gray-900 md:flex md:items-center">
             <p className="mb-2 md:mb-0">July 2020 – Present</p>
             <p className="hidden md:block md:mx-4">&middot;</p>
-            <p>Chalandri, Greece</p>
+            <p className="mb-2 md:mb-0">Chalandri, Greece</p>
             <p className="hidden md:block md:mx-4">&middot;</p>
             <p>Logicea</p>
           </div>
