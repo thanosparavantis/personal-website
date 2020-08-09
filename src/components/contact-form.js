@@ -2,6 +2,16 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSpinner } from "@fortawesome/free-solid-svg-icons"
 import ReCAPTCHA from "react-google-recaptcha"
+import { StaticQuery } from "gatsby"
+
+const query = graphql`
+  query HomePageQuery {
+    site {
+      siteMetadata {
+        reCaptchaKey
+      }
+    }
+  }`
 
 export default class ContactForm extends React.Component {
   constructor(props) {
@@ -106,65 +116,73 @@ export default class ContactForm extends React.Component {
   }
 
   render() {
-    return <div className="flex flex-col">
-      <div className="flex flex-col md:flex-row">
-        <div className="flex flex-col md:mr-5 md:w-1/2">
-          <label htmlFor="first_name" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
-            First Name
-          </label>
+    return (
+      <StaticQuery query={query} render={data => {
+        const reCaptchaKey = data.site.siteMetadata.reCaptchaKey
 
-          <input type="text" name="first_name" id="first_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" value={this.state.first_name || ""} onChange={this.inputHandler} required/>
-        </div>
-        <div className="flex flex-col md:w-1/2">
-          <label htmlFor="last_name" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
-            Last Name
-          </label>
+        return (
+          <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row">
+              <div className="flex flex-col md:mr-5 md:w-1/2">
+                <label htmlFor="first_name" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
+                  First Name
+                </label>
 
-          <input type="text" name="last_name" id="last_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" value={this.state.last_name || ""} onChange={this.inputHandler} required/>
-        </div>
-      </div>
+                <input type="text" name="first_name" id="first_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" value={this.state.first_name || ""} onChange={this.inputHandler} required/>
+              </div>
+              <div className="flex flex-col md:w-1/2">
+                <label htmlFor="last_name" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
+                  Last Name
+                </label>
 
-      <label htmlFor="email" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
-        E-mail address
-      </label>
+                <input type="text" name="last_name" id="last_name" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" value={this.state.last_name || ""} onChange={this.inputHandler} required/>
+              </div>
+            </div>
 
-      <input type="email" name="email" id="email" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" value={this.state.email || ""} onChange={this.inputHandler}/>
+            <label htmlFor="email" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
+              E-mail address
+            </label>
 
-      <label htmlFor="message" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
-        Message
-      </label>
+            <input type="email" name="email" id="email" className="mb-8 p-2 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" value={this.state.email || ""} onChange={this.inputHandler}/>
 
-      <textarea name="message" id="message" className="mb-8 p-2 h-48 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" onChange={this.inputHandler} value={this.state.message || ""} required/>
+            <label htmlFor="message" className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight cursor-pointer">
+              Message
+            </label>
 
-      <label className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight">
-        Captcha
-      </label>
-      <div className="mb-8">
-        <ReCAPTCHA sitekey="6LdMY74UAAAAAM3EIrRzslKtYWc2OKGriLEuu53y" onChange={this.captchaHandler} ref={this.captchaRef}/>
-      </div>
+            <textarea name="message" id="message" className="mb-8 p-2 h-48 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" onChange={this.inputHandler} value={this.state.message || ""} required/>
 
-      {this.state.showSuccess ? (
-        <div className="mb-5 text-center text-green-700 font-bold">
-          Your message has been sent.
-        </div>
-      ) : ""}
+            <label className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight">
+              Captcha
+            </label>
+            <div className="mb-8">
+              <ReCAPTCHA sitekey={reCaptchaKey} onChange={this.captchaHandler} ref={this.captchaRef}/>
+            </div>
 
-      {this.state.showFailure ? (
-        <div className="mb-5 text-center text-red-700 font-bold">
-          Failed to send message.
-        </div>
-      ) : ""}
+            {this.state.showSuccess ? (
+              <div className="mb-5 text-center text-green-700 font-bold">
+                Your message has been sent.
+              </div>
+            ) : ""}
 
-      {this.state.loading || !this.isFormValid() ? (<button className="p-3 rounded text-white text-lg font-bold bg-gray-500 cursor-not-allowed" disabled>
-        {this.state.loading ? <span>
+            {this.state.showFailure ? (
+              <div className="mb-5 text-center text-red-700 font-bold">
+                Failed to send message.
+              </div>
+            ) : ""}
+
+            {this.state.loading || !this.isFormValid() ? (<button className="p-3 rounded text-white text-lg font-bold bg-gray-500 cursor-not-allowed" disabled>
+              {this.state.loading ? <span>
             <FontAwesomeIcon icon={faSpinner} spin className="mr-2"/>
             Sending...
           </span> : <span>
               Send
           </span>}
-      </button>) : (<button className="p-3 rounded text-white text-lg font-bold bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800 focus:outline-none focus:shadow-outline" onClick={this.submitHandler}>
-        Send
-      </button>)}
-    </div>
+            </button>) : (<button className="p-3 rounded text-white text-lg font-bold bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800 focus:outline-none focus:shadow-outline" onClick={this.submitHandler}>
+              Send
+            </button>)}
+          </div>
+        )
+      }}/>
+    )
   }
 }

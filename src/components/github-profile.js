@@ -25,25 +25,25 @@ const GitHubProfile = () => {
       .catch(error => setError(true))
   }, [])
 
-  if (identityData && repositoryData) {
+  if (error) {
+    return (
+      <div className="bg-gray-200 p-5 text-center font-bold text-red-700">
+        <FontAwesomeIcon icon={faExclamation} className="mr-3"/>
+        Something went wrong, please try again later.
+      </div>
+    )
+  } else if (identityData && repositoryData) {
     return (
       <div>
         <GithubIdentity source={identityData}/>
         <GithubRepositories source={repositoryData}/>
       </div>
     )
-  } else if (error) {
-    return (
-      <div className="mx-5 p-5 text-center font-bold text-red-700">
-        <FontAwesomeIcon icon={faExclamation} className="mr-3"/>
-        Something went wrong, please try again later.
-      </div>
-    )
   } else {
     return (
-      <div className="mx-5 p-5 text-center">
+      <div className="bg-gray-200 p-5 text-center">
         <FontAwesomeIcon icon={faCog} spin={true} className="mr-3"/>
-        Fetching repositories...
+        Loading...
       </div>
     )
   }

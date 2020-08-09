@@ -1,5 +1,5 @@
 import NavbarLink from "./navbar-link"
-import { faArrowCircleLeft, faCode, faEnvelopeOpenText, faHome, faQuestionCircle } from "@fortawesome/free-solid-svg-icons"
+import { faArrowCircleLeft, faCode, faEnvelopeOpenText, faHome, faQuestionCircle, faRss, faSkiing } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
@@ -12,6 +12,7 @@ const NavbarExpanded = ({ onLinkClick, onToggleClick }) => (
       <NavbarLink href="/" title="Home" icon={faHome} onClick={onLinkClick}/>
       <NavbarLink href="/about/" title="About" icon={faQuestionCircle} onClick={onLinkClick}/>
       <NavbarLink href="/projects/" title="Projects" icon={faCode} onClick={onLinkClick}/>
+      <NavbarLink href="/activity/" title="Activity" icon={faRss} onClick={onLinkClick}/>
       <NavbarLink href="/contact/" title="Contact" icon={faEnvelopeOpenText} onClick={onLinkClick}/>
     </div>
     <button onClick={onToggleClick}

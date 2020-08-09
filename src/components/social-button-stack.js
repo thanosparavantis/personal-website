@@ -53,19 +53,11 @@ const SocialButtonStack = () => (
         </a>
         <a href={githubLink} rel="noopener noreferrer" title="Visit my GitHub profile"
            className="rounded-full text-center mb-3 p-5 md:w-16 text-white flex align-center items-center justify-center
-           bg-yellow-600 shadow-lg hover:bg-yellow-700 focus:outline-none focus:shadow-outline active:bg-yellow-800 md:mb-0 md:mr-12 w-64">
+           bg-yellow-600 shadow-lg hover:bg-yellow-700 focus:outline-none focus:shadow-outline active:bg-yellow-800 md:mb-0 w-64">
           <div className="w-10 md:w-auto">
             <FontAwesomeIcon icon={faGithub} size="lg" className="mr-3 md:mr-0"/>
           </div>
           <span className="md:hidden">GitHub</span>
-        </a>
-        <a href={mediumLink} rel="noopener noreferrer" title="Visit my Medium profile"
-           className="rounded-full text-center p-5 md:w-16 text-white flex align-center items-center justify-center
-           bg-yellow-600 shadow-lg hover:bg-yellow-700 focus:outline-none focus:shadow-outline active:bg-yellow-800 w-64">
-          <div className="w-10 md:w-auto">
-            <FontAwesomeIcon icon={faMediumM} size="lg" className="mr-3 md:mr-0"/>
-          </div>
-          <span className="md:hidden">Medium</span>
         </a>
       </div>
     )

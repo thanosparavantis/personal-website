@@ -1,7 +1,7 @@
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import NavbarLink from "./navbar-link"
-import { faArrowCircleRight, faBars, faCode, faEnvelopeOpenText, faHome, faQuestionCircle } from "@fortawesome/free-solid-svg-icons"
+import { faArrowCircleRight, faBars, faCode, faEnvelopeOpenText, faHome, faQuestionCircle, faRss, faSkiing } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
@@ -24,12 +24,13 @@ const NavbarMinimized = ({ onLinkClick, onToggleClick }) => (
       <div>
         <nav className="w-20 z-10 hidden fixed left-0 top-0 flex-col h-full bg-green-700 text-white shadow-lg overflow-auto md:flex">
           <h1 className="h-32 flex flex-shrink-0 items-center justify-center px-5">
-            <Img fluid={logo} className="w-10" alt="Website Logo" title="Website Logo"/>
+            <Img fluid={logo} className="w-full" alt="Website Logo" title="Website Logo"/>
           </h1>
           <div className="mb-8 flex flex-col">
             <NavbarLink href="/" title="Home" icon={faHome} isSmall={true} onClick={onLinkClick}/>
             <NavbarLink href="/about/" title="About" icon={faQuestionCircle} isSmall={true} onClick={onLinkClick}/>
             <NavbarLink href="/projects/" title="Projects" icon={faCode} isSmall={true} onClick={onLinkClick}/>
+            <NavbarLink href="/activity/" title="Activity" icon={faRss} isSmall={true} onClick={onLinkClick}/>
             <NavbarLink href="/contact/" title="Contact" icon={faEnvelopeOpenText} isSmall={true} onClick={onLinkClick}/>
           </div>
           <button onClick={onToggleClick} aria-label="Expand Navigation"

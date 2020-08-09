@@ -27,7 +27,7 @@ export default () => {
             Thanos Paravantis
           </h1>
           <h2 className="text-lg font-bold mb-10 text-gray-600">
-            student, programmer, radio amateur
+            Student, programmer, radio amateur
           </h2>
           <SocialButtonStack/>
         </div>

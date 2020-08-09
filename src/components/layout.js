@@ -32,6 +32,9 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <body className="font-custom"/>
+        </Helmet>
         <SeoTags/>
         <Page loader="spin" color="#A9A9A9" size={4}>
           <Navbar onToggleClick={this.navbarToggleClickHandler} onLinkClick={this.navbarLinkClickHandler} isOpened={this.state.navbarOpened}/>

@@ -1,9 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
     seoTitle: `Thanos Paravantis`,
@@ -16,6 +10,7 @@ module.exports = {
     linkedinLink: `https://www.linkedin.com/in/thanosparavantis`,
     githubLink: `https://github.com/thanosparavantis`,
     mediumLink: `https://medium.com/@thanosparavantis`,
+    reCaptchaKey: `6LdMY74UAAAAAM3EIrRzslKtYWc2OKGriLEuu53y`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -23,7 +18,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

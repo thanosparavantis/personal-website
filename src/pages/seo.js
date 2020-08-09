@@ -8,7 +8,7 @@ export default () => (
     <img src={image} className="w-64 rounded shadow-lg"/>
     <div className="ml-32">
       <h1 className="font-bold mb-2 text-4xl text-gray-900">Thanos Paravantis</h1>
-      <h2 className="text-3xl font-bold text-gray-700">Senior in Computer Science</h2>
+      <h2 className="text-3xl font-bold text-gray-700">Student, programmer, radio amateur</h2>
       <div className="text-2xl mt-12">
         <FontAwesomeIcon icon={faFacebookF} className="mr-12 text-yellow-600" size="2x"/>
         <FontAwesomeIcon icon={faTwitter} className="mr-12 text-yellow-600" size="2x"/>

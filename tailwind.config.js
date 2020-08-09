@@ -229,6 +229,7 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
+      custom: ['Aria', 'Helvetica', 'sans-serif'],
       sans: [
         'system-ui',
         '-apple-system',
