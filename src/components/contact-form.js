@@ -5,7 +5,7 @@ import ReCAPTCHA from "react-google-recaptcha"
 import { StaticQuery } from "gatsby"
 
 const query = graphql`
-  query HomePageQuery {
+  query ContactFormQuery {
     site {
       siteMetadata {
         reCaptchaKey
