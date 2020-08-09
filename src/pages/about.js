@@ -24,7 +24,6 @@ const query = graphql`
 
 export default () => {
   return <StaticQuery query={query} render={data => {
-    console.log(data)
     const presentationImage = data.presentationImage.childImageSharp.fluid
     const linkedIn = data.site.siteMetadata.linkedinLink
 
