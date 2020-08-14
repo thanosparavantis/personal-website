@@ -18,9 +18,9 @@ export default function ActivityPage() {
     const feedItems = localStorage.getItem(feedItemsKey)
 
     if (feedDate && feedItems) {
-      const then = parseInt(feedDate)
       const now = new Date().getTime().toString()
-      const isValid = then - now <= 3600000
+      const then = parseInt(feedDate)
+      const isValid = Math.abs(now - then) <= 3600000
 
       if (isValid) {
         console.debug("Fetching activity items from cache.")
