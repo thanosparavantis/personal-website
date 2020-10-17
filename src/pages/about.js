@@ -9,7 +9,7 @@ const query = graphql`
   query AboutPage {
     presentationImage: file(relativePath: { eq: "presenting.jpg" }) {
         childImageSharp {
-            fluid(quality: 100) {
+            fluid(quality: 100, maxWidth: 800) {
                 ...GatsbyImageSharpFluid
             }
         }

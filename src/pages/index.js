@@ -7,7 +7,7 @@ const query = graphql`
   query IndexPage {
     profilePicture: file(relativePath: { eq: "profile_picture.jpg" }) {
       childImageSharp {
-        fluid(quality: 100) {
+        fluid(quality: 100, maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
