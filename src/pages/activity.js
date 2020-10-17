@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import Parser from "rss-parser"
 import ActivityItem from "../components/activity-item"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCog, faExclamation } from "@fortawesome/free-solid-svg-icons"
+import { faCog, faExclamation, faWaveSquare } from "@fortawesome/free-solid-svg-icons"
 import SeoTags from "../components/seo-tags"
 
 export default function ActivityPage() {
@@ -71,13 +71,13 @@ export default function ActivityPage() {
   if (error) {
     return (
       <div>
-        <SeoTags title="Activity - Thanos Paravantis"/>
+        <SeoTags title="Activity - Thanos Paravantis" />
         <div className="max-w-2xl mx-auto my-24 px-5 md:pl-20 md:my-12">
           <h1 className="font-bold text-xl mb-2 text-gray-900">
             Activity
           </h1>
           <div className="bg-gray-200 p-5 text-center font-bold text-red-700">
-            <FontAwesomeIcon icon={faExclamation} className="mr-3"/>
+            <FontAwesomeIcon icon={faExclamation} className="mr-3" />
             Something went wrong, please try again later.
           </div>
         </div>
@@ -86,14 +86,29 @@ export default function ActivityPage() {
   } else if (loading) {
     return (
       <div>
-        <SeoTags title="Activity - Thanos Paravantis"/>
+        <SeoTags title="Activity - Thanos Paravantis" />
         <div className="max-w-2xl mx-auto my-24 px-5 md:pl-20 md:my-12">
           <h1 className="font-bold text-xl mb-2 text-gray-900">
             Activity
           </h1>
           <div className="bg-gray-200 p-5 text-center">
-            <FontAwesomeIcon icon={faCog} spin={true} className="mr-3"/>
+            <FontAwesomeIcon icon={faCog} spin={true} className="mr-3" />
             Loading...
+          </div>
+        </div>
+      </div>
+    )
+  } else if (items.length === 0) {
+    return (
+      <div>
+        <SeoTags title="Activity - Thanos Paravantis" />
+        <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:pl-20 md:my-12">
+          <h1 className="font-bold text-xl mb-2 text-gray-900">
+            Activity
+          </h1>
+          <div className="bg-gray-200 p-5 text-center">
+            <FontAwesomeIcon icon={faWaveSquare} className="mr-3" />
+            Nothing to see here
           </div>
         </div>
       </div>
@@ -101,13 +116,13 @@ export default function ActivityPage() {
   } else {
     return (
       <div>
-        <SeoTags title="Activity - Thanos Paravantis"/>
+        <SeoTags title="Activity - Thanos Paravantis" />
         <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:pl-20 md:my-12">
           <h1 className="font-bold text-xl mb-2 text-gray-900">
             Activity
           </h1>
           <div>
-            {items.map((item, key) => <ActivityItem key={key} item={item}/>)}
+            {items.map((item, key) => <ActivityItem key={key} item={item} />)}
           </div>
         </div>
       </div>

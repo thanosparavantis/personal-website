@@ -59,7 +59,7 @@ export default () => {
             <p className="hidden md:block md:mx-4">&middot;</p>
             <p className="mb-2 md:mb-0">University of Piraeus</p>
             <p className="hidden md:block md:mx-4">&middot;</p>
-            <p className="mb-2 md:mb-0">GPA 8.66 / 10</p>
+            <p className="mb-2 md:mb-0">GPA 8.69 / 10</p>
           </div>
           <div>
             <a href="http://www.cs.unipi.gr/index.php?lang=en" rel="noopener noreferrer" className="text-gray-700 font-bold text-sm underline hover:text-gray-900">
@@ -104,7 +104,7 @@ export default () => {
 
           <h2 className="text-green-800 font-bold mb-1">Software Engineer Intern</h2>
           <div className="text-sm font-bold text-gray-900 md:flex md:items-center">
-            <p className="mb-2 md:mb-0">July 2020 – Present</p>
+            <p className="mb-2 md:mb-0">July 2020 – September 2020</p>
             <p className="hidden md:block md:mx-4">&middot;</p>
             <p className="mb-2 md:mb-0">Chalandri, Greece</p>
             <p className="hidden md:block md:mx-4">&middot;</p>
@@ -131,7 +131,7 @@ export default () => {
 
           <h2 className="text-green-800 font-bold mt-8 mb-1">Junior Developer</h2>
           <div className="text-sm font-bold text-gray-900 md:flex md:items-center">
-            <p className="mb-2 md:mb-0">2015 - 2016</p>
+            <p className="mb-2 md:mb-0">August 2015 - September 2016</p>
             <p className="hidden md:block md:mx-4">&middot;</p>
             <p className="mb-2 md:mb-0">Athens, Greece</p>
             <p className="hidden md:block md:mx-4">&middot;</p>
