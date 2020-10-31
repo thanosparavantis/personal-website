@@ -71,7 +71,7 @@ export default function ActivityPage() {
   if (error) {
     return (
       <div>
-        <SeoTags title="Activity - Thanos Paravantis" />
+        <SeoTags title="Activity - Thanos Paravantis" relPath="/activity/" />
         <div className="max-w-2xl mx-auto my-24 px-5 md:pl-20 md:my-12">
           <h1 className="font-bold text-xl mb-2 text-gray-900">
             Activity
@@ -86,7 +86,7 @@ export default function ActivityPage() {
   } else if (loading) {
     return (
       <div>
-        <SeoTags title="Activity - Thanos Paravantis" />
+        <SeoTags title="Activity - Thanos Paravantis" relPath="/activity/" />
         <div className="max-w-2xl mx-auto my-24 px-5 md:pl-20 md:my-12">
           <h1 className="font-bold text-xl mb-2 text-gray-900">
             Activity
@@ -101,7 +101,7 @@ export default function ActivityPage() {
   } else if (items.length === 0) {
     return (
       <div>
-        <SeoTags title="Activity - Thanos Paravantis" />
+        <SeoTags title="Activity - Thanos Paravantis" relPath="/activity/" />
         <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:pl-20 md:my-12">
           <h1 className="font-bold text-xl mb-2 text-gray-900">
             Activity

@@ -29,7 +29,7 @@ export default () => {
 
     return (
       <div>
-        <SeoTags title="About - Thanos Paravantis"/>
+        <SeoTags title="About - Thanos Paravantis" relPath="/about/" />
         <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:pl-20 md:my-12">
           <Img fluid={presentationImage} className="h-64 shadow-lg rounded mb-10" alt="Presenting at Crowdhackathon #Agrifood" title="Presenting at Crowdhackathon #Agrifood"/>
 

@@ -16,13 +16,14 @@ const query = graphql`
   }
 `
 
-const SeoTags = ({ title, description, keywords }) => (
+const SeoTags = ({ title, relPath, description, keywords }) => (
   <StaticQuery query={query} render={data => {
     const seoTitle = title || data.site.siteMetadata.seoTitle
     const seoDescription = description || data.site.siteMetadata.seoDescription
     const seoKeywords = keywords || data.site.siteMetadata.seoKeywords
-    const seoUrl = data.site.siteMetadata.seoUrl
+    const seoUrl = data.site.siteMetadata.seoUrl + (relPath || "")
     const seoTwitterUsername = data.site.siteMetadata.seoTwitterUsername
+    const seoImage = data.site.siteMetadata.seoUrl + "/social.png"
 
     return (
       <Helmet>
@@ -36,7 +37,7 @@ const SeoTags = ({ title, description, keywords }) => (
         <meta property="og:description" content={seoDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={seoUrl} />
-        <meta property="og:image" content="/social.png" />
+        <meta property="og:image" content={seoImage} />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="600" />
@@ -44,7 +45,7 @@ const SeoTags = ({ title, description, keywords }) => (
         <meta name="twitter:title" content={seoTitle} />
         <meta name="twitter:creator" content={seoTwitterUsername} />
         <meta name="twitter:description" content={seoDescription} />
-        <meta name="twitter:image" content="/social.png" />
+        <meta name="twitter:image" content={seoImage} />
       </Helmet>
     )
   }} />
