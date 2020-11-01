@@ -16,12 +16,6 @@ module.exports = {
       xl: '1280px',
     },
     colors: {
-      brand: {
-        light: '',
-        normal: '#006666',
-        dark: '',
-      },
-
       transparent: 'transparent',
 
       black: '#000',

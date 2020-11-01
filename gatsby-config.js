@@ -4,7 +4,6 @@ module.exports = {
     seoDescription: `A computer science student and passionate programmer, interested in web development, machine learning, software engineering.`,
     seoKeywords: `thanos paravanits, computer science, programming, web development, machine learning, development, software, backend, frontend`,
     seoUrl: `https://thanosparavantis.com`,
-    seoTwitterUsername: `@thanosparavantis`,
     facebookLink: `https://www.facebook.com/thanosparavantis/`,
     twitterLink: `https://twitter.com/thparavantis`,
     linkedinLink: `https://www.linkedin.com/in/thanosparavantis/`,
@@ -33,7 +32,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#ffffff`,
         display: `standalone`,
-        icon: `src/images/logo.png`,
+        icon: `src/images/profile_picture.jpg`,
       },
     },
     {

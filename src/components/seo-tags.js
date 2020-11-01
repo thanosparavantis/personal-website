@@ -10,7 +10,6 @@ const query = graphql`
         seoKeywords
         seoTitle
         seoUrl
-        seoTwitterUsername
       }
     }
   }
@@ -22,28 +21,25 @@ const SeoTags = ({ title, relPath, description, keywords }) => (
     const seoDescription = description || data.site.siteMetadata.seoDescription
     const seoKeywords = keywords || data.site.siteMetadata.seoKeywords
     const seoUrl = data.site.siteMetadata.seoUrl + (relPath || "")
-    const seoTwitterUsername = data.site.siteMetadata.seoTwitterUsername
     const seoImage = data.site.siteMetadata.seoUrl + "/social.png"
 
     return (
       <Helmet>
         <html lang="en" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content={seoDescription} />
-        <meta name="robots" content="index, follow" />
-        <meta name="keywords" content={seoKeywords} />
         <title>{seoTitle}</title>
-        <meta property="og:title" content={seoTitle} />
-        <meta property="og:description" content={seoDescription} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <meta name="title" content={seoTitle} />
+        <meta name="description" content={seoDescription} />
+        <meta name="keywords" content={seoKeywords} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={seoUrl} />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={seoDescription} />
         <meta property="og:image" content={seoImage} />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="600" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={seoUrl} />
         <meta name="twitter:title" content={seoTitle} />
-        <meta name="twitter:creator" content={seoTwitterUsername} />
         <meta name="twitter:description" content={seoDescription} />
         <meta name="twitter:image" content={seoImage} />
       </Helmet>
