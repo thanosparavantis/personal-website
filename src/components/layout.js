@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "../components/navbar"
 import { isMobile } from "is-mobile"
 import { Helmet } from "react-helmet"
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 export default class Layout extends React.Component {
   constructor(props) {

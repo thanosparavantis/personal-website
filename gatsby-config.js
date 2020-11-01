@@ -8,7 +8,6 @@ module.exports = {
     twitterLink: `https://twitter.com/thparavantis`,
     linkedinLink: `https://www.linkedin.com/in/thanosparavantis/`,
     githubLink: `https://github.com/thanosparavantis`,
-    mediumLink: `https://medium.com/@thanosparavantis`,
     reCaptchaKey: `6LdMY74UAAAAAM3EIrRzslKtYWc2OKGriLEuu53y`,
   },
   plugins: [
@@ -16,7 +15,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
