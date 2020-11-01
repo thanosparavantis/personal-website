@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import SocialButtonStack from "../components/social-button-stack"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBroadcastTower } from "@fortawesome/free-solid-svg-icons"
+import SeoTags from "../components/seo-tags"
 
 const query = graphql`
   query IndexPage {
@@ -23,6 +24,8 @@ export default () => {
 
     return (
       <div className="mt-16 md:mt-0 md:pl-20">
+        <SeoTags />
+
         <div className="font-mono min-h-screen p-5 flex flex-col items-center justify-center text-center">
 
           <Img fluid={profilePicture}
