@@ -3,7 +3,7 @@ module.exports = {
     seoTitle: `Thanos Paravantis`,
     seoDescription: `A computer science student and passionate programmer, interested in web development, machine learning, software engineering.`,
     seoKeywords: `thanos paravanits, computer science, programming, web development, machine learning, development, software, backend, frontend`,
-    seoUrl: `https://thanosparavantis.com`,
+    seoUrl: `https://www.thanosparavantis.com`,
     facebookLink: `https://www.facebook.com/thanosparavantis/`,
     twitterLink: `https://twitter.com/thparavantis`,
     linkedinLink: `https://www.linkedin.com/in/thanosparavantis/`,
