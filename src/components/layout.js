@@ -1,7 +1,6 @@
 import React from "react"
 import Navbar from "../components/navbar"
 import { isMobile } from "is-mobile"
-import SeoTags from "./seo-tags"
 import { Helmet } from "react-helmet"
 
 export default class Layout extends React.Component {
