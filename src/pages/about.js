@@ -23,7 +23,12 @@ export default () => {
 
     return (
       <div>
-        <SeoTags title="About - Thanos Paravantis" relPath="/about/" />
+        <SeoTags title="About - Thanos Paravantis"
+                 description="
+                 A portfolio of my educational background, work experience,
+                 achievements, conference participation and certifications."
+                 relPath="/about/"
+        />
         <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:pl-20 md:my-12">
 
           <Img fluid={presentationImage}

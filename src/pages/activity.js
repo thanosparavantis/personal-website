@@ -68,64 +68,42 @@ export default function ActivityPage() {
     return dateB - dateA
   }
 
-  if (error) {
-    return (
-      <div>
-        <SeoTags title="Activity - Thanos Paravantis" relPath="/activity/" />
-        <div className="max-w-2xl mx-auto my-24 px-5 md:pl-20 md:my-12">
-          <h1 className="font-bold text-xl mb-2 text-gray-900">
-            Activity
-          </h1>
+  return (
+    <div>
+      <SeoTags title="Activity - Thanos Paravantis"
+               description="Aggregated social media posts from my Facebook and Twitter pages."
+               relPath="/activity/" />
+      <div className="max-w-2xl mx-auto my-24 px-5 md:pl-20 md:my-12">
+        <h1 className="font-bold text-xl mb-2 text-gray-900">
+          Activity
+        </h1>
+        {error ? (
           <div className="bg-gray-200 p-5 text-center font-bold text-red-700">
             <FontAwesomeIcon icon={faExclamation} className="mr-3" />
             Something went wrong, please try again later.
           </div>
-        </div>
-      </div>
-    )
-  } else if (loading) {
-    return (
-      <div>
-        <SeoTags title="Activity - Thanos Paravantis" relPath="/activity/" />
-        <div className="max-w-2xl mx-auto my-24 px-5 md:pl-20 md:my-12">
-          <h1 className="font-bold text-xl mb-2 text-gray-900">
-            Activity
-          </h1>
+        ) : ""}
+
+        {loading ? (
           <div className="bg-gray-200 p-5 text-center">
             <FontAwesomeIcon icon={faCog} spin={true} className="mr-3" />
             Loading...
           </div>
-        </div>
-      </div>
-    )
-  } else if (items.length === 0) {
-    return (
-      <div>
-        <SeoTags title="Activity - Thanos Paravantis" relPath="/activity/" />
-        <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:pl-20 md:my-12">
-          <h1 className="font-bold text-xl mb-2 text-gray-900">
-            Activity
-          </h1>
+        ) : ""}
+
+        {items.length === 0 ? (
           <div className="bg-gray-200 p-5 text-center">
             <FontAwesomeIcon icon={faWaveSquare} className="mr-3" />
             Nothing to see here
           </div>
-        </div>
-      </div>
-    )
-  } else {
-    return (
-      <div>
-        <SeoTags title="Activity - Thanos Paravantis" />
-        <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:pl-20 md:my-12">
-          <h1 className="font-bold text-xl mb-2 text-gray-900">
-            Activity
-          </h1>
+        ) : ""}
+
+        {items.length > 0 ? (
           <div>
             {items.map((item, key) => <ActivityItem key={key} item={item} />)}
           </div>
-        </div>
+        ) : ""}
       </div>
-    )
-  }
+    </div>
+  )
 }

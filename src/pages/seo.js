@@ -8,7 +8,7 @@ export default () => (
   <div style={{ width: "1200px", "height": "600px" }}
        className="flex items-center justify-center text-center bg-gray-200 ml-40 mt-20">
 
-    <img src={image} className="rounded shadow-xl" alt="seo image" style={{ width: "300px"}}/>
+    <img src={image} className="rounded shadow-xl" alt="Profile picture of Thanos Paravantis" style={{ width: "300px"}}/>
 
     <div className="font-mono font-bold ml-20">
       <h1 className="mb-5 text-4xl text-gray-900">

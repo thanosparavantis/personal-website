@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     seoTitle: `Thanos Paravantis`,
-    seoDescription: `A computer science student and passionate programmer, interested in web development, machine learning, software engineering.`,
-    seoKeywords: `thanos paravanits, computer science, programming, web development, machine learning, development, software, backend, frontend`,
+    seoDescription: `My personal website with information about me, including projects, work experience, educational background and hobbies.`,
+    seoKeywords: `thanos paravantis, computer science, ham radio, amateur radio, greece, programming, frontend, backend, software, frontend, backend`,
     seoUrl: `https://www.thanosparavantis.com`,
     facebookLink: `https://www.facebook.com/thanosparavantis/`,
     twitterLink: `https://twitter.com/thparavantis`,
