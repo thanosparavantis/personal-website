@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import SocialButtonStack from "../components/social-button-stack"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBroadcastTower } from "@fortawesome/free-solid-svg-icons"
 
 const query = graphql`
   query IndexPage {
@@ -21,17 +23,29 @@ export default () => {
 
     return (
       <div className="mt-16 md:mt-0 md:pl-20">
-        <div className="min-h-screen p-5 flex flex-col items-center justify-center text-center">
-          <Img fluid={profilePicture} alt="Profile picture of Thanos Paravantis" title="Profile picture of Thanos Paravantis" className="mb-10 rounded-full shadow-xl flex-shrink-0 w-56"/>
-          <h1 className="text-xl font-bold mb-2 text-gray-900">
+        <div className="font-mono min-h-screen p-5 flex flex-col items-center justify-center text-center">
+
+          <Img fluid={profilePicture}
+               alt="Profile picture of Thanos Paravantis"
+               title="Profile picture of Thanos Paravantis"
+               className="mb-10 rounded-full shadow-xl flex-shrink-0 w-48" />
+
+          <h1 className="text-lg font-bold text-gray-900 mb-2">
             Thanos Paravantis
           </h1>
-          <h2 className="text-lg font-bold mb-10 text-gray-600">
+
+          <p className="text-gray-700">
             Student, programmer, radio amateur
-          </h2>
-          <SocialButtonStack/>
+          </p>
+
+          <p className="text-gray-700 mb-10">
+            <FontAwesomeIcon icon={faBroadcastTower} className="mr-3" size="sm" />
+            SV1SQT / 18SV1364 / NR282
+          </p>
+
+          <SocialButtonStack />
         </div>
       </div>
     )
-  }}/>
+  }} />
 }
