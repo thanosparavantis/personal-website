@@ -22,6 +22,7 @@
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.24",
+    "gatsby-plugin-sitemap": "^2.4.17",
     "gatsby-source-filesystem": "^2.3.23",
     "gatsby-transformer-sharp": "^2.5.12",
     "is-mobile": "^2.2.2",

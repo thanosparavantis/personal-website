@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.thanosparavantis.com`,
     seoTitle: `Thanos Paravantis`,
     seoDescription: `My personal website with information about me, including projects, work experience, educational background and hobbies.`,
     seoKeywords: `thanos paravantis, computer science, ham radio, amateur radio, greece, programming, frontend, backend, software, frontend, backend`,
@@ -15,6 +16,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
