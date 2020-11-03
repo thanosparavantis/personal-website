@@ -8,7 +8,7 @@ import SeoTags from "../components/seo-tags"
 export default function ActivityPage() {
   const feedDateKey = "feed-date"
   const feedItemsKey = "feed-items"
-  const feedUrl = "https://cors-anywhere.herokuapp.com/https://zapier.com/engine/rss/8156996/thanosproduction"
+  const feedUrl = "https://zapier.com/engine/rss/8156996/thanosproduction"
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
