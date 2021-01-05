@@ -1,0 +1,70 @@
+.home-cover {
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.home-video {
+    z-index: -2;
+    animation-name: home-fade-in;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0.0;
+}
+
+@keyframes home-fade-in {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.social-button {
+    transition: background-color 0.05s;
+}
+
+.social-nudge-1,
+.social-nudge-2,
+.social-nudge-3,
+.social-nudge-4 {
+    animation-name: nudge-social;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0.2;
+}
+
+.social-nudge-1 {
+    animation-delay: 0.1s;
+}
+
+.social-nudge-2 {
+    animation-delay: 0.3s;
+}
+
+.social-nudge-3 {
+    animation-delay: 0.5s;
+}
+
+.social-nudge-4 {
+    animation-delay: 0.7s;
+}
+
+@keyframes nudge-social {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15%);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

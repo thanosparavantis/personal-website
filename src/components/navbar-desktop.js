@@ -7,12 +7,14 @@ export default function NavbarDesktop() {
     <div>
       <nav className="navbar w-56 z-10
                     hidden fixed left-0 top-0 h-full
-                    md:flex flex-col text-white shadow-xl
+                    md:flex flex-col text-white
                     overflow-auto">
-        <h1 className="flex items-center justify-center font-bold py-10">
-          Thanos Paravantis
-        </h1>
-        <div>
+        <div className="mt-12 pb-5">
+          <h1 className="text-lg px-5">
+            Thanos Paravantis
+          </h1>
+        </div>
+        <div className="mb-12">
           <NavbarLink href="/" title="Home" icon={faHome} />
           <NavbarLink href="/about/" title="About" icon={faQuestionCircle} />
           <NavbarLink href="/projects/" title="Projects" icon={faCode} />
