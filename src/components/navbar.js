@@ -1,13 +1,19 @@
 import React from "react"
-import NavbarExpanded from "./navbar-expanded"
-import NavbarMinimized from "./navbar-minimized"
+import NavbarDesktop from "./navbar-desktop"
+import NavbarMobile from "./navbar-mobile"
+import NavbarMobileExpanded from "./navbar-mobile-expanded"
 
-const Navbar = ({ isOpened, onToggleClick, onLinkClick }) => {
-  if (isOpened) {
-    return <NavbarExpanded onToggleClick={onToggleClick} onLinkClick={onLinkClick}/>
-  } else {
-    return <NavbarMinimized onToggleClick={onToggleClick} onLinkClick={onLinkClick}/>
-  }
+export default function Navbar({ isOpened, onToggleClick, onLinkClick }) {
+  return (
+    <div>
+      <NavbarDesktop />
+      
+      {isOpened ? (
+        <NavbarMobileExpanded onToggleClick={onToggleClick} onLinkClick={onLinkClick} />
+      ) : (
+        <NavbarMobile onToggleClick={onToggleClick} />
+      )}
+
+    </div>
+  )
 }
-
-export default Navbar

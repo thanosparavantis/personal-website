@@ -2,7 +2,7 @@ import React from "react"
 import Navbar from "../components/navbar"
 import { isMobile } from "is-mobile"
 import { Helmet } from "react-helmet"
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import "@fortawesome/fontawesome-svg-core/styles.css"
 
 export default class Layout extends React.Component {
   constructor(props) {
@@ -37,7 +37,9 @@ export default class Layout extends React.Component {
         <Navbar onToggleClick={this.navbarToggleClickHandler}
                 onLinkClick={this.navbarLinkClickHandler}
                 isOpened={this.state.navbarOpened} />
-        {this.props.children}
+        <div>
+          {this.props.children}
+        </div>
       </div>
     )
   }

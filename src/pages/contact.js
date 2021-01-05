@@ -7,7 +7,7 @@ export default () => (
     <SeoTags title="Contact - Thanos Paravantis"
              description="A contact form for business inquiries or any other matters."
              relPath="/contact/" />
-    <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:pl-20 md:my-12">
+    <div className="max-w-2xl mx-auto mt-24 mb-5 px-5 md:my-12">
       <h1 className="font-bold text-xl mb-2 text-gray-900">
         Contact
       </h1>

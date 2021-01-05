@@ -2,18 +2,18 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
-const NavbarLink = ({ title, icon, href, isSmall, onClick }) => (
-  <Link to={href} className={
-    `flex items-center h-16 px-5 mb-2 hover:bg-green-800
-     active:bg-green-900 focus:outline-none focus:shadow-outline md:h-20
-     ${isSmall ? `justify-center` : ``}`}
-        title={isSmall ? title : ""}
-        activeClassName="bg-green-800"
+const NavbarLink = ({ title, icon, href, onClick }) => (
+  <Link to={href} className="navbar-link flex items-center
+                             h-16 px-5 mb-2
+                             focus:outline-none focus:shadow-outline
+                             flex-shrink-0 font-bold"
+        title={title}
+        activeClassName="navbar-link-active"
         onClick={onClick}>
-    <div className={isSmall ? "" : "w-10"}>
+    <div className="w-10">
       <FontAwesomeIcon icon={icon} size={"lg"} />
     </div>
-    {isSmall ? "" : title}
+    <div>{title}</div>
   </Link>
 )
 

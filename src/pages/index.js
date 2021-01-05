@@ -5,6 +5,7 @@ import SocialButtonStack from "../components/social-button-stack"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBroadcastTower } from "@fortawesome/free-solid-svg-icons"
 import SeoTags from "../components/seo-tags"
+import BackgroundVideo from "../videos/background.mp4"
 
 const query = graphql`
   query IndexPage {
@@ -23,31 +24,41 @@ export default () => {
     const profilePicture = data.profilePicture.childImageSharp.fluid
 
     return (
-      <div className="mt-16 md:mt-0 md:pl-20">
-        <SeoTags />
+      <div>
 
-        <div className="font-mono min-h-screen p-5 flex flex-col items-center justify-center text-center">
+        <div className="home-cover fixed w-screen h-screen"/>
 
-          <Img fluid={profilePicture}
-               alt="Profile picture of Thanos Paravantis"
-               title="Profile picture of Thanos Paravantis"
-               className="mb-10 rounded-full shadow-xl flex-shrink-0 w-48" />
+        <video autoPlay muted loop className="home-video object-cover fixed w-screen h-screen top-0 left-0">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
 
-          <h1 className="text-lg font-bold text-gray-900 mb-2">
-            Thanos Paravantis
-          </h1>
+        <div className="home mt-16 md:mt-0">
+          <SeoTags />
 
-          <p className="text-gray-700">
-            Student, programmer, radio amateur
-          </p>
+          <div className="md:ml-56 font-mono font-bold min-h-screen p-5 flex flex-col items-center justify-center text-center">
 
-          <p className="text-gray-700 mb-10">
-            <FontAwesomeIcon icon={faBroadcastTower} className="mr-3" size="sm" />
-            SV1SQT / 18SV1364 / NR282
-          </p>
+            <Img fluid={profilePicture}
+                 alt="Profile picture of Thanos Paravantis"
+                 title="Profile picture of Thanos Paravantis"
+                 className="mb-10 rounded-full shadow-xl flex-shrink-0 w-48" />
 
-          <SocialButtonStack />
+            <h1 className="text-lg text-gray-900 mb-2">
+              Thanos Paravantis
+            </h1>
+
+            <p className="text-gray-700">
+              Student, programmer, radio amateur
+            </p>
+
+            <p className="text-gray-700 mb-10">
+              <FontAwesomeIcon icon={faBroadcastTower} className="mr-3" size="sm" />
+              SV1SQT / 18SV1364 / NR282
+            </p>
+
+            <SocialButtonStack />
+          </div>
         </div>
+
       </div>
     )
   }} />
