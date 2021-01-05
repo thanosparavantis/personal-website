@@ -37,7 +37,7 @@ export default class Layout extends React.Component {
         <Navbar onToggleClick={this.navbarToggleClickHandler}
                 onLinkClick={this.navbarLinkClickHandler}
                 isOpened={this.state.navbarOpened} />
-        <div>
+        <div className="md:ml-56">
           {this.props.children}
         </div>
       </div>

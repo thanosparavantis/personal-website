@@ -35,7 +35,7 @@ export default () => {
         <div className="home mt-16 md:mt-0">
           <SeoTags />
 
-          <div className="md:ml-56 font-mono font-bold min-h-screen p-5 flex flex-col items-center justify-center text-center">
+          <div className="font-mono font-bold min-h-screen p-5 flex flex-col items-center justify-center text-center">
 
             <Img fluid={profilePicture}
                  alt="Profile picture of Thanos Paravantis"
