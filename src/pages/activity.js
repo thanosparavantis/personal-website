@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import Parser from "rss-parser"
 import ActivityItem from "../components/activity-item"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCog, faExclamation, faWaveSquare } from "@fortawesome/free-solid-svg-icons"
+import { faCog, faExclamation, faExclamationCircle, faSpinner, faWaveSquare } from "@fortawesome/free-solid-svg-icons"
 import SeoTags from "../components/seo-tags"
 
 export default function ActivityPage() {
@@ -78,21 +78,21 @@ export default function ActivityPage() {
           Activity
         </h1>
         {error ? (
-          <div className="bg-gray-200 p-5 text-center font-bold text-red-700">
-            <FontAwesomeIcon icon={faExclamation} className="mr-3" />
+          <div className="bg-gray-200 shadow rounded p-5 text-center font-bold text-red-700">
+            <FontAwesomeIcon icon={faExclamationCircle} className="mr-3" />
             Something went wrong, please try again later.
           </div>
         ) : ""}
 
         {!error && loading ? (
-          <div className="bg-gray-200 p-5 text-center">
-            <FontAwesomeIcon icon={faCog} spin={true} className="mr-3" />
+          <div className="bg-gray-200 shadow rounded p-5 text-center font-bold">
+            <FontAwesomeIcon icon={faSpinner} spin={true} className="mr-3" />
             Loading...
           </div>
         ) : ""}
 
         {!loading && items.length === 0 ? (
-          <div className="bg-gray-200 p-5 text-center">
+          <div className="bg-gray-200 shadow rounded p-5 text-center font-bold">
             <FontAwesomeIcon icon={faWaveSquare} className="mr-3" />
             Nothing to see here
           </div>

@@ -5,12 +5,10 @@ import { faCode, faEnvelopeOpenText, faHome, faQuestionCircle, faRss } from "@fo
 export default function NavbarDesktop() {
   return (
     <div>
-      <nav className="navbar w-56 z-10
-                    hidden fixed left-0 top-0 h-full
-                    md:flex flex-col text-white
-                    overflow-auto">
-        <div className="mt-12 pb-5">
-          <h1 className="text-lg px-5">
+      <nav className="bg-green-700 w-56 z-10 hidden fixed left-0 top-0 h-full
+                    md:flex flex-col text-white overflow-auto shadow-lg">
+        <div className="my-12">
+          <h1 className="font-bold text-lg px-5">
             Thanos Paravantis
           </h1>
         </div>

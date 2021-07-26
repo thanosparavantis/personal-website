@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import GithubIdentity from "./github-identity"
 import GithubRepositories from "./github-repositories"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCog, faExclamation } from "@fortawesome/free-solid-svg-icons"
+import { faExclamation, faExclamationCircle, faSpinner } from "@fortawesome/free-solid-svg-icons"
 
 const GitHubProfile = () => {
   const identityEndpoint = "https://api.github.com/users/thanosparavantis"
@@ -27,22 +27,22 @@ const GitHubProfile = () => {
 
   if (error) {
     return (
-      <div className="bg-gray-200 p-5 text-center font-bold text-red-700">
-        <FontAwesomeIcon icon={faExclamation} className="mr-3"/>
+      <div className="bg-gray-200 shadow rounded p-5 text-center font-bold text-red-700">
+        <FontAwesomeIcon icon={faExclamationCircle} className="mr-3" />
         Something went wrong, please try again later.
       </div>
     )
   } else if (identityData && repositoryData) {
     return (
-      <div>
-        <GithubIdentity source={identityData}/>
-        <GithubRepositories source={repositoryData}/>
-      </div>
+      <>
+        <GithubIdentity source={identityData} />
+        <GithubRepositories source={repositoryData} />
+      </>
     )
   } else {
     return (
-      <div className="bg-gray-200 p-5 text-center">
-        <FontAwesomeIcon icon={faCog} spin={true} className="mr-3"/>
+      <div className="bg-gray-200 shadow rounded p-5 text-center font-bold">
+        <FontAwesomeIcon icon={faSpinner} spin={true} className="mr-3" />
         Loading...
       </div>
     )

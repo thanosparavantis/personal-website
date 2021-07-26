@@ -3,10 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
 const NavbarLink = ({ title, icon, href, onClick }) => (
-  <Link to={href} className="navbar-link flex items-center
+  <Link to={href} className="navbar-link flex items-center flex-shrink-0
                              h-16 px-5 mb-2
-                             focus:outline-none focus:shadow-outline
-                             flex-shrink-0 font-bold"
+                             focus:outline-none focus:shadow-outline"
         title={title}
         activeClassName="navbar-link-active"
         onClick={onClick}>

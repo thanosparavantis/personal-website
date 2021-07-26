@@ -12,7 +12,7 @@ import React from "react"
 
 export default function NavbarMobileExpanded({ onToggleClick, onLinkClick }) {
   return (
-    <nav className="navbar z-50 fixed top-0 left-0 w-screen h-screen
+    <nav className="bg-green-700 z-50 fixed top-0 left-0 w-screen h-screen
                   flex flex-col text-white
                   shadow-lg overflow-auto md:w-auto md:hidden">
       <h1 className="h-20 flex items-center justify-center flex-shrink-0 font-bold text-lg px-10 md:h-32">

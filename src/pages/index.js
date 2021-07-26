@@ -3,7 +3,6 @@ import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import SocialButtonStack from "../components/social-button-stack"
 import SeoTags from "../components/seo-tags"
-import BackgroundVideo from "../videos/background.mp4"
 import "../styles/home.css"
 
 const query = graphql`
@@ -23,13 +22,7 @@ export default () => {
     const profilePicture = data.profilePicture.childImageSharp.fluid
 
     return (
-      <div>
-        <div className="home-cover fixed w-screen h-screen" />
-
-        <video autoPlay muted loop className="home-video object-cover fixed w-screen h-screen top-0 left-0">
-          <source src={BackgroundVideo} type="video/mp4" />
-        </video>
-
+      <>
         <div className="mt-16 md:mt-0">
           <SeoTags />
 
@@ -41,7 +34,7 @@ export default () => {
                  title="Profile picture of Thanos Paravantis"
                  className="mb-10 rounded-full shadow-xl flex-shrink-0 w-48" />
 
-            <h1 className="text-2xl text-gray-900">
+            <h1 className="text-2xl text-gray-900 mb-1">
               Thanos Paravantis
             </h1>
 
@@ -52,8 +45,7 @@ export default () => {
             <SocialButtonStack />
           </div>
         </div>
-
-      </div>
+      </>
     )
   }} />
 }

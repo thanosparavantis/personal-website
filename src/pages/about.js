@@ -47,20 +47,18 @@ export default function AboutPage() {
                                target="_blank"
                                title="Read more about Athens, Greece in Wikipedia"
                                className="text-gray-700 font-bold underline hover:text-gray-900">Athens</a>,
-              and I am studying Computer Science at the <a href="https://en.wikipedia.org/wiki/University_of_Piraeus"
+              and I have studied Computer Science at the <a href="https://en.wikipedia.org/wiki/University_of_Piraeus"
                                                            rel="noopener noreferrer"
                                                            target="_blank"
                                                            title="Read more about the University of Piraeus in Wikipedia"
-                                                           className="text-gray-700 font-bold underline hover:text-gray-900">University
-              of Piraeus</a>.
+                                                           className="text-gray-700 font-bold underline hover:text-gray-900">University of Piraeus</a>.
               My passion for programming originated from my childhood years,
               as I was curious to learn how applications worked behind the scenes.
               As time went by, I was fascinated by the concept of writing code,
               which motivated me to dive deeper and explore new programming languages.
               In the past few years, I worked on several <Link to="/projects/"
                                                                title="Check out some of these projects"
-                                                               className="text-gray-700 font-bold underline hover:text-gray-900">projects
-              and assignments</Link>,
+                                                               className="text-gray-700 font-bold underline hover:text-gray-900">projects and assignments</Link>,
               some of which have helped me understand
               the fundamental aspects of software engineering.
               My vision is to master the field of computer science
@@ -81,7 +79,7 @@ export default function AboutPage() {
             </h2>
             <div className="text-sm font-bold text-gray-900 mb-2 md:flex md:items-center">
               <p className="mb-2 md:mb-0">
-                2016 – present
+                2016 &ndash; 2021
               </p>
               <p className="hidden md:block md:mx-4">
                 &middot;
@@ -112,7 +110,7 @@ export default function AboutPage() {
             </h2>
             <div className="text-sm font-bold text-gray-900 mb-2 md:flex md:items-center">
               <p className="mb-2 md:mb-0">
-                2013 – 2016
+                2013 &ndash; 2016
               </p>
               <p className="hidden md:block md:mx-4">
                 &middot;
@@ -175,11 +173,45 @@ export default function AboutPage() {
 
           <div className="bg-gray-200 p-5 rounded shadow mb-5">
             <h2 className="text-green-800 font-bold mb-1">
+              Consultant
+            </h2>
+            <div className="text-sm font-bold text-gray-900 md:flex md:items-center">
+              <p className="mb-2 md:mb-0">
+                January 2021
+              </p>
+              <p className="hidden md:block md:mx-4">
+                &middot;
+              </p>
+              <p className="mb-2 md:mb-0">
+                Athens, Greece
+              </p>
+              <p className="hidden md:block md:mx-4">
+                &middot;
+              </p>
+              <p>
+                World Bank Group
+              </p>
+            </div>
+            <p className="leading-loose text-gray-900 mt-3 mb-2">
+              A one-month internship working for the Information and Technology Services for Financial Engineering unit.
+            </p>
+            <div>
+              <a href="https://www.worldbank.org/"
+                 rel="noopener noreferrer"
+                 target="_blank"
+                 className="text-gray-700 font-bold text-sm underline hover:text-gray-900">
+                Visit institution website
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+            <h2 className="text-green-800 font-bold mb-1">
               Software Engineer Intern
             </h2>
             <div className="text-sm font-bold text-gray-900 md:flex md:items-center">
               <p className="mb-2 md:mb-0">
-                July 2020 – September 2020
+                July 2020 &ndash; September 2020
               </p>
               <p className="hidden md:block md:mx-4">
                 &middot;
@@ -214,7 +246,7 @@ export default function AboutPage() {
             </h2>
             <div className="text-sm font-bold text-gray-900 md:flex md:items-center">
               <p className="mb-2 md:mb-0">
-                August 2015 - September 2016
+                August 2015 &ndash; September 2016
               </p>
               <p className="hidden md:block md:mx-4">
                 &middot;
@@ -258,7 +290,7 @@ export default function AboutPage() {
             </h2>
             <div className="text-sm font-bold text-gray-900 md:flex md:items-center">
               <p className="mb-2 md:mb-0">
-                October 2020 - Present
+                October 2020 &ndash; present
               </p>
               <p className="hidden md:block md:mx-4">
                 &middot;

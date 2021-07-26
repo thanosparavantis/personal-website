@@ -9,6 +9,7 @@ module.exports = {
     twitterLink: `https://twitter.com/thparavantis`,
     linkedinLink: `https://www.linkedin.com/in/thanosparavantis/`,
     githubLink: `https://github.com/thanosparavantis`,
+    youtubeLink: `https://www.youtube.com/channel/UCjBLN827xiPCA19MMt_jbmA`,
     reCaptchaKey: `6LdMY74UAAAAAM3EIrRzslKtYWc2OKGriLEuu53y`,
   },
   plugins: [

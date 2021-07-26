@@ -4,9 +4,13 @@ import { faCode } from "@fortawesome/free-solid-svg-icons"
 import TimeAgo from "react-timeago/lib"
 
 const GitHubRepository = ({ source }) => (
-  <a href={source.html_url} className="mt-5 rounded block p-5 bg-gray-200
-   hover:bg-gray-300 focus:bg-gray-300 focus:outline-none shadow
-   focus:shadow-outline active:bg-gray-400" title={"Visit " + source.name + " on GitHub"}>
+  <a href={source.html_url}
+     className="mt-5 rounded block p-5 bg-gray-200 shadow
+                hover:bg-gray-300 focus:bg-gray-300 focus:outline-none
+                focus:shadow-outline active:bg-gray-400"
+     title={`Learn more about ${source.name} on GitHub`}
+     rel="noopener noreferrer"
+     target="_blank">
     <h1 className="uppercase font-bold text-sm text-green-800">
       <FontAwesomeIcon icon={faCode} className="mr-2" />
       {source.name}
@@ -23,7 +27,9 @@ const GitHubRepository = ({ source }) => (
         <TimeAgo date={source.updated_at} />
       </div>
     </div>
-    <p className="text-sm leading-relaxed text-gray-800">{source.description}</p>
+    <p className="text-sm leading-relaxed text-gray-800">
+      {source.description}
+    </p>
   </a>
 )
 
