@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import GithubIdentity from "./github-identity"
 import GithubRepositories from "./github-repositories"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExclamation, faExclamationCircle, faSpinner } from "@fortawesome/free-solid-svg-icons"
+import { faExclamationCircle, faSpinner } from "@fortawesome/free-solid-svg-icons"
 
 const GitHubProfile = () => {
   const identityEndpoint = "https://api.github.com/users/thanosparavantis"

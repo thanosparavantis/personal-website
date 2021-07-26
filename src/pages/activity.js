@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import Parser from "rss-parser"
 import ActivityItem from "../components/activity-item"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCog, faExclamation, faExclamationCircle, faSpinner, faWaveSquare } from "@fortawesome/free-solid-svg-icons"
+import { faExclamationCircle, faSpinner, faWaveSquare } from "@fortawesome/free-solid-svg-icons"
 import SeoTags from "../components/seo-tags"
 
 export default function ActivityPage() {
