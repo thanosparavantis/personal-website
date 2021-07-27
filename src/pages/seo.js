@@ -1,8 +1,7 @@
 import React from "react"
-import image from "../images/profile_picture.jpg"
+import image from "../images/profile_picture.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF, faGithub, faLinkedinIn, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons"
-import { faBroadcastTower } from "@fortawesome/free-solid-svg-icons"
 
 export default () => (
   <div style={{ width: "1200px", "height": "600px" }}
