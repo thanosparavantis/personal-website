@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useCallback, useEffect, useState } from "react"
 import Parser from "rss-parser"
 import ActivityItem from "../components/activity-item"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -12,6 +12,39 @@ export default function ActivityPage() {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
+
+  const sort = useCallback((itemA, itemB) => {
+    const dateA = new Date(itemA.pubDate)
+    const dateB = new Date(itemB.pubDate)
+    return dateB - dateA
+  }, [])
+
+  const fetchCached = useCallback(() => {
+    const items = localStorage.getItem(feedItemsKey)
+    const parsedItems = JSON.parse(items)
+    parsedItems.sort((itemA, itemB) => sort(itemA, itemB))
+
+    setItems(parsedItems)
+    setLoading(false)
+  }, [sort])
+
+  const fetchNew = useCallback(() => {
+    const parser = new Parser()
+
+    parser.parseURL(feedUrl)
+      .then(response => {
+        const items = response.items
+        items.sort((itemA, itemB) => sort(itemA, itemB))
+
+        setItems(items)
+        localStorage.setItem("feed-date", new Date().getTime().toString())
+        localStorage.setItem("feed-items", JSON.stringify(items))
+        setLoading(false)
+      })
+      .catch(() => {
+        setError(true)
+      })
+  }, [sort])
 
   useEffect(() => {
     const feedDate = localStorage.getItem(feedDateKey)
@@ -33,40 +66,7 @@ export default function ActivityPage() {
       console.debug("First time visit, fetch new items.")
       fetchNew()
     }
-  }, [])
-
-  function fetchCached() {
-    const items = localStorage.getItem(feedItemsKey)
-    const parsedItems = JSON.parse(items)
-    parsedItems.sort((itemA, itemB) => sort(itemA, itemB))
-
-    setItems(parsedItems)
-    setLoading(false)
-  }
-
-  function fetchNew() {
-    const parser = new Parser()
-
-    parser.parseURL(feedUrl)
-      .then(response => {
-        const items = response.items
-        items.sort((itemA, itemB) => sort(itemA, itemB))
-
-        setItems(items)
-        localStorage.setItem("feed-date", new Date().getTime().toString())
-        localStorage.setItem("feed-items", JSON.stringify(items))
-        setLoading(false)
-      })
-      .catch(() => {
-        setError(true)
-      })
-  }
-
-  function sort(itemA, itemB) {
-    const dateA = new Date(itemA.pubDate)
-    const dateB = new Date(itemB.pubDate)
-    return dateB - dateA
-  }
+  }, [fetchCached, fetchNew])
 
   return (
     <div>

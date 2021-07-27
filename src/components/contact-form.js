@@ -151,9 +151,9 @@ export default class ContactForm extends React.Component {
 
             <textarea name="message" id="message" className="mb-8 p-2 h-48 border rounded text-gray-800 text-sm border-gray-600 focus:outline-none focus:shadow-outline" onChange={this.inputHandler} value={this.state.message || ""} required/>
 
-            <label className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight">
+            <div className="mb-2 uppercase font-bold text-green-800 text-sm tracking-tight">
               Captcha
-            </label>
+            </div>
             <div className="mb-8">
               <ReCAPTCHA sitekey={reCaptchaKey} onChange={this.captchaHandler} ref={this.captchaRef}/>
             </div>

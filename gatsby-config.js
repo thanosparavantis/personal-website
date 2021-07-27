@@ -38,7 +38,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#ffffff`,
         display: `standalone`,
-        icon: `src/images/profile_picture.jpg`,
+        icon: `src/images/profile_picture_nobg.png`,
       },
     },
     {
