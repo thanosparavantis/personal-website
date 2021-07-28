@@ -390,7 +390,7 @@ export default function AboutPage() {
                  rel="noopener noreferrer"
                  target="_blank"
                  className="block text-gray-700 underline hover:text-gray-900">
-                View QRZ.com page
+                Visit QRZ.com page
               </a>
               <p className="hidden md:block md:mx-4">&middot;</p>
               <a href="https://drive.google.com/file/d/1xa4kjbna2AZDrYtQTOtThOc60WWi9vec/view?usp=sharing"
