@@ -379,17 +379,24 @@ export default function AboutPage() {
               Amateur Radio License
             </h2>
             <div className="text-sm font-bold text-gray-900 mb-2 md:flex md:items-center">
-              <p className="mb-2 md:mb-0">SV1SQT</p>
+              <p className="font-mono mb-2 md:mb-0">SV1SQT</p>
               <p className="hidden md:block md:mx-4">&middot;</p>
               <p className="mb-2 md:mb-0">October 2020</p>
               <p className="hidden md:block md:mx-4">&middot;</p>
               <p className="mb-2 md:mb-0">Region of Attica</p>
             </div>
-            <div>
+            <div className="font-bold text-sm md:flex md:items-center">
+              <a href="https://www.qrz.com/db/SV1SQT"
+                 rel="noopener noreferrer"
+                 target="_blank"
+                 className="block text-gray-700 underline hover:text-gray-900">
+                View QRZ.com page
+              </a>
+              <p className="hidden md:block md:mx-4">&middot;</p>
               <a href="https://drive.google.com/file/d/1xa4kjbna2AZDrYtQTOtThOc60WWi9vec/view?usp=sharing"
                  rel="noopener noreferrer"
                  target="_blank"
-                 className="text-gray-700 font-bold text-sm underline hover:text-gray-900">
+                 className="block text-gray-700 underline hover:text-gray-900">
                 View license
               </a>
             </div>
