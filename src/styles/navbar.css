@@ -6,6 +6,10 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.navbar-link:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .navbar-link-active {
   background-color: rgba(0, 0, 0, 0.3);
 }

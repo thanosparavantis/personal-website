@@ -1,5 +1,5 @@
 import React from "react"
-import GithubProfile from "../components/github-profile"
+import GithubProfile from "../components/github/github-profile"
 import SeoTags from "../components/seo-tags"
 
 export default () => (

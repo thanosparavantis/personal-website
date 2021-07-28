@@ -73,7 +73,7 @@ export default function AboutPage() {
             </div>
           </h2>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Bachelor’s in Computer Science
             </h2>
@@ -104,7 +104,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Secondary Education
             </h2>
@@ -135,7 +135,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Proficiency in English
             </h2>
@@ -171,7 +171,7 @@ export default function AboutPage() {
             <div>Work Experience</div>
           </h2>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Consultant
             </h2>
@@ -205,7 +205,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Software Engineer Intern
             </h2>
@@ -240,7 +240,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Junior Developer
             </h2>
@@ -284,7 +284,7 @@ export default function AboutPage() {
             </div>
           </h2>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               IT Manager
             </h2>
@@ -327,42 +327,42 @@ export default function AboutPage() {
             </div>
           </h2>
           <div className="text-gray-900">
-            <div className="bg-gray-200 p-3 rounded shadow text-sm mb-3">
+            <div className="bg-gray-200 p-3 rounded border text-sm mb-3">
               Attended
               <span className="font-bold text-green-800"> Developers Day 2019 </span>
               in Dais Sports Center.
             </div>
-            <div className="bg-gray-200 p-3 rounded shadow text-sm mb-3">
+            <div className="bg-gray-200 p-3 rounded border text-sm mb-3">
               Attended
               <span className="font-bold text-green-800"> Decentralized 2019 </span>
               in Divani Caravel Hotel.
             </div>
-            <div className="bg-gray-200 p-3 rounded shadow text-sm mb-3">
+            <div className="bg-gray-200 p-3 rounded border text-sm mb-3">
               Attended
               <span className="font-bold text-green-800"> Google Developer's Group Athens Meetup</span>,
               September 2019.
             </div>
-            <div className="bg-gray-200 p-3 rounded shadow text-sm mb-3">
+            <div className="bg-gray-200 p-3 rounded border text-sm mb-3">
               Attended
               <span className="font-bold text-green-800"> Job Fair Athens 2019 </span>
               in Zappeion Megaron.
             </div>
-            <div className="border-2 border-orange-400 bg-orange-100 p-3 rounded shadow text-sm mb-3">
+            <div className="border-2 border-orange-400 bg-orange-100 p-3 rounded border text-sm mb-3">
               4th place award at
               <span className="font-bold text-green-800"> Crowdhackathon #Agrifood</span>,
               April 2019, team “UNI3.14”.
             </div>
-            <div className="bg-gray-200 p-3 rounded shadow text-sm mb-3">
+            <div className="bg-gray-200 p-3 rounded border text-sm mb-3">
               Attended
               <span className="font-bold text-green-800"> Developers Day 2018 </span>
               in Dais Sports Center.
             </div>
-            <div className="bg-gray-200 p-3 rounded shadow text-sm mb-3">
+            <div className="bg-gray-200 p-3 rounded border text-sm mb-3">
               Attended
               <span className="font-bold text-green-800"> Decentralized 2018 </span>
               in Divani Caravel Hotel.
             </div>
-            <div className="bg-gray-200 p-3 rounded shadow text-sm">
+            <div className="bg-gray-200 p-3 rounded border text-sm">
               2nd place award at
               <span className="font-bold text-green-800"> Recycling Competition </span>
               organized by Municipality of Athens, April 2013.
@@ -374,11 +374,13 @@ export default function AboutPage() {
             <div>Certifications</div>
           </h2>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Amateur Radio License
             </h2>
             <div className="text-sm font-bold text-gray-900 mb-2 md:flex md:items-center">
+              <p className="mb-2 md:mb-0">SV1SQT</p>
+              <p className="hidden md:block md:mx-4">&middot;</p>
               <p className="mb-2 md:mb-0">October 2020</p>
               <p className="hidden md:block md:mx-4">&middot;</p>
               <p className="mb-2 md:mb-0">Region of Attica</p>
@@ -393,7 +395,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Amateur Radio Exam Certificate
             </h2>
@@ -412,7 +414,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Amateur Radio Listening Certificate
             </h2>
@@ -431,7 +433,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border mb-3">
             <h2 className="text-green-800 font-bold mb-1">
               Certificate of Proficiency in English
             </h2>
@@ -450,7 +452,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gray-200 p-5 rounded shadow mb-5">
+          <div className="bg-gray-200 p-5 rounded border">
             <h2 className="text-green-800 font-bold mb-1">
               Certificate of Competency in English
             </h2>

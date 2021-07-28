@@ -2,7 +2,7 @@ import React from "react"
 import NavbarDesktop from "./navbar-desktop"
 import NavbarMobile from "./navbar-mobile"
 import NavbarMobileExpanded from "./navbar-mobile-expanded"
-import "../styles/navbar.css"
+import "../../styles/navbar.css"
 
 export default function Navbar({ isOpened, onToggleClick, onLinkClick }) {
   return (

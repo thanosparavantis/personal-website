@@ -5,13 +5,13 @@ import TimeAgo from "react-timeago/lib"
 
 const GitHubRepository = ({ source }) => (
   <a href={source.html_url}
-     className="mt-5 rounded block p-5 bg-gray-200 shadow
+     className="mt-3 rounded block p-5 bg-gray-200 border
                 hover:bg-gray-300 focus:bg-gray-300 focus:outline-none
                 focus:shadow-outline active:bg-gray-400"
      title={`Learn more about ${source.name} on GitHub`}
      rel="noopener noreferrer"
      target="_blank">
-    <h1 className="uppercase font-bold text-sm text-green-800">
+    <h1 className="uppercase font-bold text-sm text-gray-900">
       <FontAwesomeIcon icon={faCode} className="mr-2" />
       {source.name}
     </h1>

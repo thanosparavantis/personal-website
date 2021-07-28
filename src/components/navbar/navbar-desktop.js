@@ -12,13 +12,11 @@ export default function NavbarDesktop() {
             Thanos Paravantis
           </h1>
         </div>
-        <div className="mb-12">
-          <NavbarLink href="/" title="Home" icon={faHome} />
-          <NavbarLink href="/about/" title="About" icon={faQuestionCircle} />
-          <NavbarLink href="/projects/" title="Projects" icon={faCode} />
-          <NavbarLink href="/activity/" title="Activity" icon={faRss} />
-          <NavbarLink href="/contact/" title="Contact" icon={faEnvelopeOpenText} />
-        </div>
+        <NavbarLink href="/" title="Home" icon={faHome} />
+        <NavbarLink href="/about/" title="About" icon={faQuestionCircle} />
+        <NavbarLink href="/projects/" title="Projects" icon={faCode} />
+        <NavbarLink href="/activity/" title="Activity" icon={faRss} />
+        <NavbarLink href="/contact/" title="Contact" icon={faEnvelopeOpenText} />
       </nav>
     </div>
   )

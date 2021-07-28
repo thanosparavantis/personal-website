@@ -1,9 +1,10 @@
 import React, { useCallback, useEffect, useState } from "react"
 import Parser from "rss-parser"
 import ActivityItem from "../components/activity-item"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExclamationCircle, faSpinner, faWaveSquare } from "@fortawesome/free-solid-svg-icons"
 import SeoTags from "../components/seo-tags"
+import Error from "../components/indicators/error"
+import Loading from "../components/indicators/loading"
+import Empty from "../components/indicators/empty"
 
 export default function ActivityPage() {
   const feedDateKey = "feed-date"
@@ -77,32 +78,17 @@ export default function ActivityPage() {
         <h1 className="font-bold text-xl mb-2 text-gray-900">
           Activity
         </h1>
-        {error ? (
-          <div className="bg-gray-200 shadow rounded p-5 text-center font-bold text-red-700">
-            <FontAwesomeIcon icon={faExclamationCircle} className="mr-3" />
-            Something went wrong, please try again later.
-          </div>
-        ) : ""}
+        {error && <Error />}
 
-        {!error && loading ? (
-          <div className="bg-gray-200 shadow rounded p-5 text-center font-bold">
-            <FontAwesomeIcon icon={faSpinner} spin={true} className="mr-3" />
-            Loading...
-          </div>
-        ) : ""}
+        {(!error && loading) && <Loading />}
 
-        {!loading && items.length === 0 ? (
-          <div className="bg-gray-200 shadow rounded p-5 text-center font-bold">
-            <FontAwesomeIcon icon={faWaveSquare} className="mr-3" />
-            Nothing to see here
-          </div>
-        ) : ""}
+        {(!loading && items.length === 0) && <Empty />}
 
-        {!loading && items.length > 0 ? (
+        {(!loading && items.length > 0) && (
           <div>
             {items.map((item, key) => <ActivityItem key={key} item={item} />)}
           </div>
-        ) : ""}
+        )}
       </div>
     </div>
   )

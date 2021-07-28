@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import GithubIdentity from "./github-identity"
 import GithubRepositories from "./github-repositories"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExclamationCircle, faSpinner } from "@fortawesome/free-solid-svg-icons"
+import Loading from "../indicators/loading"
+import Error from "../indicators/error"
 
 const GitHubProfile = () => {
   const identityEndpoint = "https://api.github.com/users/thanosparavantis"
@@ -26,12 +26,7 @@ const GitHubProfile = () => {
   }, [])
 
   if (error) {
-    return (
-      <div className="bg-gray-200 shadow rounded p-5 text-center font-bold text-red-700">
-        <FontAwesomeIcon icon={faExclamationCircle} className="mr-3" />
-        Something went wrong, please try again later.
-      </div>
-    )
+    return <Error />
   } else if (identityData && repositoryData) {
     return (
       <>
@@ -40,12 +35,7 @@ const GitHubProfile = () => {
       </>
     )
   } else {
-    return (
-      <div className="bg-gray-200 shadow rounded p-5 text-center font-bold">
-        <FontAwesomeIcon icon={faSpinner} spin={true} className="mr-3" />
-        Loading...
-      </div>
-    )
+    return <Loading />
   }
 }
 
