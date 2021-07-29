@@ -13,13 +13,13 @@ module.exports = {
     reCaptchaKey: `6LdMY74UAAAAAM3EIrRzslKtYWc2OKGriLEuu53y`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-89442805-3",
-        head: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-89442805-3",
+    //     head: true,
+    //   },
+    // },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
