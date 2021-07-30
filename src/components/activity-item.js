@@ -26,7 +26,7 @@ export default function ActivityItem({ item }) {
        title="Click here to see more about this"
        className="block mt-3 bg-gray-200 hover:bg-gray-300 rounded border
                   p-5 focus:outline-none focus:shadow-outline">
-      <div className="flex flex-col items-center md:flex-row font-bold mb-2">
+      <div className="flex flex-col items-start md:items-center md:flex-row font-bold mb-2">
         <div className="flex items-center">
           <FontAwesomeIcon icon={icon} className={`mr-2 ${color}`}/>
           <div className={color}>{item.title}</div>
