@@ -11,7 +11,7 @@ export default function ActivityPage() {
   const feedItemsKey = "feed-items"
   const feedUrl = "https://zapier.com/engine/rss/8156996/thanosproduction"
   const [items, setItems] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
   const sort = useCallback((itemA, itemB) => {
@@ -47,27 +47,27 @@ export default function ActivityPage() {
       })
   }, [sort])
 
-  useEffect(() => {
-    const feedDate = localStorage.getItem(feedDateKey)
-    const feedItems = localStorage.getItem(feedItemsKey)
-
-    if (feedDate && feedItems) {
-      const now = new Date().getTime().toString()
-      const then = parseInt(feedDate)
-      const isValid = Math.abs(now - then) <= 3600000
-
-      if (isValid) {
-        console.debug("Fetching activity items from cache.")
-        fetchCached()
-      } else {
-        console.debug("Invalid activity cache, fetching new items.")
-        fetchNew()
-      }
-    } else {
-      console.debug("First time visit, fetch new items.")
-      fetchNew()
-    }
-  }, [fetchCached, fetchNew])
+//  useEffect(() => {
+//    const feedDate = localStorage.getItem(feedDateKey)
+//    const feedItems = localStorage.getItem(feedItemsKey)
+//
+//    if (feedDate && feedItems) {
+//      const now = new Date().getTime().toString()
+//      const then = parseInt(feedDate)
+//      const isValid = Math.abs(now - then) <= 3600000
+//
+//      if (isValid) {
+//        console.debug("Fetching activity items from cache.")
+//        fetchCached()
+//      } else {
+//        console.debug("Invalid activity cache, fetching new items.")
+//        fetchNew()
+//      }
+//    } else {
+//      console.debug("First time visit, fetch new items.")
+//      fetchNew()
+//    }
+//  }, [fetchCached, fetchNew])
 
   return (
     <div>
