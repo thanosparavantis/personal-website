@@ -11,7 +11,7 @@ export default function PhotosPage() {
     <>
       <MetaTags
         title="Photos"
-        description="Learn more about this image and browse similar ones through a variety of photos."
+        description="A collection of personal photos from Greece usable by anyone under public domain."
       />
 
       <Helmet>

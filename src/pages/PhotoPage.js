@@ -13,7 +13,7 @@ export default function PhotoPage({photo}) {
     <>
       <MetaTags
         title={`Photo: ${photo.name}`}
-        description="Born in Athens, Greece, Thanos Paravantis is a Software Engineer and Radio Amateur with a BSc in Computer Science."
+        description="Learn more about this image and browse similar ones through a variety of photos."
       />
 
       <Helmet>
