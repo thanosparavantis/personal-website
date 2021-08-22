@@ -1,0 +1,314 @@
+[
+  {
+    "slug": "marketing-mind",
+    "name": "Marketing Mind",
+    "description": "The source code that powers Marketing Mind, a marketing consultancy agency that offers integrated marketing solutions based on your business special needs.",
+    "tags": [
+      "website",
+      "html",
+      "css",
+      "javascript",
+      "react",
+      "fontawesome",
+      "tailwindcss"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/marketing-mind"
+  },
+  {
+    "slug": "personal-website",
+    "name": "Personal Website",
+    "description": "The source code that powers this website.",
+    "tags": [
+      "website",
+      "html",
+      "css",
+      "javascript",
+      "react",
+      "fontawesome",
+      "tailwindcss"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/personal-website"
+  },
+  {
+    "slug": "hamop",
+    "name": "Hamop",
+    "description": "A social network application based on React for the frontend and Firebase for the backend. Users are able to create profiles, make posts, leave comments, like posts and increase their reputation from being active on the website.",
+    "tags": [
+      "web-app",
+      "hobby",
+      "html",
+      "css",
+      "javascript",
+      "react",
+      "fontawesome",
+      "tailwindcss",
+      "firebase"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/hamop-website"
+  },
+  {
+    "slug": "thesis",
+    "name": "Thesis",
+    "description": "Applications of the NEAT algorithm in deterministic and non-deterministic game environments.",
+    "tags": [
+      "university",
+      "neural-networks",
+      "reinforcement-learning",
+      "neat-algorithm",
+      "game",
+      "python",
+      "multithreading",
+      "numpy",
+      "matplotlib"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/thesis"
+  },
+  {
+    "slug": "bioinformatics",
+    "name": "Bioinformatics",
+    "description": "A group project in Python that was developed for a university assignment on the subject of Bioinformatics.",
+    "tags": [
+      "university",
+      "python",
+      "numpy",
+      "biopython"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/bioinformatics"
+  },
+  {
+    "slug": "image-processing",
+    "name": "Image Processing",
+    "description": "A group project that was developed for the subject of Image Processing.",
+    "tags": [
+      "university",
+      "python",
+      "numpy",
+      "cv2",
+      "scikit-image",
+      "scikit-learn",
+      "matplotlib"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/image-processing"
+  },
+  {
+    "slug": "cryptography",
+    "name": "Cryptography",
+    "description": "This is an experimental project that illustrates popular cryptography techniques. It contains implementations of algorithms, unit tests and several use case scenarios. The prototype source code is written in Python 3.6 and may have some issues or vulnerabilities.",
+    "tags": [
+      "hobby",
+      "python"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/cryptography"
+  },
+  {
+    "slug": "dining-philosophers",
+    "name": "Dining Philosophers",
+    "description": "A solution for the dining philosophers problem in Java using multi-threading techniques.",
+    "tags": [
+      "university",
+      "java",
+      "multithreading"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/dining-philosophers"
+  },
+  {
+    "slug": "shannon-fano",
+    "name": "Shannon Fano",
+    "description": "A group project in Python that was developed for a university assignment on the subject of Code and Information Theory.",
+    "tags": [
+      "university",
+      "python",
+      "numpy",
+      "pillow"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/shannon-fano"
+  },
+  {
+    "slug": "multimedia-systems",
+    "name": "Multimedia Systems",
+    "description": "A group project in Python that was developed for a university assignment on the subject of Multimedia Systems.",
+    "tags": [
+      "university",
+      "python",
+      "numpy",
+      "cv2",
+      "pillow"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/multimedia-systems"
+  },
+  {
+    "slug": "e-career-office",
+    "name": "e-Career Office",
+    "description": "A group project in Java that was developed for a university assignment on the subject of Software Technologies.",
+    "tags": [
+      "university",
+      "html",
+      "css",
+      "javascript",
+      "bootstrap",
+      "jquery",
+      "fontawesome",
+      "java",
+      "servlets",
+      "tomcat",
+      "mysql"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/e-career-office-web-app"
+  },
+  {
+    "slug": "android-emergency-application",
+    "name": "Android Emergency Application",
+    "description": "A group project in Android that was developed for a university assignment on the subject of Software Engineering.",
+    "tags": [
+      "university",
+      "java",
+      "android",
+      "firebase",
+      "sqlite"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/android-emergency-application"
+  },
+  {
+    "slug": "e-bookstore",
+    "name": "e-Bookstore",
+    "description": "A group project in C# that was developed for a university assignment on the subject of Human Interaction with Computers.",
+    "tags": [
+      "university",
+      "visual-studio",
+      "c-sharp"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/e-bookstore"
+  },
+  {
+    "slug": "social-networks-analysis",
+    "name": "Social Networks Analysis",
+    "description": "A group project in Python that was developed for a university assignment on the subject of Social Networks Analysis.",
+    "tags": [
+      "university",
+      "python",
+      "pandas",
+      "networkx"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/social-networks-analysis"
+  },
+  {
+    "slug": "student-university-information-system",
+    "name": "Student University Information System",
+    "description": "Tier 3 Java application. We created a fully functional authentication and authorization solution. Students, instructors and secretaries have access to specific functionalities based on their role.",
+    "tags": [
+      "university",
+      "html",
+      "css",
+      "javascript",
+      "bootstrap",
+      "jquery",
+      "fontawesome",
+      "java",
+      "servlets",
+      "tomcat",
+      "jasypt",
+      "jstl",
+      "mysql"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/student-university-information-system"
+  },
+  {
+    "slug": "rapidsay",
+    "name": "Rapidsay",
+    "description": "A full fledged social network application created in PHP using the Laravel framework.",
+    "tags": [
+      "web-app",
+      "hobby",
+      "html",
+      "css",
+      "javascript",
+      "jquery",
+      "php",
+      "laravel",
+      "bootstrap",
+      "fontawesome",
+      "mysql"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/rapidsay"
+  },
+  {
+    "slug": "airport-ticket-system",
+    "name": "Airport Ticket System",
+    "description": "A simple console based airport ticket system in C++ using data structures.",
+    "tags": [
+      "university",
+      "visual-studio",
+      "c-plus-plus"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/airport-ticket-system"
+  },
+  {
+    "slug": "tic-tac-toe",
+    "name": "Tic-Tac-Toe",
+    "description": "A window based Tic-Tac-Toe game implementation in C# using Visual Studio.",
+    "tags": [
+      "university",
+      "game",
+      "visual-studio",
+      "c-sharp"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/tic-tac-toe"
+  },
+  {
+    "slug": "missionaries-and-cannibals",
+    "name": "Missionaries and Cannibals",
+    "description": "A solution for the missionaries and cannibals problem in Java using Breadth First Search and Hill Climb Search algorithms.",
+    "tags": [
+      "university",
+      "java"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/missionaries-and-cannibals"
+  },
+  {
+    "slug": "android-speedometer",
+    "name": "Android Speedometer",
+    "description": "A simple Android application that uses a phone's location to keep track of speeding violations.",
+    "tags": [
+      "university",
+      "java",
+      "android",
+      "sqlite"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/android-speedometer"
+  },
+  {
+    "slug": "relational-dbms-1",
+    "name": "Relational DBMS I",
+    "description": "A group project that was developed for a university assignment on the subject of Databases.",
+    "tags": [
+      "university",
+      "java",
+      "postgresql"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/relational-database-managment-system"
+  },
+  {
+    "slug": "relational-dbms-2",
+    "name": "Relational DBMS II",
+    "description": "A group project that was developed for a university assignment on the subject of Databases.",
+    "tags": [
+      "university",
+      "java",
+      "java-spark",
+      "postgresql"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/relational-database-management-system-advanced"
+  },
+  {
+    "slug": "compilers",
+    "name": "Compilers",
+    "description": "A group project that was developed for a university assignment on the subject of Compilers.",
+    "tags": [
+      "university",
+      "python",
+      "java",
+      "flex-lexical-analysis"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/compilers-project"
+  }
+]
