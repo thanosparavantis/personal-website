@@ -223,7 +223,7 @@ export default function ContactPage() {
 
             {success && (
               <div className="mt-8 text-sm font-bold text-green-500 text-center">
-                Your form has been submitted, thank you for contacting us.
+                Your form has been submitted, thank you for contacting.
               </div>
             )}
 
@@ -235,8 +235,8 @@ export default function ContactPage() {
           </div>
           <div className="px-5 md:px-8 py-3 border-t flex items-center justify-center text-center">
             {loading ? (
-              <button className="w-full shadow text-white font-bold rounded py-2 text-sm md:text-base
-                                       bg-blue-500 transition focus:outline-none focus:ring-2 cursor-not-allowed"
+              <button className="w-full shadow text-white font-bold rounded py-3 text-sm md:text-base
+                                 bg-yellow-500 transition focus:outline-none focus:ring-2 cursor-not-allowed"
                       disabled>
                 <FontAwesomeIcon icon={faSpinner} spin className="mr-3"/>
                 Sending...
