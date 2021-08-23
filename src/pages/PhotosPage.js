@@ -11,7 +11,7 @@ export default function PhotosPage() {
     <>
       <MetaTags
         title="Photos"
-        description="A collection of personal photos from Greece usable by anyone under public domain."
+        description="A curated collection of personal copyright free photos from Greece under public domain."
       />
 
       <Helmet>
@@ -19,20 +19,27 @@ export default function PhotosPage() {
       </Helmet>
 
       <header className="my-16 text-center">
-        <h1 className="text-4xl text-gray-900 font-bold">
+        <h1 className="text-4xl text-gray-900 font-bold mb-3">
           Photos
         </h1>
+        <p className="text-gray-600">
+          A curated collection of personal copyright free photos from Greece under public domain.
+        </p>
       </header>
 
       <main className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-5">
-        {photos.map(photo => (
-          <Link to={`/photos/${photo.slug}`} key={photo.slug}>
-            <LazyLoadImage src={require(`../images/gallery/${photo.filename}`).default}
-                           title={photo.name}
-                           alt={photo.name}
-                           className="rounded shadow"/>
-          </Link>
-        ))}
+        {photos.map(photo => {
+          const photoPreview = require(`../images/preview/${photo.filename}`).default
+
+          return (
+            <Link to={`/photos/${photo.slug}`} key={photo.slug}>
+              <LazyLoadImage src={photoPreview}
+                             title={photo.name}
+                             alt={photo.name}
+                             className="rounded shadow hover:opacity-80 transition"/>
+            </Link>
+          )
+        })}
       </main>
     </>
   )
