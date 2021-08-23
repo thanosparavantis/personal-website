@@ -128,7 +128,7 @@ export default function AboutPage() {
               &middot;
             </p>
             <p>
-              World Bank Group
+              World Bank Group, Washington D.C.
             </p>
           </div>
           <p className="mb-3 leading-relaxed">
@@ -152,7 +152,7 @@ export default function AboutPage() {
               &middot;
             </p>
             <p>
-              Chalandri, Greece
+              Athens, Greece
             </p>
             <p className="mx-3 hidden md:block">
               &middot;
@@ -189,7 +189,7 @@ export default function AboutPage() {
               &middot;
             </p>
             <p>
-              Mineplex
+              Mineplex, Georgia USA
             </p>
           </div>
           <p className="mb-3 leading-relaxed">
