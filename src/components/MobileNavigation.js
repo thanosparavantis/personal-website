@@ -31,7 +31,7 @@ export default function MobileNavigation() {
             <img src={thanosParavantisImg}
                  title="Thanos Paravantis"
                  alt="Thanos Paravantis"
-                 className="block h-10 bg-gray-100 rounded-full shadow-lg mr-3 p-1"
+                 className="block w-10 h-10 bg-gray-100 rounded-full shadow-lg mr-3 p-1"
             />
             Thanos Paravantis
           </Link>

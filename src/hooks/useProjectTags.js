@@ -13,13 +13,6 @@ export default function useProjectTags(project = null) {
       })
     }
 
-    return [...tagSet]
-      .sort()
-      .sort((t1, t2) => {
-        const tc1 = projects.filter(project => project.tags.includes(t1))
-        const tc2 = projects.filter(project => project.tags.includes(t2))
-
-        return (tc1 > tc2) ? -1 : ((tc2 > tc1) ? 1 : 0)
-      })
+    return [...tagSet].sort()
   }, [project])
 }

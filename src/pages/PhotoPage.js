@@ -43,7 +43,7 @@ export default function PhotoPage({photo}) {
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-5 opacity-50 hover:opacity-100 transition">
+        <div className="grid md:grid-cols-2 gap-5 md:opacity-50 md:hover:opacity-100 md:transition">
           {similarPhotos.map(photo => (
             <Link to={`/photos/${photo.slug}`} key={photo.slug}>
               <LazyLoadImage src={require(`../images/gallery/${photo.filename}`).default}
