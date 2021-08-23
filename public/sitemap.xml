@@ -85,6 +85,9 @@
         <loc>https://www.thanosparavantis.com/projects/compilers</loc>
     </url>
     <url>
+        <loc>https://www.thanosparavantis.com/projects/pattern-recognition</loc>
+    </url>
+    <url>
         <loc>https://www.thanosparavantis.com/projects/tag/university</loc>
     </url>
     <url>
@@ -215,6 +218,12 @@
     </url>
     <url>
         <loc>https://www.thanosparavantis.com/projects/tag/scikit-learn</loc>
+    </url>
+    <url>
+        <loc>https://www.thanosparavantis.com/projects/tag/netlify</loc>
+    </url>
+    <url>
+        <loc>https://www.thanosparavantis.com/projects/tag/scipy</loc>
     </url>
     <url>
         <loc>https://www.thanosparavantis.com/photos/seaside-view-with-parked-fishing-boats</loc>

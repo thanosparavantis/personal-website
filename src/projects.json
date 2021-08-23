@@ -10,7 +10,8 @@
       "javascript",
       "react",
       "fontawesome",
-      "tailwindcss"
+      "tailwindcss",
+      "netlify"
     ],
     "githubLink": "https://github.com/thanosparavantis/marketing-mind"
   },
@@ -25,7 +26,8 @@
       "javascript",
       "react",
       "fontawesome",
-      "tailwindcss"
+      "tailwindcss",
+      "netlify"
     ],
     "githubLink": "https://github.com/thanosparavantis/personal-website"
   },
@@ -42,7 +44,8 @@
       "react",
       "fontawesome",
       "tailwindcss",
-      "firebase"
+      "firebase",
+      "netlify"
     ],
     "githubLink": "https://github.com/thanosparavantis/hamop-website"
   },
@@ -310,5 +313,20 @@
       "flex-lexical-analysis"
     ],
     "githubLink": "https://github.com/thanosparavantis/compilers-project"
+  },
+  {
+    "slug": "pattern-recognition",
+    "name": "Pattern Recognition",
+    "description": "A group project in Python that was developed for a university assignment on the subject of Pattern Recognition.",
+    "tags": [
+      "university",
+      "python",
+      "numpy",
+      "scikit-learn",
+      "pandas",
+      "matplotlib",
+      "scipy"
+    ],
+    "githubLink": "https://github.com/thanosparavantis/pattern-recognition"
   }
 ]
