@@ -19,8 +19,8 @@ export default function HomePage() {
         <h1 className="text-2xl font-bold mb-1 text-gray-900 uppercase mb-5">
           Thanos Paravantis
         </h1>
-        <h2 className="text-gray-900 mb-5">
-          Born in Athens, Greece, Thanos Paravantis is a Software Engineer <br/>and Radio Amateur with a BSc in Computer Science.
+        <h2 className="max-w-md md:max-w-full text-gray-900 mb-5">
+          Born in Athens, Greece, Thanos Paravantis is a Software Engineer <br className="hidden md:block"/>and Radio Amateur with a BSc in Computer Science.
         </h2>
         <div className="grid grid-flow-col gap-2 md:gap-6">
           <a href="https://www.facebook.com/thanosparavantis/"
