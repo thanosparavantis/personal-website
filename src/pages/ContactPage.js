@@ -79,15 +79,18 @@ export default function ContactPage() {
     <>
       <MetaTags
         title="Contact"
-        description="For business inquiries or any other matters, you get in touch by sending me an email or filling out the contact form."
+        description="For business inquiries or any other matters, feel free to send me an email or fill out the contact form."
       />
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
       <header className="my-16 text-center">
-        <h1 className="text-4xl text-gray-900 font-bold">
+        <h1 className="text-4xl text-gray-900 font-bold mb-3">
           Contact
         </h1>
+        <h2 className="text-gray-600">
+          For business inquiries or any other matters, feel free to send me an email or fill out the contact form.
+        </h2>
       </header>
 
       <section className="mb-5 bg-white border rounded">
@@ -100,7 +103,7 @@ export default function ContactPage() {
             Email Address
           </h3>
           <p className="text-gray-600 mb-5">
-            <a href="mailto:thanosparavantis@gmail.com" className="underline">
+            <a href="mailto:thanosparavantis@gmail.com" className="underline text-blue-600 hover:text-blue-800">
               thanosparavantis@gmail.com
             </a>
           </p>
@@ -236,7 +239,7 @@ export default function ContactPage() {
           <div className="px-5 md:px-8 py-3 border-t flex items-center justify-center text-center">
             {loading ? (
               <button className="w-full shadow text-white font-bold rounded py-3 text-sm md:text-base
-                                 bg-yellow-500 transition focus:outline-none focus:ring-2 cursor-not-allowed"
+                                 bg-yellow-500 focus:outline-none focus:ring-2 cursor-not-allowed"
                       disabled>
                 <FontAwesomeIcon icon={faSpinner} spin className="mr-3"/>
                 Sending...

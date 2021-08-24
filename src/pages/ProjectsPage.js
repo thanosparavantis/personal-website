@@ -13,25 +13,23 @@ export default function ProjectsPage() {
     <>
       <MetaTags
         title="Projects"
-        description="The list of computer science projects I have worked on as university assignments and hobby projects."
+        description="Browse through a collection of open source computer science projects I have worked on."
       />
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
 
       <header className="my-16 text-center">
-        <h1 className="text-4xl text-gray-900 font-bold">
+        <h1 className="text-4xl text-gray-900 font-bold mb-3">
           Projects
         </h1>
+        <p className="text-gray-600">
+          Browse through a collection of open source computer science projects I have worked on.
+        </p>
       </header>
 
-      <section>
-        <h2 className="text-gray-900 mb-3">
-          There are <strong>{projects.length}</strong> projects with <strong>{tags.length}</strong> tags:
-        </h2>
-        <div className="flex flex-wrap gap-1 mb-5">
-          {tags.map(tag => <ProjectTag tag={tag} key={tag}/>)}
-        </div>
+      <section className="flex flex-wrap gap-1 mb-5">
+        {tags.map(tag => <ProjectTag tag={tag} key={tag}/>)}
       </section>
 
       <main className="grid grid-cols-flow gap-5 mb-5">

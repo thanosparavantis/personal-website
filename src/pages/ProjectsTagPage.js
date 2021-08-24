@@ -13,25 +13,23 @@ export default function ProjectsTagPage({tag}) {
     <>
       <MetaTags
         title={`Tag: ${tag}`}
-        description={`The list of computer science projects I have worked on tagged with ${tag}.`}
+        description={`The list of open source computer science projects including the ${tag} tag.`}
       />
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
 
       <header className="my-16 text-center">
-        <h1 className="text-4xl text-gray-900 font-bold">
-          Projects
+        <h1 className="text-3xl text-gray-900 mb-3">
+          Tag: <strong>{tag}</strong>
         </h1>
+        <h2 className="text-gray-600">
+          The list of open source computer science projects including the {tag} tag.
+        </h2>
       </header>
 
-      <section>
-        <h2 className="text-gray-900 mb-3">
-          There {projects.length > 1 ? "are" : "is"} <strong>{projects.length}</strong> {projects.length > 1 ? "projects" : "project"} with the <strong>{tag}</strong> tag:
-        </h2>
-        <div className="flex flex-wrap gap-1 mb-5">
-          {tags.map(otherTag => <ProjectTag tag={otherTag} active={otherTag === tag} key={otherTag}/>)}
-        </div>
+      <section className="text-gray-900 flex flex-wrap gap-1 mb-5">
+        {tags.map(otherTag => <ProjectTag tag={otherTag} active={otherTag === tag} key={otherTag}/>)}
       </section>
 
       <main className="grid grid-cols-flow gap-5 mb-5">

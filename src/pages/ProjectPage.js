@@ -13,16 +13,19 @@ export default function ProjectPage({project}) {
     <>
       <MetaTags
         title={`Project: ${project.name}`}
-        description={project.description}
+        description={`Learn more about this resource and browse through a variety of related open source projects.`}
       />
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
 
       <header className="my-16 text-center">
-        <h1 className="text-4xl text-gray-900 font-bold">
-          Projects
+        <h1 className="text-3xl text-gray-900 mb-3">
+          Project: <strong>{project.name}</strong>
         </h1>
+        <h2 className="text-gray-600">
+          Learn more about this resource and browse through a variety of related open source projects.
+        </h2>
       </header>
 
       <main>
@@ -32,7 +35,7 @@ export default function ProjectPage({project}) {
       <section className="mb-5">
         <div className="mt-10 mb-5">
           <Link to="/projects"
-                className="block font-bold text-gray-900 rounded border
+                className="block font-bold text-gray-900 rounded border focus:outline-none focus:ring-2
                            hover:border-gray-400 text-center py-3 bg-white">
             <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
             View all projects

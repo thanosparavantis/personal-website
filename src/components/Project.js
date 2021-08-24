@@ -21,7 +21,7 @@ export default function Project({project, expanded = false}) {
             {project.description}
           </p>
         </div>
-        <div className="px-5 md:px-8 pb-3 underline text-blue-600">
+        <div className="px-5 md:px-8 pb-3 underline text-blue-600 hover:text-blue-800">
           <a href={project.githubLink}
              rel="noopener noreferrer"
              target="_blank">

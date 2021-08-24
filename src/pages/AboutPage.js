@@ -8,15 +8,18 @@ export default function AboutPage() {
     <>
       <MetaTags
         title="About"
-        description="Personal portfolio of my educational background, work and volunteer experience, hobby projects and achievements."
+        description="Portfolio of my educational background, work and volunteer experience, hobby projects and achievements."
       />
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
       <header className="my-16 text-center">
-        <h1 className="text-4xl text-gray-900 font-bold">
+        <h1 className="text-4xl text-gray-900 font-bold mb-3">
           About
         </h1>
+        <h2 className="text-gray-600">
+          Portfolio of my educational background, work and volunteer experience, hobby projects and achievements.
+        </h2>
       </header>
       <section className="mb-5 border rounded bg-white">
         <h2 className="px-5 md:px-8 py-5 border-b md:text-lg font-bold text-gray-900">
@@ -46,7 +49,7 @@ export default function AboutPage() {
           </div>
           <a href="https://www.cs.unipi.gr/index.php?lang=en"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             Visit university website
           </a>
         </div>
@@ -73,7 +76,7 @@ export default function AboutPage() {
           </div>
           <a href="https://46lyk-athin.att.sch.gr/"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             Visit school website
           </a>
         </div>
@@ -100,7 +103,7 @@ export default function AboutPage() {
           </div>
           <a href="https://www.hau.gr/"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             Visit organization website
           </a>
         </div>
@@ -136,7 +139,7 @@ export default function AboutPage() {
           </p>
           <a href="https://www.worldbank.org/"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             Visit institution website
           </a>
         </div>
@@ -167,7 +170,7 @@ export default function AboutPage() {
           </p>
           <a href="https://logicea.com/"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             Visit company website
           </a>
         </div>
@@ -199,7 +202,7 @@ export default function AboutPage() {
           </p>
           <a href="https://www.mineplex.com/home/"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             Visit company website
           </a>
         </div>
@@ -236,7 +239,7 @@ export default function AboutPage() {
           </p>
           <a href="https://www.tedxuniversityofpiraeus.com/"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             Visit organization website
           </a>
         </div>
@@ -300,7 +303,7 @@ export default function AboutPage() {
           <div className="flex flex-col md:flex-row">
             <a href="https://www.qrz.com/db/SV1SQT"
                target="noopener noreferrer"
-               className="block underline text-blue-600">
+               className="block underline text-blue-600 hover:text-blue-800">
               Visit QRZ.com page
             </a>
             <p className="mx-3 hidden md:block">
@@ -308,7 +311,7 @@ export default function AboutPage() {
             </p>
             <a href="https://drive.google.com/file/d/1xa4kjbna2AZDrYtQTOtThOc60WWi9vec/view?usp=sharing"
                target="noopener noreferrer"
-               className="block underline text-blue-600">
+               className="block underline text-blue-600 hover:text-blue-800">
               View license
             </a>
           </div>
@@ -330,7 +333,7 @@ export default function AboutPage() {
           </div>
           <a href="https://drive.google.com/file/d/1jTeK3_C8oWvk8vcDWsK4iT0556PgDQS1/view?usp=sharing"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             View certificate
           </a>
         </div>
@@ -351,7 +354,7 @@ export default function AboutPage() {
           </div>
           <a href="https://drive.google.com/file/d/1N05hHJc_y2VsDh-cXmKNQeAJlkLZtKNg/view?usp=sharing"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             View certificate
           </a>
         </div>
@@ -372,7 +375,7 @@ export default function AboutPage() {
           </div>
           <a href="https://drive.google.com/file/d/1nRmDh7_pfjRT4rZFhKeR6lHzm10rF1rE/view?usp=sharing"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             View certificate
           </a>
         </div>
@@ -393,7 +396,7 @@ export default function AboutPage() {
           </div>
           <a href="https://drive.google.com/file/d/1nVhxVt3jSkmWz1qOCj7p7lDnSSska32s/view?usp=sharing"
              target="noopener noreferrer"
-             className="block underline text-blue-600">
+             className="block underline text-blue-600 hover:text-blue-800">
             View certificate
           </a>
         </div>
