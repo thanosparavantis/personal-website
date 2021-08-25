@@ -125,12 +125,6 @@ export default function AboutPage() {
               &middot;
             </p>
             <p>
-              Athens, Greece
-            </p>
-            <p className="mx-3 hidden md:block">
-              &middot;
-            </p>
-            <p>
               World Bank Group, Washington D.C.
             </p>
           </div>
@@ -155,13 +149,7 @@ export default function AboutPage() {
               &middot;
             </p>
             <p>
-              Athens, Greece
-            </p>
-            <p className="mx-3 hidden md:block">
-              &middot;
-            </p>
-            <p>
-              Logicea
+              Logicea, Athens, Greece
             </p>
           </div>
           <p className="mb-3 leading-relaxed">
@@ -181,12 +169,6 @@ export default function AboutPage() {
           <div className="mb-2 flex flex-col md:flex-row text-gray-700">
             <p>
               August 2015 – September 2016
-            </p>
-            <p className="mx-3 hidden md:block">
-              &middot;
-            </p>
-            <p>
-              Athens, Greece
             </p>
             <p className="mx-3 hidden md:block">
               &middot;
@@ -224,13 +206,7 @@ export default function AboutPage() {
               &middot;
             </p>
             <p>
-              Athens, Greece
-            </p>
-            <p className="mx-3 hidden md:block">
-              &middot;
-            </p>
-            <p>
-              TEDxUniversityofPiraeus
+              TEDxUniversityofPiraeus, Athens, Greece
             </p>
           </div>
           <p className="mb-3 leading-relaxed">
