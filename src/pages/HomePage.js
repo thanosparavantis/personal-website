@@ -7,8 +7,8 @@ export default function HomePage() {
   return (
     <>
       <MetaTags
-        title="Software Engineer"
-        description="Born in Athens, Greece, Thanos Paravantis is a Software Engineer and Radio Amateur with a BSc in Computer Science."
+        title="Computer Scientist"
+        description="Born in Athens, Greece, Thanos Paravantis is a Computer Scientist and Radio Amateur with a BSc in Computer Science."
       />
       <main className="min-h-screen py-32 flex flex-col items-center justify-center text-center">
         <img src={thanosParavantisImg}
@@ -20,7 +20,7 @@ export default function HomePage() {
           Thanos Paravantis
         </h1>
         <h2 className="max-w-md md:max-w-full text-gray-900 mb-5">
-          Born in Athens, Greece, Thanos Paravantis is a Software Engineer <br className="hidden md:block"/>and Radio Amateur with a BSc in Computer Science.
+          Born in Athens, Greece, Thanos Paravantis is a Computer Scientist <br className="hidden md:block"/>and Radio Amateur with a BSc in Computer Science.
         </h2>
         <div className="grid grid-flow-col gap-2 md:gap-6">
           <a href="https://www.facebook.com/thanosparavantis/"

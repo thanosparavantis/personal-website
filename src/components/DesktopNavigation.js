@@ -20,7 +20,7 @@ export default function DesktopNavigation() {
           Thanos Paravantis
         </h1>
         <h2 className="text-gray-100 text-lg">
-          Software Engineer
+          Computer Scientist
         </h2>
       </div>
       <NavLink to="/"
