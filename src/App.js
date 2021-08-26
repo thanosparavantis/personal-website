@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
@@ -39,6 +39,9 @@ function App() {
             </Route>
             <Route path="/photos" exact>
               <PhotosPage/>
+            </Route>
+            <Route path="/activity" exact>
+              <Redirect to="/"/>
             </Route>
             <Route path="/contact" exact>
               <ContactPage/>

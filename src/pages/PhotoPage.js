@@ -41,7 +41,7 @@ export default function PhotoPage({photo}) {
            rel="noopener noreferrer"
            target="_blank"
         className="block py-5 mb-5 underline text-center text-blue-600 hover:text-blue-800">
-          View the higher resolution version of this photo
+          View this photo in higher resolution
           <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
         </a>
       </main>
