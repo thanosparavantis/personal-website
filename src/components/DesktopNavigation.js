@@ -12,7 +12,7 @@ export default function DesktopNavigation() {
         <Link to="/" className="mb-8 transition rounded-full hover:opacity-90">
           <img src={thanosParavantisImg}
                title="Thanos Paravantis"
-               alt="Thanos Paravantis"
+               alt=""
                className="block w-32 h-32 bg-gray-100 rounded-full shadow-lg p-2"
           />
         </Link>

@@ -13,7 +13,7 @@ export default function HomePage() {
       <main className="min-h-screen py-32 flex flex-col items-center justify-center text-center">
         <img src={thanosParavantisImg}
              title="Thanos Paravantis"
-             alt="Thanos Paravantis"
+             alt=""
              className="mb-10 h-52 md:h-72"
         />
         <h1 className="text-2xl font-bold mb-1 text-gray-900 uppercase mb-5">
