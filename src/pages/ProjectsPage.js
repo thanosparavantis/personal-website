@@ -18,7 +18,6 @@ export default function ProjectsPage() {
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
-
       <header className="my-16 text-center">
         <h1 className="text-4xl text-gray-900 font-bold mb-3">
           Projects
@@ -27,13 +26,13 @@ export default function ProjectsPage() {
           Browse through a collection of open source computer science projects I have worked on.
         </p>
       </header>
-
-      <section className="flex flex-wrap gap-1 mb-5">
-        {tags.map(tag => <ProjectTag tag={tag} key={tag}/>)}
-      </section>
-
-      <main className="grid grid-cols-flow gap-5 mb-5">
-        {projects.map(project => <Project project={project} key={project.slug}/>)}
+      <main>
+        <section className="flex flex-wrap gap-1 mb-5">
+          {tags.map(tag => <ProjectTag tag={tag} key={tag}/>)}
+        </section>
+        <section className="grid grid-cols-flow gap-5 mb-5">
+          {projects.map(project => <Project project={project} key={project.slug}/>)}
+        </section>
       </main>
     </>
   )
