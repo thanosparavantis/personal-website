@@ -40,9 +40,6 @@ function App() {
             <Route path="/photos" exact>
               <PhotosPage/>
             </Route>
-            <Route path="/activity" exact>
-              <Redirect to="/"/>
-            </Route>
             <Route path="/contact" exact>
               <ContactPage/>
             </Route>
