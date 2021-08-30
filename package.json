@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build && react-snap",
+    "build": "craco build && react-snap && react-snap-sitemap --base-url=https://www.thanosparavantis.com/",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@alex-drocks/react-snap-sitemap": "^0.3.0",
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
