@@ -69,7 +69,7 @@
   {
     "slug": "bioinformatics",
     "name": "Bioinformatics",
-    "description": "A group project in Python that was developed for a university assignment on the subject of Bioinformatics.",
+    "description": "<p class=\"mb-3\">A group project in Python that was developed for a university assignment on the subject of Bioinformatics.</p><p>This project includes algorithms written in Python that solve elemental problems in Bioinformatics. The goal of this assignment is to work with hypothetical sequences of nucleotides. Notable algorithms used are the Viterbi algorithm and Hidden Markov Models.</p>",
     "tags": [
       "university",
       "python",
@@ -161,7 +161,7 @@
   {
     "slug": "android-emergency-application",
     "name": "Android Emergency Application",
-    "description": "A group project in Android that was developed for a university assignment on the subject of Software Engineering.",
+    "description": "<p class=\"mb-3\">A group project in Android that was developed for a university assignment on the subject of Software Engineering.</p><p class=\"mb-1\">Notable features:</p><ul class=\"list-disc list-inside\"><li>Google sign in and fingerpring authentication</li><li>Speak with a hypothetical licensed Doctor using live chat</li><li>In-app and system wide emergency phone alerts on major events</li><li>Panic button for emergency calls when something serious happens</li><li>Driving mode that notifies user of speeding violations with map representation</li><li>Disability mode that detects when someone falls but also makes calls and sends sms</li><li>Software development phases based on RUP with detailed UML diagrams</li></ul>",
     "tags": [
       "university",
       "java",
@@ -281,7 +281,7 @@
   },
   {
     "slug": "relational-dbms-1",
-    "name": "Relational DBMS I",
+    "name": "RDBMS Car Dealership Project",
     "description": "A group project that was developed for a university assignment on the subject of Databases.",
     "tags": [
       "university",
@@ -292,7 +292,7 @@
   },
   {
     "slug": "relational-dbms-2",
-    "name": "Relational DBMS II",
+    "name": "RDBMS Advanced Car Crash Project",
     "description": "A group project that was developed for a university assignment on the subject of Databases.",
     "tags": [
       "university",

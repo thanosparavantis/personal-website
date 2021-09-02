@@ -17,9 +17,7 @@ export default function Project({project, expanded = false}) {
           </h2>
         </div>
         <div className="px-5 md:px-8 py-5 leading-relaxed">
-          <p className="text-gray-600">
-            {project.description}
-          </p>
+          <div className="text-gray-600" dangerouslySetInnerHTML={{__html: project.description}}/>
         </div>
         <div className="px-5 md:px-8 pb-3 underline text-blue-600 hover:text-blue-800">
           <a href={project.githubLink}
@@ -46,9 +44,7 @@ export default function Project({project, expanded = false}) {
           </h2>
         </div>
         <div className="px-5 md:px-8 py-5 leading-relaxed">
-          <p className="text-gray-600">
-            {project.description}
-          </p>
+          <div className="text-gray-600" dangerouslySetInnerHTML={{__html: project.description}}/>
         </div>
       </Link>
     )
