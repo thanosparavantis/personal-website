@@ -33,6 +33,7 @@ export default function PhotoPage({photo}) {
           <LazyLoadImage src={photoPreview}
                          title={photo.name}
                          alt={photo.name}
+                         effect="blur"
                          className="rounded shadow"/>
 
           <a href={photoFull}
@@ -60,6 +61,7 @@ export default function PhotoPage({photo}) {
                 <LazyLoadImage src={require(`../images/preview/${photo.filename}`).default}
                                title={photo.name}
                                alt={photo.name}
+                               effect="blur"
                                className="rounded shadow"/>
               </Link>
             ))}

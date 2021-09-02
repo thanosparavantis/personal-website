@@ -34,6 +34,7 @@ export default function PhotosPage() {
                 <LazyLoadImage src={photoPreview}
                                title={photo.name}
                                alt={photo.name}
+                               effect="blur"
                                className="rounded shadow hover:opacity-80 transition"/>
               </Link>
             )
