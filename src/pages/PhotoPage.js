@@ -47,14 +47,14 @@ export default function PhotoPage({photo}) {
         <section className="mb-5">
           <div className="mb-5">
             <Link to="/photos"
-                  className="block font-bold text-gray-900 rounded border focus:outline-none focus:ring-2
-                           hover:border-gray-400 text-center py-3 bg-white">
+                  className="block font-bold text-gray-900 rounded border focus:outline-none
+                             bg-white hover:border-gray-400 active:bg-gray-200 text-center py-3">
               <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
               View all photos
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-5 md:opacity-50 md:hover:opacity-100 md:transition">
+          <div className="grid md:grid-cols-2 gap-5 md:opacity-70 md:hover:opacity-100 md:transition">
             {similarPhotos.map(photo => (
               <Link to={`/photos/${photo.slug}`} key={photo.slug}>
                 <LazyLoadImage src={require(`../images/preview/${photo.filename}`).default}

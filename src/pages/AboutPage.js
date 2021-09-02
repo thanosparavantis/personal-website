@@ -1,7 +1,14 @@
 import MetaTags from "../components/MetaTags";
 import {Helmet} from "react-helmet";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBriefcase, faHandsHelping, faScroll, faTrophy, faUserGraduate} from "@fortawesome/free-solid-svg-icons";
+import {
+  faBriefcase,
+  faExternalLinkAlt,
+  faHandsHelping,
+  faScroll,
+  faTrophy,
+  faUserGraduate
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutPage() {
   return (
@@ -48,10 +55,11 @@ export default function AboutPage() {
                 GPA 8.72 / 10
               </p>
             </div>
-            <a href="https://www.cs.unipi.gr/index.php?lang=en"
+            <a href="https://www.unipi.gr/unipi/en/"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
-              Visit university website
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+              Visit institution website
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
           <div className="px-5 md:px-8 py-5 border-b">
@@ -77,8 +85,9 @@ export default function AboutPage() {
             </div>
             <a href="https://46lyk-athin.att.sch.gr/"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit school website
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
           <div className="px-5 md:px-8 py-5">
@@ -104,8 +113,9 @@ export default function AboutPage() {
             </div>
             <a href="https://www.hau.gr/"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit organization website
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
         </section>
@@ -134,8 +144,9 @@ export default function AboutPage() {
             </p>
             <a href="https://www.worldbank.org/"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit institution website
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
           <div className="px-5 md:px-8 py-5 border-b">
@@ -159,8 +170,9 @@ export default function AboutPage() {
             </p>
             <a href="https://logicea.com/"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit company website
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
           <div className="px-5 md:px-8 py-5">
@@ -185,8 +197,9 @@ export default function AboutPage() {
             </p>
             <a href="https://www.mineplex.com/home/"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit company website
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
         </section>
@@ -216,8 +229,9 @@ export default function AboutPage() {
             </p>
             <a href="https://www.tedxuniversityofpiraeus.com/"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit organization website
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
         </section>
@@ -280,16 +294,18 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row">
               <a href="https://www.qrz.com/db/SV1SQT"
                  target="noopener noreferrer"
-                 className="block underline text-blue-600 hover:text-blue-800">
+                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 Visit QRZ.com page
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
               <p className="mx-3 hidden md:block">
                 &middot;
               </p>
               <a href="https://drive.google.com/file/d/1xa4kjbna2AZDrYtQTOtThOc60WWi9vec/view?usp=sharing"
                  target="noopener noreferrer"
-                 className="block underline text-blue-600 hover:text-blue-800">
+                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 View license
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
             </div>
           </div>
@@ -310,8 +326,9 @@ export default function AboutPage() {
             </div>
             <a href="https://drive.google.com/file/d/1jTeK3_C8oWvk8vcDWsK4iT0556PgDQS1/view?usp=sharing"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               View certificate
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
           <div className="px-5 md:px-8 py-5 border-b">
@@ -331,8 +348,9 @@ export default function AboutPage() {
             </div>
             <a href="https://drive.google.com/file/d/1N05hHJc_y2VsDh-cXmKNQeAJlkLZtKNg/view?usp=sharing"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               View certificate
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
           <div className="px-5 md:px-8 py-5 border-b">
@@ -352,8 +370,9 @@ export default function AboutPage() {
             </div>
             <a href="https://drive.google.com/file/d/1nRmDh7_pfjRT4rZFhKeR6lHzm10rF1rE/view?usp=sharing"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               View certificate
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
           <div className="px-5 md:px-8 py-5">
@@ -373,8 +392,9 @@ export default function AboutPage() {
             </div>
             <a href="https://drive.google.com/file/d/1nVhxVt3jSkmWz1qOCj7p7lDnSSska32s/view?usp=sharing"
                target="noopener noreferrer"
-               className="block underline text-blue-600 hover:text-blue-800">
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
               View certificate
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
         </section>
