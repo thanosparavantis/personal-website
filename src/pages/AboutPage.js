@@ -45,7 +45,7 @@ export default function AboutPage() {
                 &middot;
               </p>
               <p>
-                GPA 8.6 / 10
+                GPA 8.72 / 10
               </p>
             </div>
             <a href="https://www.cs.unipi.gr/index.php?lang=en"
