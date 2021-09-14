@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
 import useSimilarPhotos from "../hooks/useSimilarPhotos";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 export default function PhotoPage({photo}) {
   const similarPhotos = useSimilarPhotos(photo)
@@ -31,9 +32,11 @@ export default function PhotoPage({photo}) {
       <main>
         <section>
           <LazyLoadImage src={photoPreview}
+                         width="1280"
+                         height="960"
                          title={photo.name}
                          alt={photo.name}
-                         effect="blur"
+                         effect="opacity"
                          className="rounded shadow"/>
 
           <a href={photoFull}
@@ -59,9 +62,11 @@ export default function PhotoPage({photo}) {
             {similarPhotos.map(photo => (
               <Link to={`/photos/${photo.slug}`} key={photo.slug}>
                 <LazyLoadImage src={require(`../images/preview/${photo.filename}`).default}
+                               width="1280"
+                               height="960"
                                title={photo.name}
                                alt={photo.name}
-                               effect="blur"
+                               effect="opacity"
                                className="rounded shadow"/>
               </Link>
             ))}

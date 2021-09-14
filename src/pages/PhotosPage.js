@@ -1,8 +1,9 @@
 import MetaTags from "../components/MetaTags";
 import {Helmet} from "react-helmet";
-import usePhotos from "../hooks/usePhotos";
 import {Link} from "react-router-dom";
 import {LazyLoadImage} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
+import usePhotos from "../hooks/usePhotos";
 
 export default function PhotosPage() {
   const photos = usePhotos()
@@ -30,12 +31,16 @@ export default function PhotosPage() {
             const photoPreview = require(`../images/preview/${photo.filename}`).default
 
             return (
-              <Link to={`/photos/${photo.slug}`} key={photo.slug}>
+              <Link to={`/photos/${photo.slug}`}
+                    className="hover:opacity-80 transition"
+                    key={photo.slug}>
                 <LazyLoadImage src={photoPreview}
+                               width="1280"
+                               height="960"
                                title={photo.name}
                                alt={photo.name}
-                               effect="blur"
-                               className="rounded shadow hover:opacity-80 transition"/>
+                               effect="opacity"
+                               className="rounded shadow"/>
               </Link>
             )
           })}
