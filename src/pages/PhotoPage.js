@@ -5,12 +5,12 @@ import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
 import useSimilarPhotos from "../hooks/useSimilarPhotos";
-import "react-lazy-load-image-component/src/effects/opacity.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function PhotoPage({photo}) {
   const similarPhotos = useSimilarPhotos(photo)
   const photoFull = require(`../images/full/${photo.filename}`).default
-  const photoPreview = require(`../images/preview/${photo.filename}`).default
+  const photoPreview = require(`../images/previews/${photo.filename}`).default
 
   return (
     <>
@@ -61,12 +61,12 @@ export default function PhotoPage({photo}) {
           <div className="grid md:grid-cols-2 gap-5 md:opacity-70 md:hover:opacity-100 md:transition">
             {similarPhotos.map(photo => (
               <Link to={`/photos/${photo.slug}`} key={photo.slug}>
-                <LazyLoadImage src={require(`../images/preview/${photo.filename}`).default}
+                <LazyLoadImage src={require(`../images/previews/${photo.filename}`).default}
                                width="1280"
                                height="960"
                                title={photo.name}
                                alt={photo.name}
-                               effect="opacity"
+                               effect="blur"
                                className="rounded shadow"/>
               </Link>
             ))}

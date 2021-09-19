@@ -2,7 +2,7 @@ import MetaTags from "../components/MetaTags";
 import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
 import {LazyLoadImage} from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/opacity.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import usePhotos from "../hooks/usePhotos";
 
 export default function PhotosPage() {
@@ -28,18 +28,18 @@ export default function PhotosPage() {
       <main>
         <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-5">
           {photos.map(photo => {
-            const photoPreview = require(`../images/preview/${photo.filename}`).default
+            const photoPreview = require(`../images/thumbnails/${photo.filename}`).default
 
             return (
               <Link to={`/photos/${photo.slug}`}
                     className="hover:opacity-80 transition"
                     key={photo.slug}>
                 <LazyLoadImage src={photoPreview}
-                               width="1280"
-                               height="960"
+                               width="320"
+                               height="240"
                                title={photo.name}
                                alt={photo.name}
-                               effect="opacity"
+                               effect="blur"
                                className="rounded shadow"/>
               </Link>
             )
