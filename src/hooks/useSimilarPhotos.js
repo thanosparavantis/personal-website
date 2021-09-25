@@ -22,6 +22,6 @@ export default function useSimilarPhotos(photo) {
 
     const similarPhotos = mappings.map(mapping => mapping[0])
 
-    return similarPhotos.slice(0, 4)
+    return similarPhotos.slice(0, 6)
   }, [photos, photo])
 }

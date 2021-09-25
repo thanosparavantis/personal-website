@@ -1,16 +1,15 @@
 import MetaTags from "../components/MetaTags";
 import {Helmet} from "react-helmet";
-import {LazyLoadImage} from "react-lazy-load-image-component";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowLeft, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 import useSimilarPhotos from "../hooks/useSimilarPhotos";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import FreePhotoPreview from "../components/FreePhotoPreview";
+import FreePhotoThumbnail from "../components/FreePhotoThumbnail";
 
 export default function PhotoPage({photo}) {
   const similarPhotos = useSimilarPhotos(photo)
-  const photoFull = require(`../images/full/${photo.filename}`).default
-  const photoPreview = require(`../images/previews/${photo.filename}`).default
 
   return (
     <>
@@ -31,23 +30,8 @@ export default function PhotoPage({photo}) {
       </header>
       <main>
         <section>
-          <LazyLoadImage src={photoPreview}
-                         width="1280"
-                         height="960"
-                         title={photo.name}
-                         alt={photo.name}
-                         effect="opacity"
-                         className="rounded shadow"/>
-
-          <a href={photoFull}
-             rel="noopener noreferrer"
-             target="_blank"
-             className="block py-5 mb-5 underline text-center text-blue-600 hover:text-blue-800">
-            View this photo in higher resolution
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-          </a>
+          <FreePhotoPreview photo={photo}/>
         </section>
-
         <section className="mb-5">
           <div className="mb-5">
             <Link to="/photos"
@@ -57,19 +41,8 @@ export default function PhotoPage({photo}) {
               View all photos
             </Link>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-5 md:opacity-70 md:hover:opacity-100 md:transition">
-            {similarPhotos.map(photo => (
-              <Link to={`/photos/${photo.slug}`} key={photo.slug}>
-                <LazyLoadImage src={require(`../images/previews/${photo.filename}`).default}
-                               width="1280"
-                               height="960"
-                               title={photo.name}
-                               alt={photo.name}
-                               effect="blur"
-                               className="rounded shadow"/>
-              </Link>
-            ))}
+          <div className="flex flex-wrap items-center justify-center gap-5 md:opacity-70 md:hover:opacity-100 md:transition">
+            {similarPhotos.map(photo => <FreePhotoThumbnail photo={photo} key={photo.slug}/>)}
           </div>
         </section>
       </main>
