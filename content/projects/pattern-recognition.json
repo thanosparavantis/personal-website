@@ -1,0 +1,15 @@
+{
+  "name": "Pattern Recognition",
+  "description": "A group project in Python that was developed for a university assignment on the subject of Pattern Recognition.\n",
+  "linkSlug": "pattern-recognition",
+  "githubLink": "https://github.com/thanosparavantis/pattern-recognition",
+  "tags": [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "python",
+    "scikit-learn",
+    "scipy",
+    "university"
+  ]
+}
