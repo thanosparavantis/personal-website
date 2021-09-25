@@ -1,0 +1,11 @@
+{
+  "githubLink": "https://github.com/thanosparavantis/airport-ticket-system",
+  "name": "Airport Ticket System",
+  "slug": "airport-ticket-system",
+  "description": "A simple console based airport ticket system in C++ using data structures.\n",
+  "tags": [
+    "c-plus-plus",
+    "university",
+    "visual-studio"
+  ]
+}
