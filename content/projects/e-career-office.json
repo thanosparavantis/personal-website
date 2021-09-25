@@ -1,0 +1,18 @@
+{
+  "name": "e-Career Office",
+  "linkSlug": "e-career-office",
+  "description": "A group project in Java that was developed for a university assignment on the subject of Software Technologies.\n",
+  "githubLink": "https://github.com/thanosparavantis/e-career-office-web-app",
+  "tags": [
+    "bootstrap",
+    "css",
+    "fontawesome",
+    "html",
+    "javascript",
+    "jquery",
+    "mysql",
+    "servlets",
+    "tomcat",
+    "university"
+  ]
+}
