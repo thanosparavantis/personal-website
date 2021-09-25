@@ -20,4 +20,4 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Contributors", name: "contributors", widget: "list", required: false }
-      - { label: "GitHub Link", name: "githubLink", widget: "text" }
+      - { label: "GitHub Link", name: "githubLink", widget: "string" }
