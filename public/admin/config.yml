@@ -10,13 +10,13 @@ collections:
   - name: "projects"
     label: "Project"
     folder: "content/projects"
-    slug: "{{slug}}"
+    slug: "{{linkSlug}}"
     create: true
     extension: "json"
     format: "json"
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Link Slug", name: "linkSlug", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "GitHub Link", name: "githubLink", widget: "string" }
