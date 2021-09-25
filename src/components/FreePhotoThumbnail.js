@@ -13,7 +13,7 @@ export default function FreePhotoThumbnail({photo}) {
       <LazyLoadImage src={photoSrc}
                      title={photo.name}
                      alt={photo.name}
-                     effect="black-and-white"
+                     effect="blur"
                      className="inline-block rounded md:w-60 md:h-60 object-cover"
       />
     </Link>

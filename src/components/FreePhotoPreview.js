@@ -19,7 +19,7 @@ export default function FreePhotoPreview({photo}) {
                      height="960"
                      title={photo.name}
                      alt={photo.name}
-                     effect="black-and-white"
+                     effect="blur"
                      className="rounded shadow"
       />
       <a href={photoFullSrc}

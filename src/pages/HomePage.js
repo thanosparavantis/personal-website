@@ -18,7 +18,7 @@ export default function HomePage() {
                          itemProp="image"
                          title="Thanos Paravantis"
                          alt=""
-                         effect="black-and-white"
+                         effect="blur"
                          className="mb-10 h-52 md:h-72"
           />
           <h1 itemProp="name" className="text-2xl font-bold mb-1 text-gray-900 uppercase mb-5">

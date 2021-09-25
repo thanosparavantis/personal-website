@@ -20,8 +20,8 @@
     "string-similarity-js": "^2.1.4"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build && react-snap && react-snap-sitemap --base-url=https://www.thanosparavantis.com/",
+    "start": "node content.js && craco start",
+    "build": "node content.js && craco build && react-snap && react-snap-sitemap --base-url=https://www.thanosparavantis.com/",
     "test": "craco test",
     "eject": "react-scripts eject"
   },

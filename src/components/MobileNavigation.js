@@ -4,6 +4,7 @@ import {faBars, faCode, faEnvelopeOpenText, faHome, faQuestionCircle, faTimes} f
 import thanosParavantisImg from "../images/thanos_paravantis_navbar.png";
 import {useCallback, useEffect, useState} from "react";
 import {faImages} from "@fortawesome/free-regular-svg-icons";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 export default function MobileNavigation() {
   const [opened, setOpened] = useState(false)
@@ -25,13 +26,14 @@ export default function MobileNavigation() {
   return (
     <>
       <nav className="lg:hidden flex items-center justify-center bg-green-600
-                    shadow-lg h-20 border-b-8 border-green-700">
+                    shadow-lg h-20 border-b-8 border-green-700 z-10">
         <div className="container max-w-3xl text-white flex justify-between">
           <Link to="/" className="flex items-center font-bold h-20 px-5">
-            <img src={thanosParavantisImg}
-                 title="Thanos Paravantis"
-                 alt="Thanos Paravantis"
-                 className="block w-10 h-10 bg-gray-100 rounded-full shadow-lg mr-3 p-1"
+            <LazyLoadImage src={thanosParavantisImg}
+                           title="Thanos Paravantis"
+                           alt=""
+                           effect="blur"
+                           className="block w-10 h-10 bg-gray-100 rounded-full shadow-lg mr-3 p-1"
             />
             Thanos Paravantis
           </Link>
@@ -44,7 +46,7 @@ export default function MobileNavigation() {
       {opened && (
         <div
           className="lg:hidden flex flex-col absolute bg-gray-100 text-lg font-bold
-                     text-gray-600 top-0 left-0 right-0 bottom-0 mt-20 overflow-auto"
+                     text-gray-600 top-0 left-0 right-0 bottom-0 mt-20 overflow-auto z-10"
           style={{height: "calc(100vh - 5rem)"}}>
           <NavLink to="/"
                    exact={true}

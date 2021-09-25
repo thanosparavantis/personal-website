@@ -8,13 +8,13 @@ import {LazyLoadImage} from "react-lazy-load-image-component";
 export default function DesktopNavigation() {
   return (
     <nav className="hidden lg:flex lg:flex-col py-10 overflow-auto border-l-8 border-green-700
-                    fixed top-0 left-0 h-screen w-72 bg-green-600 shadow-lg">
+                    fixed top-0 left-0 h-screen w-72 bg-green-600 shadow-lg z-10">
       <div className="flex flex-col items-center text-center px-8 mb-10">
         <Link to="/" className="mb-8 transition rounded-full hover:opacity-90">
           <LazyLoadImage src={thanosParavantisImg}
                          title="Thanos Paravantis"
                          alt=""
-                         effect="black-and-white"
+                         effect="blur"
                          className="block w-32 h-32 bg-gray-100 rounded-full shadow-lg p-2"
           />
         </Link>
