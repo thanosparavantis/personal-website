@@ -1,0 +1,15 @@
+{
+  "name": "Image Processing",
+  "linkSlug": "image-processing",
+  "description": "A group project that was developed for the subject of Image Processing.\n",
+  "githubLink": "https://github.com/thanosparavantis/image-processing",
+  "tags": [
+    "cv2",
+    "matplotlib",
+    "numpy",
+    "python",
+    "scikit-image",
+    "scikit-learn",
+    "university"
+  ]
+}
