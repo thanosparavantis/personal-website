@@ -19,5 +19,4 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Contributors", name: "contributors", widget: "list", required: false }
       - { label: "GitHub Link", name: "githubLink", widget: "string" }
