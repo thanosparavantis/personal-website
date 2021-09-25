@@ -1,0 +1,19 @@
+{
+  "name": "Rapidsay",
+  "linkSlug": "rapidsay",
+  "description": "A full fledged social network application created in PHP using the Laravel framework.",
+  "githubLink": "https://github.com/thanosparavantis/rapidsay",
+  "tags": [
+    "bootstrap",
+    "css",
+    "fontawesome",
+    "hobby",
+    "html",
+    "javascript",
+    "jquery",
+    "laravel",
+    "mysql",
+    "php",
+    "web-app"
+  ]
+}
