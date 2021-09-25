@@ -1,0 +1,13 @@
+{
+  "name": "Multimedia Systems",
+  "linkSlug": "multimedia-systems",
+  "description": "A group project in Python that was developed for a university assignment on the subject of Multimedia Systems.\n",
+  "githubLink": "https://github.com/thanosparavantis/multimedia-systems",
+  "tags": [
+    "cv2",
+    "numpy",
+    "pillow",
+    "python",
+    "university"
+  ]
+}
