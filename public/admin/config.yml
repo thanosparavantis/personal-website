@@ -8,7 +8,7 @@ media_folder: "content/images"
 
 collections:
   - name: "projects"
-    label: "Projects"
+    label: "Project"
     folder: "content/projects"
     slug: "{{slug}}"
     create: true
@@ -19,4 +19,5 @@ collections:
       - { label: "Slug", name: "slug", widget: "text" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Contributors", name: "contributors", widget: "list", required: false }
       - { label: "GitHub Link", name: "githubLink", widget: "text" }
