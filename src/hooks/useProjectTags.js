@@ -1,5 +1,5 @@
 import {useMemo} from "react";
-import projects from "../projects.json";
+import projects from "../_projects.json";
 
 export default function useProjectTags(project = null) {
   return useMemo(() => {
