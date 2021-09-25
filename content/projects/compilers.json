@@ -1,0 +1,12 @@
+{
+  "name": "Compilers",
+  "description": "A group project that was developed for a university assignment on the subject of Compilers.\n",
+  "linkSlug": "compilers",
+  "githubLink": "https://github.com/thanosparavantis/compilers-project",
+  "tags": [
+    "flex-lexical-analysis",
+    "java",
+    "python",
+    "university"
+  ]
+}
