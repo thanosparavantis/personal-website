@@ -1,0 +1,12 @@
+{
+  "name": "Bioinformatics",
+  "description": "A group project in Python that was developed for a university assignment on the subject of Bioinformatics.\n\nThis project includes algorithms written in Python that solve elemental problems in Bioinformatics. The goal of this assignment is to work with hypothetical sequences of nucleotides. Notable algorithms used are the Viterbi algorithm and Hidden Markov Models.",
+  "githubLink": "https://github.com/thanosparavantis/bioinformatics",
+  "linkSlug": "bioinformatics",
+  "tags": [
+    "biopython",
+    "numpy",
+    "python",
+    "university"
+  ]
+}
