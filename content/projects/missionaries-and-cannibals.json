@@ -1,0 +1,10 @@
+{
+  "name": "Missionaries and Cannibals",
+  "linkSlug": "missionaries-and-cannibals",
+  "description": "A solution for the missionaries and cannibals problem in Java using Breadth First Search and Hill Climb Search algorithms.\n",
+  "githubLink": "https://github.com/thanosparavantis/missionaries-and-cannibals",
+  "tags": [
+    "java",
+    "university"
+  ]
+}
