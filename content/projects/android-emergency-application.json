@@ -1,0 +1,13 @@
+{
+  "name": "Android Emergency Application",
+  "linkSlug": "android-emergency-application",
+  "description": "A group project in Android that was developed for a university assignment on the subject of Software Engineering.\n\nNotable features:\n- Google sign in and fingerpring authentication\n- Speak with a hypothetical licensed Doctor using live chat\n- In-app and system wide emergency phone alerts on major events\n- Panic button for emergency calls when something serious happens\n- Driving mode that notifies user of speeding violations with map representation\n- Disability mode that detects when someone falls but also makes calls and sends sms\n- Software development phases based on RUP with detailed UML diagrams",
+  "tags": [
+    "android",
+    "firebase",
+    "java",
+    "sqlite",
+    "university"
+  ],
+  "githubLink": "https://github.com/thanosparavantis/android-emergency-application"
+}
