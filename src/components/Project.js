@@ -17,7 +17,9 @@ export default function Project({project, expanded = false}) {
           </h2>
         </div>
         <div className="px-5 md:px-8 py-5 leading-relaxed">
-          <div className="text-gray-600" dangerouslySetInnerHTML={{__html: project.description}}/>
+          <div className="text-gray-600 whitespace-pre-line">
+            {project.description}
+          </div>
         </div>
         <div className="px-5 md:px-8 pb-3">
           <a href={project.githubLink}
@@ -45,7 +47,9 @@ export default function Project({project, expanded = false}) {
           </h2>
         </div>
         <div className="px-5 md:px-8 py-5 leading-relaxed">
-          <div className="text-gray-600" dangerouslySetInnerHTML={{__html: project.description}}/>
+          <div className="text-gray-600 whitespace-pre-line">
+            {project.description}
+          </div>
         </div>
       </Link>
     )

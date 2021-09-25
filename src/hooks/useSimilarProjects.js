@@ -10,7 +10,7 @@ export default function useSimilarProjects(project) {
     const tagsA = new Set(project.tags);
 
     projects.forEach(otherProject => {
-      if (otherProject === project) {
+      if (otherProject.slug === project.slug) {
         return
       }
 
