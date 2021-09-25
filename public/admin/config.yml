@@ -10,6 +10,7 @@ collections:
   - name: "projects"
     label: "Projects"
     folder: "_projects"
+    create: true
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
