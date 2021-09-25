@@ -16,7 +16,7 @@ collections:
     format: "json"
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "text" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Contributors", name: "contributors", widget: "list", required: false }
