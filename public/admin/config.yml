@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: master
+
+publish_mode: editorial_workflow
+
+media_folder: "_images"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "GitHub Link", name: "githubLink", widget: "text"}

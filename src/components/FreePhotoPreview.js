@@ -1,7 +1,6 @@
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import {useMemo} from "react";
 
 export default function FreePhotoPreview({photo}) {
@@ -20,7 +19,7 @@ export default function FreePhotoPreview({photo}) {
                      height="960"
                      title={photo.name}
                      alt={photo.name}
-                     effect="blur"
+                     effect="black-and-white"
                      className="rounded shadow"
       />
       <a href={photoFullSrc}

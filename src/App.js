@@ -14,6 +14,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import usePhotos from "./hooks/usePhotos";
 import useProjects from "./hooks/useProjects";
 import PhotoPage from "./pages/PhotoPage";
+import "react-lazy-load-image-component/src/effects/black-and-white.css";
 
 function App() {
   const projects = useProjects()

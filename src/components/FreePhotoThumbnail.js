@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import {useMemo} from "react";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function FreePhotoThumbnail({photo}) {
   const photoSrc = useMemo(() => {
@@ -14,7 +13,7 @@ export default function FreePhotoThumbnail({photo}) {
       <LazyLoadImage src={photoSrc}
                      title={photo.name}
                      alt={photo.name}
-                     effect="blur"
+                     effect="black-and-white"
                      className="inline-block rounded md:w-60 md:h-60 object-cover"
       />
     </Link>
