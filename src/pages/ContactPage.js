@@ -158,6 +158,7 @@ export default function ContactPage() {
           <form
             name="contact"
             method="post"
+            data-netlify="true"
             onSubmit={handleSubmit}
           >
             <div className="px-5 md:px-8 py-5 flex flex-col">
