@@ -3,6 +3,12 @@ const fs = require("fs")
 console.log("Starting content export")
 
 const projectsPath = "./content/projects"
+
+if (!fs.existsSync(projectsPath)) {
+  console.log("Projects folder does not exist")
+  return
+}
+
 const projectsExportPath = "./src/_projects.json"
 
 projects = []
