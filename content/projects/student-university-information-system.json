@@ -1,0 +1,21 @@
+{
+  "name": "Student University Information System",
+  "linkSlug": "student-university-information-system",
+  "description": "Tier 3 Java application. We created a fully functional authentication and authorization solution. Students, instructors and secretaries have access to specific functionalities based on their role.\n",
+  "githubLink": "https://github.com/thanosparavantis/student-university-information-system",
+  "tags": [
+    "bootstrap",
+    "css",
+    "fontawesome",
+    "html",
+    "jasypt",
+    "java",
+    "javascript",
+    "jquery",
+    "jstl",
+    "mysql",
+    "servlets",
+    "tomcat",
+    "university"
+  ]
+}
