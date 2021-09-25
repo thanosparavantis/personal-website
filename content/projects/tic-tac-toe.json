@@ -1,0 +1,12 @@
+{
+  "name": "Tic-Tac-Toe",
+  "description": "A window based Tic-Tac-Toe game implementation in C# using Visual Studio.\n",
+  "linkSlug": "tic-tac-toe",
+  "githubLink": "https://github.com/thanosparavantis/tic-tac-toe",
+  "tags": [
+    "c-sharp",
+    "game",
+    "university",
+    "visual-studio"
+  ]
+}
