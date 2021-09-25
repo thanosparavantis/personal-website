@@ -1,0 +1,16 @@
+{
+  "name": "Personal Website",
+  "linkSlug": "personal-website",
+  "description": "The source code that powers my personal website using HTML, CSS and JavaScript. The React framework is used to build an interactive user interface and the Tailwind CSS library for utility-first styling. The project is open source on GitHub and is currently hosted on Netlify. The website is accessible from two domains: thanosparavantis.com (primary) and thanos.dev (alias).",
+  "tags": [
+    "css",
+    "fontawesome",
+    "html",
+    "javascript",
+    "netlify",
+    "react",
+    "tailwindcss",
+    "website"
+  ],
+  "githubLink": "https://github.com/thanosparavantis/personal-website"
+}
