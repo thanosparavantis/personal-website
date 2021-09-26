@@ -2,7 +2,6 @@ import MetaTags from "../components/MetaTags";
 import thanosParavantisImg from "../images/thanos_paravantis_speaking.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faGithub, faLinkedin, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
-import {LazyLoadImage} from "react-lazy-load-image-component";
 
 export default function HomePage() {
   return (
@@ -14,12 +13,11 @@ export default function HomePage() {
       <main>
         <section itemScope itemType="https://schema.org/Person"
                  className="min-h-screen py-32 flex flex-col items-center justify-center text-center">
-          <LazyLoadImage src={thanosParavantisImg}
-                         itemProp="image"
-                         title="Thanos Paravantis"
-                         alt=""
-                         effect="blur"
-                         className="mb-10 h-52 md:h-72"
+          <img src={thanosParavantisImg}
+               itemProp="image"
+               title="Thanos Paravantis"
+               alt=""
+               className="mb-10 h-52 md:h-72"
           />
           <h1 itemProp="name" className="text-2xl font-bold mb-1 text-gray-900 uppercase mb-5">
             Thanos Paravantis

@@ -3,7 +3,6 @@ import {Link, NavLink} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCode, faEnvelopeOpenText, faHome, faQuestionCircle} from "@fortawesome/free-solid-svg-icons";
 import {faImages} from "@fortawesome/free-regular-svg-icons";
-import {LazyLoadImage} from "react-lazy-load-image-component";
 
 export default function DesktopNavigation() {
   return (
@@ -11,11 +10,10 @@ export default function DesktopNavigation() {
                     fixed top-0 left-0 h-screen w-72 bg-green-600 shadow-lg z-10">
       <div className="flex flex-col items-center text-center px-8 mb-10">
         <Link to="/" className="mb-8 transition rounded-full hover:opacity-90">
-          <LazyLoadImage src={thanosParavantisImg}
-                         title="Thanos Paravantis"
-                         alt=""
-                         effect="blur"
-                         className="block w-32 h-32 bg-gray-100 rounded-full shadow-lg p-2"
+          <img src={thanosParavantisImg}
+               title="Thanos Paravantis"
+               alt=""
+               className="block w-32 h-32 bg-gray-100 rounded-full shadow-lg p-2"
           />
         </Link>
         <h1 className="text-white font-bold text-lg mb-1">
