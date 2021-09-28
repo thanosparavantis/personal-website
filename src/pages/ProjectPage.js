@@ -39,7 +39,7 @@ export default function ProjectPage({project}) {
               View all projects
             </Link>
           </div>
-          <div className="flex flex-col gap-5 md:opacity-70 md:hover:opacity-100 md:transition">
+          <div className="flex flex-col gap-5 md:opacity-60 md:hover:opacity-100 md:transition">
             {similarProjects.map(similarProject => <Project project={similarProject} key={similarProject.slug}/>)}
           </div>
         </section>

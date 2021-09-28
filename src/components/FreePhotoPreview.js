@@ -25,7 +25,7 @@ export default function FreePhotoPreview({photo}) {
       <a href={photoFullSrc}
          rel="noopener noreferrer"
          target="_blank"
-         className="block py-5 mb-5 underline text-center text-blue-600 hover:text-blue-800">
+         className="block py-5 mb-5 underline text-center text-blue-600 hover:text-blue-800 active:text-green-700">
         View this photo in higher resolution
         <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
       </a>

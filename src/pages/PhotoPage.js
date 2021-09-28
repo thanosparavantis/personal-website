@@ -41,7 +41,7 @@ export default function PhotoPage({photo}) {
               View all photos
             </Link>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-5 md:opacity-70 md:hover:opacity-100 md:transition">
+          <div className="flex flex-wrap items-center justify-center gap-5 md:opacity-60 md:hover:opacity-100 md:transition">
             {similarPhotos.map(photo => <FreePhotoThumbnail photo={photo} key={photo.slug}/>)}
           </div>
         </section>

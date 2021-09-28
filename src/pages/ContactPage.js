@@ -103,7 +103,8 @@ export default function ContactPage() {
               Email Address
             </h3>
             <p className="text-gray-600 mb-5">
-              <a href="mailto:thanosparavantis@gmail.com" className="underline text-blue-600 hover:text-blue-800">
+              <a href="mailto:thanosparavantis@gmail.com"
+                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 thanosparavantis@gmail.com
               </a>
             </p>

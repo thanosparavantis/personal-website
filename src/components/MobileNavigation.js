@@ -35,7 +35,9 @@ export default function MobileNavigation() {
             />
             Thanos Paravantis
           </Link>
-          <button className="h-20 px-5" onClick={toggleOpenState} aria-label="Toggle navigation menu">
+          <button className="w-16 h-20"
+                  onClick={toggleOpenState}
+                  aria-label="Toggle navigation menu">
             <FontAwesomeIcon icon={opened ? faTimes : faBars} size="lg"/>
           </button>
         </div>
