@@ -25,9 +25,9 @@ export default function DesktopNavigation() {
       </div>
       <NavLink to="/"
                exact={true}
-               activeClassName="bg-green-700 hover:opacity-100"
-               className="flex items-center px-8 h-20 transition font-bold
-                          flex-shrink-0 text-white text-lg hover:opacity-90">
+               activeClassName="bg-green-700"
+               className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
+                          text-white text-lg active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faHome}/>
         </div>
@@ -35,27 +35,27 @@ export default function DesktopNavigation() {
       </NavLink>
       <NavLink to="/about"
                exact={true}
-               activeClassName="bg-green-700 hover:opacity-100"
-               className="flex items-center px-8 h-20 transition font-bold
-                          flex-shrink-0 text-white text-lg hover:opacity-90">
+               activeClassName="bg-green-700"
+               className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
+                          text-white text-lg active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faQuestionCircle}/>
         </div>
         About
       </NavLink>
       <NavLink to="/projects"
-               activeClassName="bg-green-700 hover:opacity-100"
-               className="flex items-center px-8 h-20 transition font-bold
-                          flex-shrink-0 text-white text-lg hover:opacity-90">
+               activeClassName="bg-green-700"
+               className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
+                          text-white text-lg active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faCode}/>
         </div>
         Projects
       </NavLink>
       <NavLink to="/photos"
-               activeClassName="bg-green-700 hover:opacity-100"
-               className="flex items-center px-8 h-20 transition font-bold
-                          flex-shrink-0 text-white text-lg hover:opacity-90">
+               activeClassName="bg-green-700"
+               className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
+                          text-white text-lg active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faImages}/>
         </div>
@@ -63,9 +63,9 @@ export default function DesktopNavigation() {
       </NavLink>
       <NavLink to="/contact"
                exact={true}
-               activeClassName="bg-green-700 hover:opacity-100"
-               className="flex items-center px-8 h-20 transition font-bold
-                          flex-shrink-0 text-white text-lg hover:opacity-90">
+               activeClassName="bg-green-700"
+               className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
+                          text-white text-lg active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faEnvelopeOpenText}/>
         </div>
