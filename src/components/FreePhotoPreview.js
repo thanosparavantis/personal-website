@@ -36,7 +36,7 @@ export default function FreePhotoPreview({photo}) {
           <FontAwesomeIcon icon={faChevronRight} size="3x"/>
         </Link>
       </div>
-      <div className="flex md:items-center flex-col md:flex-row md:justify-between bg-white p-5 rounded-b gap-3">
+      <div className="p-3 md:p-5 flex md:items-center flex-col md:flex-row md:justify-between bg-white rounded-b gap-3">
         <a href={photoFullSrc}
            rel="noopener noreferrer"
            target="_blank"
