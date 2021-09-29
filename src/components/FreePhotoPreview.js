@@ -36,17 +36,17 @@ export default function FreePhotoPreview({photo}) {
           <FontAwesomeIcon icon={faChevronRight} size="3x"/>
         </Link>
       </div>
-      <div className="flex items-center justify-between bg-white p-5 rounded-b">
+      <div className="flex md:items-center flex-col md:flex-row md:justify-between bg-white p-5 rounded-b gap-3">
         <a href={photoFullSrc}
            rel="noopener noreferrer"
            target="_blank"
-           className="block text-center px-5 py-3 text-sm text-white font-bold shadow-lg transition
+           className="text-center px-5 py-3 text-sm text-white font-bold shadow-lg transition
                       bg-green-600 hover:bg-green-700 active:bg-green-800">
           Download photo
           <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-3" size="sm"/>
         </a>
         <Link to="/photos"
-              className="block text-center px-5 py-3 text-sm text-gray-900 font-bold shadow-lg transition
+              className="text-center px-5 py-3 text-sm text-gray-900 font-bold shadow-lg transition
                          bg-gray-200 hover:bg-gray-300 active:bg-gray-400">
           View all photos
           <FontAwesomeIcon icon={faArrowRight} className="ml-3" size="sm"/>

@@ -17,8 +17,8 @@ export default function PhotoPage({photo}) {
         <body className="bg-gray-100"/>
       </Helmet>
       <header className="my-16 text-center">
-        <h1 className="text-3xl text-gray-900 font-bold mb-3">
-          {photo.name}
+        <h1 className="text-3xl text-gray-900 mb-3">
+          Photo: <strong>{photo.name}</strong>
         </h1>
         <p className="text-gray-600">
           Learn more about this copyright free photo and find similar ones under public domain.
