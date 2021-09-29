@@ -24,7 +24,7 @@ export default function PhotosPage() {
         </p>
       </header>
       <main>
-        <section className="flex flex-wrap items-center justify-center gap-5 mb-5">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
           {photos.map(photo => <FreePhotoThumbnail photo={photo} key={photo.slug}/>)}
         </section>
       </main>

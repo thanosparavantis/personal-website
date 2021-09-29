@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronLeft, faChevronRight, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
+import {faArrowRight, faChevronLeft, faChevronRight, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
 import {useMemo} from "react";
 import {Link} from "react-router-dom";
 import useArrowPhotos from "../hooks/useArrowPhotos";
@@ -16,14 +16,14 @@ export default function FreePhotoPreview({photo}) {
   const [prevPhoto, nextPhoto] = useArrowPhotos(photo)
 
   return (
-    <>
+    <div className="shadow-lg rounded">
       <div className="group relative flex items-center justify-center">
         <img src={photoPreviewSrc}
              width="1280"
              height="960"
              title={photo.name}
              alt={photo.name}
-             className="bg-gray-200 rounded shadow"
+             className="pointer-events-none bg-gray-200 rounded-t"
         />
         <Link to={`/photos/${prevPhoto.slug}`}
               className="absolute left-0 text-white px-5 py-8 transition
@@ -36,14 +36,22 @@ export default function FreePhotoPreview({photo}) {
           <FontAwesomeIcon icon={faChevronRight} size="3x"/>
         </Link>
       </div>
-
-      <a href={photoFullSrc}
-         rel="noopener noreferrer"
-         target="_blank"
-         className="block py-5 mb-5 underline text-center text-blue-600 hover:text-blue-800 active:text-green-700">
-        View this photo in higher resolution
-        <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-      </a>
-    </>
+      <div className="flex items-center justify-between bg-white p-5 rounded-b">
+        <a href={photoFullSrc}
+           rel="noopener noreferrer"
+           target="_blank"
+           className="block text-center px-5 py-3 text-sm text-white font-bold shadow-lg transition
+                      bg-green-600 hover:bg-green-700 active:bg-green-800">
+          Download photo
+          <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-3" size="sm"/>
+        </a>
+        <Link to="/photos"
+              className="block text-center px-5 py-3 text-sm text-gray-900 font-bold shadow-lg transition
+                         bg-gray-200 hover:bg-gray-300 active:bg-gray-400">
+          View all photos
+          <FontAwesomeIcon icon={faArrowRight} className="ml-3" size="sm"/>
+        </Link>
+      </div>
+    </div>
   )
 }
