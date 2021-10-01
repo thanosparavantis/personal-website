@@ -4,7 +4,7 @@ export default function MetaTags({title, description}) {
   const metaUrl = window.location.href
   const metaTitle = `Thanos Paravantis - ${title}`
   const metaDesc = description
-  const metaImage = "https://www.thanosparavantis.com/preview.png"
+  const metaImage = "https://www.thanosparavantis.com/preview.jpg"
 
   return (
     <Helmet>
