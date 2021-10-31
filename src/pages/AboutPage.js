@@ -214,7 +214,7 @@ export default function AboutPage() {
             </h3>
             <div className="mb-2 flex flex-col md:flex-row text-gray-700">
               <p>
-                October 2020 – present
+                October 2020 – September 2021
               </p>
               <p className="mx-3 hidden md:block">
                 &middot;
