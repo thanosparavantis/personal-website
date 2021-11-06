@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
   faExternalLinkAlt,
-  faHandsHelping,
+  faHandsHelping, faMugHot,
   faScroll,
   faTrophy,
   faUserGraduate
@@ -36,7 +36,7 @@ export default function AboutPage() {
           </h2>
           <div className="px-5 md:px-8 py-5 border-b">
             <h3 className="mb-1 font-bold text-gray-900">
-              Bachelor’s in Computer Science
+              Bachelor's in Computer Science
             </h3>
             <div className="mb-2 flex flex-col md:flex-row text-gray-700">
               <p>
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <a href="https://www.unipi.gr/unipi/en/"
                target="noopener noreferrer"
                className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
-              Visit institution website
+              Visit university website
               <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
           </div>
@@ -126,6 +126,31 @@ export default function AboutPage() {
           </h2>
           <div className="px-5 md:px-8 py-5 border-b">
             <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
+              Research Assistant
+            </h3>
+            <div className="mb-2 flex flex-col md:flex-row text-gray-700">
+              <p>
+                October 2021 - Present
+              </p>
+              <p className="mx-3 hidden md:block">
+                &middot;
+              </p>
+              <p>
+                University of Illinois Chicago
+              </p>
+            </div>
+            <p className="mb-3 leading-relaxed">
+              State legislators database development, Dr. Alexandra Filindra.
+            </p>
+            <a href="https://www.uic.edu/"
+               target="noopener noreferrer"
+               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+              Visit university website
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+            </a>
+          </div>
+          <div className="px-5 md:px-8 py-5 border-b">
+            <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
               Consultant
             </h3>
             <div className="mb-2 flex flex-col md:flex-row text-gray-700">
@@ -155,7 +180,7 @@ export default function AboutPage() {
             </h3>
             <div className="mb-2 flex flex-col md:flex-row text-gray-700">
               <p>
-                July 2020 – September 2020
+                July 2020 - September 2020
               </p>
               <p className="mx-3 hidden md:block">
                 &middot;
@@ -181,7 +206,7 @@ export default function AboutPage() {
             </h3>
             <div className="mb-2 flex flex-col md:flex-row text-gray-700">
               <p>
-                August 2015 – September 2016
+                August 2015 - September 2016
               </p>
               <p className="mx-3 hidden md:block">
                 &middot;
@@ -206,7 +231,7 @@ export default function AboutPage() {
         <section className="mb-5 border rounded bg-white">
           <h2 className="px-5 md:px-8 py-5 border-b md:text-lg font-bold text-gray-900">
             <FontAwesomeIcon icon={faHandsHelping} className="mr-3"/>
-            Volunteer Experience
+            Volunteer experience
           </h2>
           <div className="px-5 md:px-8 py-5">
             <h3 className="mb-1 font-bold text-gray-900">
@@ -214,7 +239,7 @@ export default function AboutPage() {
             </h3>
             <div className="mb-2 flex flex-col md:flex-row text-gray-700">
               <p>
-                October 2020 – September 2021
+                October 2020 - September 2021
               </p>
               <p className="mx-3 hidden md:block">
                 &middot;
@@ -237,58 +262,32 @@ export default function AboutPage() {
         </section>
         <section className="mb-5 border rounded bg-white">
           <h2 className="px-5 md:px-8 py-5 border-b md:text-lg font-bold text-gray-900">
-            <FontAwesomeIcon icon={faTrophy} className="mr-3"/>
-            Achievements and attended conferences
-          </h2>
-          <div className="px-5 md:px-8 py-3 text-gray-900 border-b">
-            Attended Developers Day 2019 in Dais Sports Center.
-          </div>
-          <div className="px-5 md:px-8 py-3 text-gray-900 border-b">
-            Attended Decentralized 2019 in Divani Caravel Hotel.
-          </div>
-          <div className="px-5 md:px-8 py-3 text-gray-900 border-b">
-            Attended Google Developer's Group Athens Meetup, September 2019.
-          </div>
-          <div className="px-5 md:px-8 py-3 text-gray-900 border-b">
-            Attended Job Fair Athens 2019 in Zappeion Megaron.
-          </div>
-          <div className="px-5 md:px-8 py-3 text-gray-900 border-b">
-            4th place award at Crowdhackathon #Agrifood, April 2019, team “UNI3.14”.
-          </div>
-          <div className="px-5 md:px-8 py-3 text-gray-900 border-b">
-            Attended Developers Day 2018 in Dais Sports Center.
-          </div>
-          <div className="px-5 md:px-8 py-3 text-gray-900 border-b">
-            Attended Decentralized 2018 in Divani Caravel Hotel.
-          </div>
-          <div className="px-5 md:px-8 py-3 text-gray-900">
-            2nd place award at Recycling Competition organized by Municipality of Athens, April 2013.
-          </div>
-        </section>
-        <section className="mb-5 border rounded bg-white">
-          <h2 className="px-5 md:px-8 py-5 border-b md:text-lg font-bold text-gray-900">
-            <FontAwesomeIcon icon={faScroll} className="mr-3"/>
-            Certifications
+            <FontAwesomeIcon icon={faMugHot} className="mr-3"/>
+            Hobbies and skills
           </h2>
           <div className="px-5 md:px-8 py-5 border-b">
             <h3 className="mb-1 font-bold text-gray-900">
-              Amateur Radio License
+              Greek driving license
             </h3>
             <div className="mb-2 flex flex-col md:flex-row text-gray-700">
               <p>
-                SV1SQT
+                Since November 2021
+              </p>
+            </div>
+          </div>
+          <div className="px-5 md:px-8 py-5 border-b">
+            <h3 className="mb-1 font-bold text-gray-900">
+              Licensed amateur radio operator
+            </h3>
+            <div className="mb-2 flex flex-col md:flex-row text-gray-700">
+              <p>
+                Callsign: SV1SQT
               </p>
               <p className="mx-3 hidden md:block">
                 &middot;
               </p>
               <p>
-                October 2020
-              </p>
-              <p className="mx-3 hidden md:block">
-                &middot;
-              </p>
-              <p>
-                Region of Attica
+                Since October 2020
               </p>
             </div>
             <div className="flex flex-col md:flex-row">
@@ -298,104 +297,56 @@ export default function AboutPage() {
                 Visit QRZ.com page
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
-              <p className="mx-3 hidden md:block">
-                &middot;
-              </p>
-              <a href="https://drive.google.com/file/d/1xa4kjbna2AZDrYtQTOtThOc60WWi9vec/view?usp=sharing"
+            </div>
+          </div>
+        </section>
+        <section className="mb-5 border rounded bg-white">
+          <h2 className="px-5 md:px-8 py-5 border-b md:text-lg font-bold text-gray-900">
+            <FontAwesomeIcon icon={faTrophy} className="mr-3"/>
+            Achievements and conferences
+          </h2>
+          <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
+            Participated in the 33rd IEEE International Conference on Tools with Artificial Intelligence Conference (ICTAI) virtually
+            as Session Coordinator, chaired 8 sessions, November 2021.
+            <div className="mt-2 flex flex-col md:flex-row">
+              <a href="https://ictai.computer.org/"
                  target="noopener noreferrer"
                  className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
-                View license
+                Visit conference website
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
             </div>
           </div>
-          <div className="px-5 md:px-8 py-5 border-b">
-            <h3 className="mb-1 font-bold text-gray-900">
-              Amateur Radio Exam Certificate
-            </h3>
-            <div className="mb-2 flex flex-col md:flex-row text-gray-700">
-              <p>
-                August 2020
-              </p>
+          <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
+            Awarded 4th place in Crowdhackathon Agrifood, team "UNI3.14", April 2019.
+            <div className="mt-2 flex flex-col md:flex-row">
+              <a href="https://crowdhackathon.com/agrifood/"
+                 target="noopener noreferrer"
+                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                Visit event website
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+              </a>
               <p className="mx-3 hidden md:block">
                 &middot;
               </p>
-              <p>
-                Region of Attica
-              </p>
+              <a href="https://www.youtube.com/watch?v=UIgAHE7qk7g"
+                 target="noopener noreferrer"
+                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                Watch our presentation
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+              </a>
             </div>
-            <a href="https://drive.google.com/file/d/1jTeK3_C8oWvk8vcDWsK4iT0556PgDQS1/view?usp=sharing"
-               target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
-              View certificate
-              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-            </a>
           </div>
-          <div className="px-5 md:px-8 py-5 border-b">
-            <h3 className="mb-1 font-bold text-gray-900">
-              Amateur Radio Listening Certificate
-            </h3>
-            <div className="mb-2 flex flex-col md:flex-row text-gray-700">
-              <p>
-                February 2020
-              </p>
-              <p className="mx-3 hidden md:block">
-                &middot;
-              </p>
-              <p>
-                SWARL Callsign Desk
-              </p>
+          <div className="px-5 md:px-8 py-5 text-gray-900">
+            Awarded 2nd place in a recycling competition organized by Municipality of Athens, April 2013.
+            <div className="mt-2 flex flex-col md:flex-row">
+              <a href="https://www.newsbomb.gr/ellada/story/326452/vraveytikan-oi-nikites-stis-megales-giortes-antapodotikis-anakyklosis"
+                 target="noopener noreferrer"
+                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                Visit related news article
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+              </a>
             </div>
-            <a href="https://drive.google.com/file/d/1N05hHJc_y2VsDh-cXmKNQeAJlkLZtKNg/view?usp=sharing"
-               target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
-              View certificate
-              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-            </a>
-          </div>
-          <div className="px-5 md:px-8 py-5 border-b">
-            <h3 className="mb-1 font-bold text-gray-900">
-              Certificate of Proficiency in English
-            </h3>
-            <div className="mb-2 flex flex-col md:flex-row text-gray-700">
-              <p>
-                May 2014
-              </p>
-              <p className="mx-3 hidden md:block">
-                &middot;
-              </p>
-              <p>
-                Hellenic American Union
-              </p>
-            </div>
-            <a href="https://drive.google.com/file/d/1nRmDh7_pfjRT4rZFhKeR6lHzm10rF1rE/view?usp=sharing"
-               target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
-              View certificate
-              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-            </a>
-          </div>
-          <div className="px-5 md:px-8 py-5">
-            <h3 className="mb-1 font-bold text-gray-900">
-              Certificate of Competency in English
-            </h3>
-            <div className="mb-2 flex flex-col md:flex-row text-gray-700">
-              <p>
-                May 2012
-              </p>
-              <p className="mx-3 hidden md:block">
-                &middot;
-              </p>
-              <p>
-                Hellenic American Union
-              </p>
-            </div>
-            <a href="https://drive.google.com/file/d/1nVhxVt3jSkmWz1qOCj7p7lDnSSska32s/view?usp=sharing"
-               target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
-              View certificate
-              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-            </a>
           </div>
         </section>
       </main>
