@@ -74,7 +74,7 @@ export default function AboutPage() {
                 &middot;
               </p>
               <p>
-                46 Lyceum Athens
+                46th High School of Athens
               </p>
               <p className="mx-3 hidden md:block">
                 &middot;
@@ -122,7 +122,7 @@ export default function AboutPage() {
         <section className="mb-5 border rounded bg-white">
           <h2 className="px-5 md:px-8 py-5 border-b md:text-lg font-bold text-gray-900">
             <FontAwesomeIcon icon={faBriefcase} className="mr-3"/>
-            Work Experience
+            Work experience
           </h2>
           <div className="px-5 md:px-8 py-5 border-b">
             <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
@@ -316,6 +316,9 @@ export default function AboutPage() {
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
             </div>
+          </div>
+          <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
+            Awarded with the "Employee of the month" title in World Bank Group on the Information and Technology Services for Financial Engineering unit, January 2021.
           </div>
           <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
             Awarded 4th place in Crowdhackathon Agrifood, team "UNI3.14", April 2019.
