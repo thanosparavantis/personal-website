@@ -1,8 +1,8 @@
 {
-  "name": "Airport Ticket System",
-  "githubLink": "https://github.com/thanosparavantis/airport-ticket-system",
-  "description": "A simple console based airport ticket system in C++ using data structures.\n",
-  "linkSlug": "airport-ticket-system",
+  "name": "Airline Reservation System",
+  "githubLink": "https://github.com/thanosparavantis/airline-reservation-system",
+  "description": "A simple console based airline reservation system written in C++. Users are able to select existing flights determined by unique flight codes, view the list of direct and connecting flights, create and manage flight routes and make passenger seat reservations. Sample flights are included from and to Athens, Thessaloniki and Patra cities. The project has been developed with data structures in mind, using object oriented programming and utilizing data structures such as Linear Lists and Linked Queues.",
+  "linkSlug": "airline-reservation-system",
   "tags": [
     "c-plus-plus",
     "university",
