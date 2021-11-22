@@ -10,7 +10,7 @@ export default function Project({project, expanded = false}) {
   if (expanded) {
     return (
       <div className="bg-white border rounded">
-        <div className="px-5 md:px-8 py-4 gap-3 border-b bg-gray-50">
+        <div className="px-5 md:px-8 py-4 gap-3 border-b">
           <h2 className="font-bold text-gray-900">
             <FontAwesomeIcon icon={faCode} className="mr-3"/>
             {project.name}
@@ -23,12 +23,12 @@ export default function Project({project, expanded = false}) {
             </div>
           </div>
         )}
-        <div className="px-5 md:px-8 py-5 leading-relaxed">
+        <div className="px-5 md:px-8 pt-5 leading-relaxed">
           <div className="text-gray-600 whitespace-pre-line">
             {project.description}
           </div>
         </div>
-        <div className="px-5 md:px-8 pb-3 inline-flex flex-col md:flex-row md:gap-3">
+        <div className="px-5 md:px-8 pt-5 pb-3 flex md:gap-3 md:flex-row flex-col md:items-center">
           {project.websiteLink && (
             <a href={project.websiteLink}
                rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export default function Project({project, expanded = false}) {
             </a>
           )}
           {project.websiteLink && project.repositoryLink && (
-            <p>
+            <p className="md:block hidden">
               &middot;
             </p>
           )}
@@ -62,7 +62,7 @@ export default function Project({project, expanded = false}) {
     return (
       <div className="bg-white border rounded">
         <Link to={`/projects/${project.slug}`}
-              className="block px-5 md:px-8 py-4 border-b transition bg-gray-50 active:bg-gray-100">
+              className="block px-5 md:px-8 py-4 border-b transition hover:bg-gray-50 active:bg-gray-100">
           <h2 className="font-bold text-gray-900">
             <FontAwesomeIcon icon={faCode} className="mr-3"/>
             {project.name}
@@ -80,7 +80,7 @@ export default function Project({project, expanded = false}) {
             {project.description}
           </div>
         </div>
-        <div className="px-5 md:px-8 pt-5 pb-3 flex items-center gap-3">
+        <div className="px-5 md:px-8 pt-5 pb-3 flex md:gap-3 md:flex-row flex-col md:items-center">
           {project.websiteLink && (
             <a href={project.websiteLink}
                rel="noopener noreferrer"
@@ -91,7 +91,7 @@ export default function Project({project, expanded = false}) {
             </a>
           )}
           {project.websiteLink && project.repositoryLink && (
-            <p>
+            <p className="md:block hidden">
               &middot;
             </p>
           )}
