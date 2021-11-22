@@ -2,11 +2,12 @@
   "name": "Shannon Fano",
   "linkSlug": "shannon-fano",
   "description": "A group project in Python that was developed for a university assignment on the subject of Code and Information Theory.\n",
-  "githubLink": "https://github.com/thanosparavantis/shannon-fano",
+  "repositoryLink": "https://github.com/thanosparavantis/shannon-fano",
   "tags": [
     "numpy",
     "pillow",
     "python",
     "university"
-  ]
+  ],
+  "contributors": "Panos Ioannidis, Dionisis Nikas"
 }

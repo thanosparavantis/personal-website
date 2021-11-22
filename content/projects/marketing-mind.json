@@ -2,7 +2,7 @@
   "name": "Marketing Mind",
   "linkSlug": "marketing-mind",
   "description": "The source code that powers Marketing Mind, a marketing consultancy agency that offers integrated marketing solutions based on your business special needs.\n",
-  "githubLink": "https://github.com/thanosparavantis/marketing-mind",
+  "repositoryLink": "https://github.com/thanosparavantis/marketing-mind",
   "tags": [
     "css",
     "fontawesome",
@@ -14,5 +14,5 @@
     "website"
   ],
   "websiteLink": "https://www.marketingmind.gr/",
-  "collaborators": "Maria Mavrommati"
+  "contributors": "Maria Mavrommati"
 }

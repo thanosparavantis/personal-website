@@ -2,7 +2,7 @@
   "name": "Android Speedometer",
   "linkSlug": "android-speedometer",
   "description": "A simple Android application that uses a phone's location to keep track of speeding violations.",
-  "githubLink": "https://github.com/thanosparavantis/android-speedometer",
+  "repositoryLink": "https://github.com/thanosparavantis/android-speedometer",
   "tags": [
     "android",
     "java",

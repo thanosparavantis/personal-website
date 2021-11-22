@@ -2,10 +2,11 @@
   "name": "e-Bookstore",
   "linkSlug": "e-bookstore",
   "description": "A group project in C# that was developed for a university assignment on the subject of Human Interaction with Computers.\n",
-  "githubLink": "https://github.com/thanosparavantis/e-bookstore",
+  "repositoryLink": "https://github.com/thanosparavantis/e-bookstore",
   "tags": [
     "c-sharp",
     "university",
     "visual-studio"
-  ]
+  ],
+  "contributors": "Panos Ioannidis"
 }

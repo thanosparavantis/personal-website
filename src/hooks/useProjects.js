@@ -10,7 +10,9 @@ export default function useProjects() {
           slug: project.linkSlug,
           description: project.description,
           tags: project.tags,
-          githubLink: project.githubLink
+          repositoryLink: project.repositoryLink,
+          websiteLink: project.websiteLink,
+          contributors: project.contributors
         }
       })
       .sort((pA, pB) => (pA.name > pB.name) ? 1 : ((pB.name > pA.name) ? -1 : 0))

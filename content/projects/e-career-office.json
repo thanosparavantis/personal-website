@@ -2,7 +2,7 @@
   "name": "e-Career Office",
   "linkSlug": "e-career-office",
   "description": "A group project in Java that was developed for a university assignment on the subject of Software Technologies.\n",
-  "githubLink": "https://github.com/thanosparavantis/e-career-office-web-app",
+  "repositoryLink": "https://github.com/thanosparavantis/e-career-office-web-app",
   "tags": [
     "bootstrap",
     "css",
@@ -14,5 +14,6 @@
     "servlets",
     "tomcat",
     "university"
-  ]
+  ],
+  "contributors": "Panos Ioannidis, Dionisis Nikas, George Theofilopoulos"
 }

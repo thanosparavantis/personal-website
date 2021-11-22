@@ -19,6 +19,6 @@ collections:
       - { label: "Link Slug", name: "linkSlug", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "GitHub Link", name: "githubLink", widget: "string" }
+      - { label: "Repository Link", name: "repositoryLink", widget: "string", required: false }
       - { label: "Website Link", name: "websiteLink", widget: "string", required: false }
-      - { label: "Collaborators", name: "collaborators", widget: "string", required: false }
+      - { label: "Contributors", name: "contributors", widget: "string", required: false }

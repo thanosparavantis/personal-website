@@ -2,11 +2,12 @@
   "name": "Social Networks Analysis",
   "linkSlug": "social-networks-analysis",
   "description": "A group project in Python that was developed for a university assignment on the subject of Social Networks Analysis.\n",
-  "githubLink": "https://github.com/thanosparavantis/social-networks-analysis",
+  "repositoryLink": "https://github.com/thanosparavantis/social-networks-analysis",
   "tags": [
     "networkx",
     "pandas",
     "python",
     "university"
-  ]
+  ],
+  "contributors": "Panos Ioannidis"
 }

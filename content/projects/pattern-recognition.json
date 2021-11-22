@@ -2,7 +2,7 @@
   "name": "Pattern Recognition",
   "description": "A group project in Python that was developed for a university assignment on the subject of Pattern Recognition.\n",
   "linkSlug": "pattern-recognition",
-  "githubLink": "https://github.com/thanosparavantis/pattern-recognition",
+  "repositoryLink": "https://github.com/thanosparavantis/pattern-recognition",
   "tags": [
     "matplotlib",
     "numpy",
@@ -11,5 +11,6 @@
     "scikit-learn",
     "scipy",
     "university"
-  ]
+  ],
+  "contributors": "Panos Ioannidis"
 }

@@ -27,19 +27,22 @@ export default function ProjectPage({project}) {
         </p>
       </header>
       <main>
-        <section>
+        <section className="mb-10">
           <Project project={project} expanded={true}/>
-        </section>
-        <section className="mb-5">
-          <div className="mt-10 mb-5">
+          <div className="mt-3">
             <Link to="/projects"
                   className="block font-bold text-gray-900 rounded border focus:outline-none
-                             bg-white hover:border-gray-400 active:bg-gray-200 text-center py-3">
+                             bg-white hover:border-gray-400 active:bg-gray-100 text-center py-3">
               <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
               View all projects
             </Link>
           </div>
-          <div className="flex flex-col gap-5 md:opacity-60 md:hover:opacity-100 md:transition">
+        </section>
+        <section className="mb-5">
+          <h2 className="text-xl font-bold text-gray-900 mb-5">
+            Similar to this project
+          </h2>
+          <div className="flex flex-col gap-5">
             {similarProjects.map(similarProject => <Project project={similarProject} key={similarProject.slug}/>)}
           </div>
         </section>

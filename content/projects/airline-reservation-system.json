@@ -1,6 +1,6 @@
 {
   "name": "Airline Reservation System",
-  "githubLink": "https://github.com/thanosparavantis/airline-reservation-system",
+  "repositoryLink": "https://github.com/thanosparavantis/airline-reservation-system",
   "description": "A simple console based airline reservation system written in C++. Users are able to select existing flights determined by unique flight codes, view the list of direct and connecting flights, create and manage flight routes and make passenger seat reservations. Sample flights are included from and to Athens, Thessaloniki and Patra cities. The project has been developed with data structures in mind, using object oriented programming and utilizing data structures such as Linear Lists and Linked Queues.",
   "linkSlug": "airline-reservation-system",
   "tags": [

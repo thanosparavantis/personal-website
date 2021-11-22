@@ -2,7 +2,7 @@
   "name": "Dining Philosophers",
   "linkSlug": "dining-philosophers",
   "description": "A solution for the dining philosophers problem in Java using multi-threading techniques.\n",
-  "githubLink": "https://github.com/thanosparavantis/dining-philosophers",
+  "repositoryLink": "https://github.com/thanosparavantis/dining-philosophers",
   "tags": [
     "java",
     "multithreading",
