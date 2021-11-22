@@ -12,5 +12,7 @@
     "react",
     "tailwindcss",
     "website"
-  ]
+  ],
+  "websiteLink": "https://www.marketingmind.gr/",
+  "collaborators": "Maria Mavrommati"
 }

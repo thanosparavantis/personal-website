@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 media_folder: "content/images"
 
@@ -21,4 +21,4 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "GitHub Link", name: "githubLink", widget: "string" }
       - { label: "Website Link", name: "websiteLink", widget: "string", required: false }
-      - { label: "Collaborators", name: "collaborators", widget: "list", required: false }
+      - { label: "Collaborators", name: "collaborators", widget: "string", required: false }
