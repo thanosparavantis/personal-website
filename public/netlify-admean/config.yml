@@ -20,3 +20,5 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "GitHub Link", name: "githubLink", widget: "string" }
+      - { label: "Website Link", name: "websiteLink", widget: "string", required: false }
+      - { label: "Collaborators", name: "collaborators", widget: "list", required: false }
