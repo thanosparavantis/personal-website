@@ -1,7 +1,7 @@
 {
   "name": "Student University Information System",
   "linkSlug": "student-university-information-system",
-  "description": "Tier 3 Java application. We created a fully functional authentication and authorization solution. Students, instructors and secretaries have access to specific functionalities based on their role.\n",
+  "description": "A Tier 3 Java web application that was developed as a university assignment for the subject of Object Oriented Application Development. The app features a custom authentication system with roles including students, instructors and secretaries. Students are able to view details about their courses and assigned grades. Instructors are able to grade students per course. Secretaries are able to create, edit or delete courses and assign instructors to courses.",
   "repositoryLink": "https://github.com/thanosparavantis/student-university-information-system",
   "tags": [
     "bootstrap",
