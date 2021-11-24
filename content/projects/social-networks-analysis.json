@@ -1,7 +1,7 @@
 {
   "name": "Social Networks Analysis",
   "linkSlug": "social-networks-analysis",
-  "description": "A group project in Python that was developed for a university assignment on the subject of Social Networks Analysis.\n",
+  "description": "A Python project that was developed as a university assignment for the subject of Social Networks. The program uses the \"Stack Overflow Temporal Network\" dataset and is processed using the Pandas library. We partition user interactions based on timestamps. We then create a graphical representation of the network as it progressed through time. Finally, we compute Degree Centrality, In-Degree Centrality, Out-Degree Centrality, Closeness Centrality, Betweenness Centrality, Eigenvector Centrality and Katz Centrality using the NetworkX library.",
   "repositoryLink": "https://github.com/thanosparavantis/social-networks-analysis",
   "tags": [
     "networkx",
