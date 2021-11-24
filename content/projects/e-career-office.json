@@ -1,8 +1,8 @@
 {
   "name": "e-Career Office",
   "linkSlug": "e-career-office",
-  "description": "A group project in Java that was developed for a university assignment on the subject of Software Technologies.\n",
-  "repositoryLink": "https://github.com/thanosparavantis/e-career-office-web-app",
+  "description": "A Java web application that was developed as a university assignment for the subject of Software Technologies. The app features a custom authentication system with roles including super admins, admins, students and HR members. Students can upload and manager their resumes. HR members appointed from companies can create classifieds. Administrators can assign students to classifieds, manage accounts and update job categories. Super administrators have complete control over the platform and are able to create new departments and add new companies. This software was developed in phases based on RUP with detailed UML diagrams.",
+  "repositoryLink": "https://github.com/thanosparavantis/e-career-office",
   "tags": [
     "bootstrap",
     "css",
@@ -13,7 +13,8 @@
     "mysql",
     "servlets",
     "tomcat",
-    "university"
+    "university",
+    "web-app"
   ],
   "contributors": "Panos Ioannidis, Dionisis Nikas, George Theofilopoulos"
 }
