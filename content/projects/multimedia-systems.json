@@ -1,7 +1,7 @@
 {
   "name": "Multimedia Systems",
   "linkSlug": "multimedia-systems",
-  "description": "A group project in Python that was developed for a university assignment on the subject of Multimedia Systems.\n",
+  "description": "A Python project that was developed as a university assignment for the subject of Multimedia Systems. The program first implements Run-length encoding (RLE) for a sample image of Mona Lisa. Then, Differential pulse-code modulation encoding (DPCM) is applied on a sample TV advert. We perform motion prediction for that advert and object removal on a video scene that features moving characters on a stage. For the error frame calculations, we use the sum of absolute differences (SAD) metric and macroblock techniques.",
   "repositoryLink": "https://github.com/thanosparavantis/multimedia-systems",
   "tags": [
     "cv2",
