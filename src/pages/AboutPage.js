@@ -251,8 +251,9 @@ export default function AboutPage() {
               </p>
             </div>
             <p className="mb-3 leading-relaxed">
-              Responsible for managing all IT related work in preparation
+              Responsible for coordinating all IT related work in preparation
               for the annual TEDx local event with the support of the University of Piraeus.
+              Managed a team of two web developers and supervised the creation of a new website for the organization.
             </p>
             <a href="https://www.tedxuniversityofpiraeus.com/"
                target="noopener noreferrer"
@@ -325,6 +326,28 @@ export default function AboutPage() {
             Technology Services for Financial Engineering unit, January 2021.
           </div>
           <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
+            Created a YouTube video guide on "How to become a radio amateur" with more than 10,000 views,
+            that went viral on amateur radio community in Greece, November 2020.
+
+            <div className="mt-2 flex flex-col md:flex-row">
+              <a href="https://www.youtube.com/watch?v=pQUzARlrJBY"
+                 target="noopener noreferrer"
+                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                Watch video
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+              </a>
+              <p className="mx-3 hidden md:block">
+                &middot;
+              </p>
+              <a href="https://rfnews.gr/%CF%80%CF%89%CF%82-%CE%BD%CE%B1-%CE%B3%CE%AF%CE%BD%CE%B5%CF%84%CE%B5-%CF%81%CE%B1%CE%B4%CE%B9%CE%BF%CE%B5%CF%81%CE%B1%CF%83%CE%B9%CF%84%CE%AD%CF%87%CE%BD%CE%B7%CF%82-video-guide/"
+                 target="noopener noreferrer"
+                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                Read article on rfnews.gr
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+              </a>
+            </div>
+          </div>
+          <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
             Awarded 4th place in Crowdhackathon Agrifood, team "UNI3.14", April 2019.
             <div className="mt-2 flex flex-col md:flex-row">
               <a href="https://crowdhackathon.com/agrifood/"
@@ -351,7 +374,7 @@ export default function AboutPage() {
                 href="https://www.newsbomb.gr/ellada/story/326452/vraveytikan-oi-nikites-stis-megales-giortes-antapodotikis-anakyklosis"
                 target="noopener noreferrer"
                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
-                Visit related news article
+                Read article on newsbomb.gr
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
             </div>
