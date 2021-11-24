@@ -1,7 +1,7 @@
 {
-  "name": "RDBMS Advanced Car Crash Project",
+  "name": "Relational DBMS 2",
   "linkSlug": "relational-dbms-2",
-  "description": "A group project that was developed for a university assignment on the subject of Databases.\n",
+  "description": "A SQL based project that was developed as an assignment for the subject of Databases. This project uses the \"UK Road Safety: Traffic Accidents and Vehicles\" dataset that is available on Kaggle. We designed optimized SQL queries for looking up accident information in the dataset. We created indexes to speed up queries. We broke up tables into partitions based on specific ranges and database relations. Finally, we have written a program in Java using Spark that executes the designed SQL queries and calculates related statistics.",
   "repositoryLink": "https://github.com/thanosparavantis/relational-dbms-2",
   "tags": [
     "java",
