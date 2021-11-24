@@ -1,7 +1,7 @@
 {
   "name": "Shannon Fano",
   "linkSlug": "shannon-fano",
-  "description": "A group project in Python that was developed for a university assignment on the subject of Code and Information Theory.\n",
+  "description": "A Python project that was developed as a university assignment for the subject of Code and Information Theory. The program features a client-server implementation using sockets. It simulates a simple exchange of an image between the client and the server. Once the user inputs a specific parameter on how the image should be compressed, the Shannon-Fano coding is applied. The image is compressed and sent from the client to the server, which then applies decompression to reconstruct the image.",
   "repositoryLink": "https://github.com/thanosparavantis/shannon-fano",
   "tags": [
     "numpy",
