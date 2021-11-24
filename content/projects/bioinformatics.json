@@ -1,6 +1,6 @@
 {
   "name": "Bioinformatics",
-  "description": "A group project in Python that was developed for a university assignment on the subject of Bioinformatics.\n\nThis project includes algorithms written in Python that solve elemental problems in Bioinformatics. The goal of this assignment is to work with hypothetical sequences of nucleotides. Notable algorithms used are the Viterbi algorithm and Hidden Markov Models.",
+  "description": "A Python project that was developed as a university assignment for the subject of Bioinformatics. The goal of this assignment was to process hypothetical sequences of nucleotides on seven different scenarios. The Biopython library is used for biological computation. The Needleman-Wunsch algorithm is utilized for sequence alignment along with Hidden Markov Models with the Viterbi algorithm.",
   "repositoryLink": "https://github.com/thanosparavantis/bioinformatics",
   "linkSlug": "bioinformatics",
   "tags": [
