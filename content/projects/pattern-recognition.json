@@ -1,6 +1,6 @@
 {
   "name": "Pattern Recognition",
-  "description": "A group project in Python that was developed for a university assignment on the subject of Pattern Recognition.\n",
+  "description": "A Python project that was developed as a university assignment for the subject of Pattern Recognition. The program uses the \"MovieLens 100K\" dataset that includes movie ratings of random users. The data included is processed using the Pandas library. We implement three algorithms: Basic Sequential Algorithmic Scheme (BSAS), K-means and hierarchical clustering. Finally, we use a neural network with multilayer perceptron and least squares linear regression to make predictions on movie ratings.",
   "linkSlug": "pattern-recognition",
   "repositoryLink": "https://github.com/thanosparavantis/pattern-recognition",
   "tags": [
