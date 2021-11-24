@@ -29,14 +29,6 @@ export default function ProjectPage({project}) {
       <main>
         <section className="mb-10">
           <Project project={project} expanded={true}/>
-          <div className="mt-3">
-            <Link to="/projects"
-                  className="block font-bold text-gray-900 rounded border focus:outline-none
-                             bg-white hover:border-gray-400 active:bg-gray-100 text-center py-3">
-              <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
-              View all projects
-            </Link>
-          </div>
         </section>
         <section className="mb-5">
           <h2 className="text-xl font-bold text-gray-900 mb-5">
@@ -44,6 +36,13 @@ export default function ProjectPage({project}) {
           </h2>
           <div className="flex flex-col gap-5">
             {similarProjects.map(similarProject => <Project project={similarProject} key={similarProject.slug}/>)}
+
+            <Link to="/projects"
+                  className="block font-bold text-gray-900 rounded border focus:outline-none
+                             bg-white hover:border-gray-400 active:bg-gray-100 text-center py-3">
+              <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
+              View all projects
+            </Link>
           </div>
         </section>
       </main>
