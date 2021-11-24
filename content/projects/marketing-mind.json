@@ -11,7 +11,8 @@
     "netlify",
     "react",
     "tailwindcss",
-    "website"
+    "website",
+    "web-app"
   ],
   "websiteLink": "https://www.marketingmind.gr/",
   "contributors": "Maria Mavrommati"

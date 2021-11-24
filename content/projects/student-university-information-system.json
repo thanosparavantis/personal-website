@@ -16,7 +16,9 @@
     "mysql",
     "servlets",
     "tomcat",
-    "university"
+    "university",
+    "web-app",
+    "sql"
   ],
   "contributors": "Panos Ioannidis, Dionisis Nikas"
 }

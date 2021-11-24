@@ -14,7 +14,8 @@
     "servlets",
     "tomcat",
     "university",
-    "web-app"
+    "web-app",
+    "sql"
   ],
   "contributors": "Panos Ioannidis, Dionisis Nikas, George Theofilopoulos"
 }

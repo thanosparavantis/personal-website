@@ -7,7 +7,9 @@
     "firebase",
     "java",
     "sqlite",
-    "university"
+    "university",
+    "google-maps",
+    "sql"
   ],
   "repositoryLink": "https://github.com/thanosparavantis/android-emergency-application",
   "contributors": "Panos Ioannidis, Dionisis Nikas"

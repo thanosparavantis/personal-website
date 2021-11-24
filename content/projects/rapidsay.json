@@ -14,6 +14,7 @@
     "laravel",
     "mysql",
     "php",
-    "web-app"
+    "web-app",
+    "sql"
   ]
 }

@@ -10,7 +10,8 @@
     "netlify",
     "react",
     "tailwindcss",
-    "website"
+    "website",
+    "web-app"
   ],
   "repositoryLink": "https://github.com/thanosparavantis/personal-website"
 }

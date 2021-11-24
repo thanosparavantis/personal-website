@@ -7,7 +7,8 @@
     "java",
     "java-spark",
     "postgresql",
-    "university"
+    "university",
+    "sql"
   ],
   "contributors": "Panos Ioannidis, Dionisis Nikas"
 }
