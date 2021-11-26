@@ -21,7 +21,7 @@ export default function MetaTags({title, description, image = null}) {
 
   const metaImage = useMemo(() => {
     return domain + (image || "/preview.jpg")
-  }, [])
+  }, [domain])
 
   return (
     <Helmet>
