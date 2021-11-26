@@ -1,6 +1,6 @@
 {
   "name": "Compilers",
-  "description": "A group project that was developed for a university assignment on the subject of Compilers.\n",
+  "description": "A programming project that was developed as a university assignment for the subject of Compilers. This project features three languages: C, Java and Python and the Flex lexical analyzer. We include: a Python solution for the balanced parentheses problem using a pushdown automaton, a Python program that generates random character sequences based on specific grammar, a Java program that implements a top-down syntax analyzer and two lexical analyzers in Flex for sample variable and geometric shape declaration.",
   "linkSlug": "compilers",
   "repositoryLink": "https://github.com/thanosparavantis/compilers-project",
   "tags": [
