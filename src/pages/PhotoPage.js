@@ -4,6 +4,9 @@ import useSimilarPhotos from "../hooks/useSimilarPhotos";
 import FreePhotoPreview from "../components/FreePhotoPreview";
 import FreePhotoThumbnail from "../components/FreePhotoThumbnail";
 import {useMemo} from "react";
+import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 
 export default function PhotoPage({photo}) {
   const similarPhotos = useSimilarPhotos(photo)
@@ -40,6 +43,14 @@ export default function PhotoPage({photo}) {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {similarPhotos.map(photo => <FreePhotoThumbnail photo={photo} key={photo.slug}/>)}
+          </div>
+          <div className="mt-5">
+            <Link to="/photos"
+                  className="block font-bold text-gray-900 rounded border focus:outline-none
+                           bg-white hover:border-gray-400 active:bg-gray-100 text-center py-3">
+              <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
+              View all photos
+            </Link>
           </div>
         </section>
       </main>
