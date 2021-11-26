@@ -1,10 +1,27 @@
 import {Helmet} from "react-helmet";
+import {useMemo} from "react";
 
-export default function MetaTags({title, description}) {
-  const metaUrl = window.location.href
-  const metaTitle = `Thanos Paravantis - ${title}`
-  const metaDesc = description
-  const metaImage = "https://www.thanosparavantis.com/preview.jpg"
+export default function MetaTags({title, description, image = null}) {
+  const metaUrl = useMemo(() => {
+    return window.location.href
+  }, [])
+
+  const domain = useMemo(() => {
+    const url = new URL(metaUrl)
+    return url.protocol + "//" + url.host
+  }, [metaUrl])
+
+  const metaTitle = useMemo(() => {
+    return `Thanos Paravantis - ${title}`
+  }, [title])
+
+  const metaDesc = useMemo(() => {
+    return description
+  }, [description])
+
+  const metaImage = useMemo(() => {
+    return domain + (image || "/preview.jpg")
+  }, [])
 
   return (
     <Helmet>

@@ -3,15 +3,21 @@ import {Helmet} from "react-helmet";
 import useSimilarPhotos from "../hooks/useSimilarPhotos";
 import FreePhotoPreview from "../components/FreePhotoPreview";
 import FreePhotoThumbnail from "../components/FreePhotoThumbnail";
+import {useMemo} from "react";
 
 export default function PhotoPage({photo}) {
   const similarPhotos = useSimilarPhotos(photo)
+
+  const photoSrc = useMemo(() => {
+    return require(`../images/previews/${photo.filename}`).default
+  }, [photo])
 
   return (
     <>
       <MetaTags
         title={`Photo: ${photo.name}`}
         description="Learn more about this copyright free photo and find similar ones under public domain."
+        image={photoSrc}
       />
       <Helmet>
         <body className="bg-gray-100"/>
