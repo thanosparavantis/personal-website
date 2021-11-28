@@ -17,6 +17,7 @@ export default function MetaTags({title, description, canonicalUrl = null, image
   return (
     <Helmet>
       <title>{metaTitle}</title>
+      <link rel="canonical" href={metaUrl}/>
       <meta name="title" content={metaTitle}/>
       <meta name="description" content={description}/>
       <meta property="og:type" content="website"/>
@@ -29,10 +30,6 @@ export default function MetaTags({title, description, canonicalUrl = null, image
       <meta property="twitter:title" content={metaTitle}/>
       <meta property="twitter:description" content={description}/>
       <meta property="twitter:image" content={metaImage}/>
-
-      {canonicalUrl && (
-        <link rel="canonical" href={metaUrl}/>
-      )}
     </Helmet>
   )
 }
