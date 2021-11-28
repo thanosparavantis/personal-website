@@ -14,6 +14,7 @@ export default function ProjectsTagPage({tag}) {
       <MetaTags
         title={`Tag: ${tag}`}
         description={`The list of open source computer science projects including the ${tag} tag.`}
+        canonicalUrl="/projects"
       />
       <Helmet>
         <body className="bg-gray-100"/>

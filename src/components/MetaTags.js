@@ -1,9 +1,9 @@
 import {Helmet} from "react-helmet";
 import {useMemo} from "react";
 
-export default function MetaTags({title, description, image = null}) {
+export default function MetaTags({title, description, canonicalUrl = null, image = null}) {
   const metaUrl = useMemo(() => {
-    return "https://www.thanosparavantis.com" + window.location.pathname
+    return "https://www.thanosparavantis.com" + (canonicalUrl || window.location.pathname)
   }, [])
 
   const metaTitle = useMemo(() => {
@@ -29,6 +29,10 @@ export default function MetaTags({title, description, image = null}) {
       <meta property="twitter:title" content={metaTitle}/>
       <meta property="twitter:description" content={description}/>
       <meta property="twitter:image" content={metaImage}/>
+
+      {canonicalUrl && (
+        <link rel="canonical" href={metaUrl}/>
+      )}
     </Helmet>
   )
 }
