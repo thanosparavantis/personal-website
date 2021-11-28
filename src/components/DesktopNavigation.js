@@ -16,12 +16,12 @@ export default function DesktopNavigation() {
                className="block w-32 h-32 bg-gray-100 rounded-full shadow-lg p-2"
           />
         </Link>
-        <h1 className="text-white font-bold text-lg mb-1">
+        <div className="text-white font-bold text-lg mb-1">
           Thanos Paravantis
-        </h1>
-        <h2 className="text-gray-100 text-lg">
+        </div>
+        <div className="text-gray-100 text-lg">
           Computer Scientist
-        </h2>
+        </div>
       </div>
       <NavLink to="/"
                exact={true}
