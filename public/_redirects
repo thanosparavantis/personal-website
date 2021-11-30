@@ -1,4 +1,5 @@
 /wp* https://www.youtube.com/watch?v=dQw4w9WgXcQ 301
 /admin* https://www.youtube.com/watch?v=dQw4w9WgXcQ 301
-/projects/airport-ticket-system /projects/airline-reservation-system
-/projects/hamop /projects/hamop-social-network
+/projects/airport-ticket-system /projects/airline-reservation-system 301
+/projects/hamop /projects/hamop-social-network 301
+/photos/seaside-cloudy-wetland_view /photos/seaside-cloudy-wetland-view 301
