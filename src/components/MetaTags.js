@@ -1,35 +1,34 @@
 import {Helmet} from "react-helmet";
 import {useMemo} from "react";
+import useCanonicalUrl from "../hooks/useCanonicalUrl";
 
-export default function MetaTags({title, description, canonicalUrl = null, image = null}) {
-  const metaUrl = useMemo(() => {
-    return "https://www.thanosparavantis.com" + (canonicalUrl || window.location.pathname)
-  }, [])
+export default function MetaTags({title: pageTitle, description, canonicalUrl = null, photoSrc = null}) {
+  const url = useCanonicalUrl(canonicalUrl)
 
-  const metaTitle = useMemo(() => {
-    return `Thanos Paravantis - ${title}`
-  }, [title])
+  const title = useMemo(() => {
+    return `Thanos Paravantis - ${pageTitle}`
+  }, [pageTitle])
 
-  const metaImage = useMemo(() => {
-    return "https://www.thanosparavantis.com" + (image || "/preview.jpg")
+  const image = useMemo(() => {
+    return "https://www.thanosparavantis.com" + (photoSrc || "/preview.jpg")
   }, [])
 
   return (
     <Helmet>
-      <title>{metaTitle}</title>
-      <link rel="canonical" href={metaUrl}/>
-      <meta name="title" content={metaTitle}/>
+      <title>{title}</title>
+      <link rel="canonical" href={url}/>
+      <meta name="title" content={title}/>
       <meta name="description" content={description}/>
       <meta property="og:type" content="website"/>
-      <meta property="og:url" content={metaUrl}/>
-      <meta property="og:title" content={metaTitle}/>
+      <meta property="og:url" content={url}/>
+      <meta property="og:title" content={title}/>
       <meta property="og:description" content={description}/>
-      <meta property="og:image" content={metaImage}/>
+      <meta property="og:image" content={image}/>
       <meta property="twitter:card" content="summary_large_image"/>
-      <meta property="twitter:url" content={metaUrl}/>
-      <meta property="twitter:title" content={metaTitle}/>
+      <meta property="twitter:url" content={url}/>
+      <meta property="twitter:title" content={title}/>
       <meta property="twitter:description" content={description}/>
-      <meta property="twitter:image" content={metaImage}/>
+      <meta property="twitter:image" content={image}/>
     </Helmet>
   )
 }
