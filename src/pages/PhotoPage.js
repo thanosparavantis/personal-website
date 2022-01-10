@@ -7,7 +7,6 @@ import {useMemo} from "react";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
-import CommentWidget from "../components/CommentWidget";
 
 export default function PhotoPage({photo}) {
   const similarPhotos = useSimilarPhotos(photo)
@@ -34,9 +33,6 @@ export default function PhotoPage({photo}) {
       <main>
         <section className="mb-10">
           <FreePhotoPreview photo={photo}/>
-        </section>
-        <section className="mb-10">
-          <CommentWidget identifier={photo.slug} title={`Photo: ${photo.name}`}/>
         </section>
         <section className="mb-5">
           <h2 className="text-xl font-bold text-gray-900 mb-5">
