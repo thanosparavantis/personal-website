@@ -39,8 +39,8 @@ export default function FreePhotoPreview({photo}) {
       <div className="mt-5">
         <a href={photoFullSrc}
            target="_blank"
-           className="block font-bold text-white rounded border focus:outline-none text-center py-3
-                      bg-green-600 hover:bg-green-700 active:bg-green-800">
+           className="block font-bold text-white rounded border focus:outline-none
+                      text-center py-3 bg-green-600 hover:bg-green-700 active:bg-green-800">
           <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-3" size="sm"/>
           Download photo
         </a>

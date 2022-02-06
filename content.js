@@ -23,4 +23,4 @@ fs.readdirSync(projectsPath).forEach(file => {
 console.log(`Exporting projects to file: ${projectsExportPath}`)
 fs.writeFileSync(projectsExportPath, JSON.stringify(projects))
 
-console.log("✔ Finished exporting content")
+console.log("Finished exporting content")

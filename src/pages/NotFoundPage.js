@@ -3,14 +3,19 @@ import MetaTags from "../components/MetaTags";
 import personWalkingOutdoorsImg from "../images/person_walking_outdoors.png"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import PageTemplate from "../components/PageTemplate";
+import {Helmet} from "react-helmet";
 
 export default function NotFoundPage() {
   return (
-    <>
+    <PageTemplate>
       <MetaTags
         title="404 Not Found"
         description="Born in Athens, Greece, Thanos Paravantis is a Computer Scientist and Radio Amateur with a BSc in Computer Science."
       />
+      <Helmet>
+        <body className="bg-gray-100"/>
+      </Helmet>
       <main>
         <section className="min-h-screen py-32 flex flex-wrap items-center gap-20 justify-center text-center">
           <div className="flex-shrink-0">
@@ -35,6 +40,6 @@ export default function NotFoundPage() {
           </div>
         </section>
       </main>
-    </>
+    </PageTemplate>
   )
 }

@@ -9,10 +9,12 @@ import {
   faTrophy,
   faUserGraduate
 } from "@fortawesome/free-solid-svg-icons";
+import PageHeader from "../components/PageHeader";
+import PageTemplate from "../components/PageTemplate";
 
 export default function AboutPage() {
   return (
-    <>
+    <PageTemplate>
       <MetaTags
         title="About"
         description="Portfolio of my educational background, work and volunteer experience, hobby projects and achievements."
@@ -21,15 +23,7 @@ export default function AboutPage() {
         <body className="bg-gray-100"/>
       </Helmet>
       <main>
-        <header className="my-16 text-center">
-          <h1 className="text-4xl text-gray-900 font-bold mb-3">
-            About
-          </h1>
-          <p className="text-gray-600">
-            Portfolio of my educational background, work and volunteer experience, hobby projects and
-            achievements.
-          </p>
-        </header>
+        <PageHeader title="About" description="Portfolio of my educational background, work and volunteer experience, hobby projects and achievements."/>
         <section className="mb-5 border rounded bg-white">
           <h2 className="px-5 md:px-8 py-5 border-b md:text-lg font-bold text-gray-900">
             <FontAwesomeIcon icon={faUserGraduate} className="mr-3"/>
@@ -278,7 +272,7 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          <div className="px-5 md:px-8 py-5 border-b">
+          <div className="px-5 md:px-8 py-5">
             <h3 className="mb-1 font-bold text-gray-900">
               Licensed amateur radio operator
             </h3>
@@ -339,9 +333,10 @@ export default function AboutPage() {
               <p className="mx-3 hidden md:block">
                 &middot;
               </p>
-              <a href="https://rfnews.gr/%CF%80%CF%89%CF%82-%CE%BD%CE%B1-%CE%B3%CE%AF%CE%BD%CE%B5%CF%84%CE%B5-%CF%81%CE%B1%CE%B4%CE%B9%CE%BF%CE%B5%CF%81%CE%B1%CF%83%CE%B9%CF%84%CE%AD%CF%87%CE%BD%CE%B7%CF%82-video-guide/"
-                 target="noopener noreferrer"
-                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+              <a
+                href="https://rfnews.gr/%CF%80%CF%89%CF%82-%CE%BD%CE%B1-%CE%B3%CE%AF%CE%BD%CE%B5%CF%84%CE%B5-%CF%81%CE%B1%CE%B4%CE%B9%CE%BF%CE%B5%CF%81%CE%B1%CF%83%CE%B9%CF%84%CE%AD%CF%87%CE%BD%CE%B7%CF%82-video-guide/"
+                target="noopener noreferrer"
+                className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 Read article on rfnews.gr
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
@@ -381,6 +376,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-    </>
+    </PageTemplate>
   )
 }

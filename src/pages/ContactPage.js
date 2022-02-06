@@ -6,6 +6,8 @@ import {faEnvelopeOpenText, faSpinner, faUserFriends} from "@fortawesome/free-so
 import {faPaperPlane} from "@fortawesome/free-regular-svg-icons";
 import TextareaAutosize from "react-textarea-autosize";
 import {faFacebook, faGithub, faLinkedin, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import PageHeader from "../components/PageHeader";
+import PageTemplate from "../components/PageTemplate";
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false)
@@ -76,7 +78,7 @@ export default function ContactPage() {
   }, [resetStatus, resetFields, encode, fullName, email, message])
 
   return (
-    <>
+    <PageTemplate>
       <MetaTags
         title="Contact"
         description="For business inquiries or any other matters, feel free to send me an email or fill out the contact form."
@@ -84,14 +86,7 @@ export default function ContactPage() {
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
-      <header className="my-16 text-center">
-        <h1 className="text-4xl text-gray-900 font-bold mb-3">
-          Contact
-        </h1>
-        <p className="text-gray-600">
-          For business inquiries or any other matters, feel free to send me an email or fill out the contact form.
-        </p>
-      </header>
+      <PageHeader title="Contact" description="For business inquiries or any other matters, feel free to send me an email or fill out the contact form."/>
       <main>
         <section className="mb-5 bg-white border rounded">
           <h2 className="px-5 md:px-8 py-5 text-lg font-bold border-b">
@@ -257,6 +252,6 @@ export default function ContactPage() {
           </form>
         </section>
       </main>
-    </>
+    </PageTemplate>
   )
 }

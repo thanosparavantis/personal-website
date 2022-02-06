@@ -5,12 +5,14 @@ import useSimilarProjects from "../hooks/useSimilarProjects";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
+import PageHeader from "../components/PageHeader";
+import PageTemplate from "../components/PageTemplate";
 
 export default function ProjectPage({project}) {
   const similarProjects = useSimilarProjects(project)
 
   return (
-    <>
+    <PageTemplate>
       <MetaTags
         title={`Project: ${project.name}`}
         description={`Learn more about this resource and browse through a variety of related open source projects.`}
@@ -18,14 +20,7 @@ export default function ProjectPage({project}) {
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
-      <header className="my-16 text-center">
-        <h1 className="text-3xl text-gray-900 mb-3">
-          Project: <strong>{project.name}</strong>
-        </h1>
-        <p className="text-gray-600">
-          Learn more about this resource and browse through a variety of related open source projects.
-        </p>
-      </header>
+      <PageHeader title={`Project: ${project.name}`} description="Learn more about this resource and browse through a variety of related open source projects."/>
       <main>
         <section className="mb-10">
           <Project project={project} expanded={true}/>
@@ -38,14 +33,14 @@ export default function ProjectPage({project}) {
             {similarProjects.map(similarProject => <Project project={similarProject} key={similarProject.slug}/>)}
 
             <Link to="/projects"
-                  className="block font-bold text-gray-900 rounded border focus:outline-none
-                             bg-white hover:border-gray-400 active:bg-gray-100 text-center py-3">
+                  className="block font-bold text-white rounded border focus:outline-none
+                             text-center py-3 bg-green-600 hover:bg-green-700 active:bg-green-800">
               <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
               View all projects
             </Link>
           </div>
         </section>
       </main>
-    </>
+    </PageTemplate>
   )
 }

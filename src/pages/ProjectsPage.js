@@ -4,13 +4,15 @@ import Project from "../components/Project";
 import useProjectTags from "../hooks/useProjectTags";
 import ProjectTag from "../components/ProjectTag";
 import useProjects from "../hooks/useProjects";
+import PageHeader from "../components/PageHeader";
+import PageTemplate from "../components/PageTemplate";
 
 export default function ProjectsPage() {
   const projects = useProjects()
   const tags = useProjectTags()
 
   return (
-    <>
+    <PageTemplate>
       <MetaTags
         title="Projects"
         description="Browse through a collection of open source computer science projects I have worked on."
@@ -18,14 +20,7 @@ export default function ProjectsPage() {
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
-      <header className="my-16 text-center">
-        <h1 className="text-4xl text-gray-900 font-bold mb-3">
-          Projects
-        </h1>
-        <p className="text-gray-600">
-          Browse through a collection of open source computer science projects I have worked on.
-        </p>
-      </header>
+      <PageHeader title="Projects" description="Browse through a collection of open source computer science projects I have worked on."/>
       <main>
         <section className="flex flex-wrap gap-1 mb-5">
           {tags.map(tag => <ProjectTag tag={tag} key={tag}/>)}
@@ -34,6 +29,6 @@ export default function ProjectsPage() {
           {projects.map(project => <Project project={project} key={project.slug}/>)}
         </section>
       </main>
-    </>
+    </PageTemplate>
   )
 }

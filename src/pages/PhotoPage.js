@@ -7,13 +7,15 @@ import {useMemo} from "react";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
+import PageHeader from "../components/PageHeader";
+import PageTemplate from "../components/PageTemplate";
 
 export default function PhotoPage({photo}) {
   const similarPhotos = useSimilarPhotos(photo)
   const photoSrc = useMemo(() => require(`../images/previews/${photo.filename}`).default, [photo])
 
   return (
-    <>
+    <PageTemplate>
       <MetaTags
         title={`Photo: ${photo.name}`}
         description="Learn more about this copyright free photo and find similar ones under public domain."
@@ -22,14 +24,7 @@ export default function PhotoPage({photo}) {
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
-      <header className="my-16 text-center">
-        <h1 className="text-3xl text-gray-900 mb-3">
-          Photo: <strong>{photo.name}</strong>
-        </h1>
-        <p className="text-gray-600">
-          Learn more about this copyright free photo and find similar ones under public domain.
-        </p>
-      </header>
+      <PageHeader title={`Photo: ${photo.name}`} description="Learn more about this copyright free photo and find similar ones under public domain."/>
       <main>
         <section className="mb-10">
           <FreePhotoPreview photo={photo}/>
@@ -43,14 +38,14 @@ export default function PhotoPage({photo}) {
           </div>
           <div className="mt-5">
             <Link to="/photos"
-                  className="block font-bold text-gray-900 rounded border focus:outline-none
-                           bg-white hover:border-gray-400 active:bg-gray-100 text-center py-3">
+                  className="block font-bold text-white rounded border focus:outline-none
+                             text-center py-3 bg-green-600 hover:bg-green-700 active:bg-green-800">
               <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
               View all photos
             </Link>
           </div>
         </section>
       </main>
-    </>
+    </PageTemplate>
   )
 }
