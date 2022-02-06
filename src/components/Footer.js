@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-white border-t shadow p-5 text-gray-600 font-bold md:text-right text-center md:text-xs text-sm">
-      &copy; {year} thanosparavantis.com
+      &copy; {year} Thanos Paravantis
     </footer>
   )
 }
