@@ -27,7 +27,7 @@ export default function DesktopNavigation() {
                exact={true}
                activeClassName="bg-green-700"
                className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
-                          text-white text-lg active:bg-green-800">
+                          text-white active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faHome}/>
         </div>
@@ -37,7 +37,7 @@ export default function DesktopNavigation() {
                exact={true}
                activeClassName="bg-green-700"
                className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
-                          text-white text-lg active:bg-green-800">
+                          text-white active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faQuestionCircle}/>
         </div>
@@ -46,7 +46,7 @@ export default function DesktopNavigation() {
       <NavLink to="/projects"
                activeClassName="bg-green-700"
                className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
-                          text-white text-lg active:bg-green-800">
+                          text-white active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faCode}/>
         </div>
@@ -55,7 +55,7 @@ export default function DesktopNavigation() {
       <NavLink to="/photos"
                activeClassName="bg-green-700"
                className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
-                          text-white text-lg active:bg-green-800">
+                          text-white active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faImages}/>
         </div>
@@ -65,7 +65,7 @@ export default function DesktopNavigation() {
                exact={true}
                activeClassName="bg-green-700"
                className="flex items-center flex-shrink-0 px-8 h-20 transition font-bold
-                          text-white text-lg active:bg-green-800">
+                          text-white active:bg-green-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faEnvelopeOpenText}/>
         </div>
