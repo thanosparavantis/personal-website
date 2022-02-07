@@ -3,7 +3,13 @@ import thanosParavantisImg from "../images/thanos_paravantis_speaking.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faGithub, faLinkedin, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
-import {faAngleDoubleDown, faCode, faEnvelopeOpenText, faQuestionCircle} from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDoubleDown,
+  faChevronDown,
+  faCode,
+  faEnvelopeOpenText,
+  faQuestionCircle
+} from "@fortawesome/free-solid-svg-icons";
 import {faImages} from "@fortawesome/free-regular-svg-icons";
 import MobileNavigation from "../components/MobileNavigation";
 import DesktopNavigation from "../components/DesktopNavigation";
@@ -19,10 +25,8 @@ export default function HomePage() {
         description="Born in Athens, Greece, Thanos Paravantis is a Computer Scientist and Radio Amateur with a BSc in Computer Science."
       />
       <main>
-        <div className="flex items-center justify-center lg:ml-72 px-3">
-          <section itemScope
-                   itemType="https://schema.org/Person"
-                   className="container max-w-3xl min-h-screen py-32 flex flex-col items-center justify-center text-center">
+        <div className="relative flex items-center justify-center lg:ml-72 px-3">
+          <section itemScope itemType="https://schema.org/Person" className="container max-w-3xl min-h-screen py-32 flex flex-col items-center justify-center text-center">
             <img src={thanosParavantisImg}
                  itemProp="image"
                  title="Thanos Paravantis"
@@ -107,76 +111,13 @@ export default function HomePage() {
               </a>
             </div>
           </section>
+          <FontAwesomeIcon icon={faChevronDown} size="lg" className="text-gray-900 absolute bottom-0 animate-bounce mb-1"/>
         </div>
         <div className="bg-gray-100 flex items-center justify-center lg:ml-72 px-3 border-t shadow">
           <section className="container max-w-3xl min-h-screen mt-16 mb-5 flex flex-col items-center justify-center">
-            <h2 className="text-3xl text-gray-900 font-bold">
-              Let's connect
-              <FontAwesomeIcon icon={faAngleDoubleDown} className="ml-6"/>
+            <h2 className="text-2xl text-gray-900 font-extrabold mb-10">
+              Welcome to <span className="text-blue-600">thanosparavantis.com</span>
             </h2>
-            <div className="flex md:flex-row flex-col items-center justify-center gap-3 mt-5 mb-16 font-bold text-sm">
-              <div className="flex items-center justify-center gap-3">
-                <a href="https://stackoverflow.com/users/2672192/thanos-paravantis"
-                   rel="noopener noreferrer"
-                   target="_blank"
-                   title="Visit my StackOverflow profile"
-                   className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
-                  StackOverflow
-                </a>
-                <p>
-                  &middot;
-                </p>
-                <a href="https://medium.com/@thanos"
-                   rel="noopener noreferrer"
-                   target="_blank"
-                   title="Visit my Medium profile"
-                   className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
-                  Medium
-                </a>
-                <p>
-                  &middot;
-                </p>
-                <a href="https://codepen.io/thanosparavantis/"
-                   rel="noopener noreferrer"
-                   target="_blank"
-                   title="Visit my CodePen profile"
-                   className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
-                  CodePen
-                </a>
-              </div>
-              <div className="flex items-center justify-center gap-3">
-                <p className="hidden md:block">
-                  &middot;
-                </p>
-                <a href="https://dev.to/thanos"
-                   rel="noopener noreferrer"
-                   target="_blank"
-                   title="Visit my DEV Community profile"
-                   className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
-                  DEV Community
-                </a>
-                <p>
-                  &middot;
-                </p>
-                <a href="https://www.hackerrank.com/thanosparavantis"
-                   rel="noopener noreferrer"
-                   target="_blank"
-                   title="Visit my HackerRank profile"
-                   className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
-                  HackerRank
-                </a>
-                <p>
-                  &middot;
-                </p>
-                <a href="https://www.kaggle.com/thanosparavantis"
-                   rel="noopener noreferrer"
-                   target="_blank"
-                   title="Visit my Kaggle profile"
-                   className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
-                  Kaggle
-                </a>
-              </div>
-            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <Link to="/about" className="h-36 flex flex-col gap-3 p-5 border rounded shadow bg-white
                                            border-gray-300 hover:border-gray-400 active:bg-gray-50">
