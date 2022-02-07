@@ -13,7 +13,7 @@ export default function DesktopNavigation() {
           <img src={thanosParavantisImg}
                title="Thanos Paravantis"
                alt=""
-               className="block w-32 h-32 bg-gray-100 rounded-full shadow-lg p-2"
+               className="block w-28 h-28 bg-gray-100 rounded-full shadow-lg p-2"
           />
         </Link>
         <div className="text-white font-bold text-lg mb-1">
