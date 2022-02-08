@@ -115,7 +115,7 @@ export default function HomePage() {
         </div>
         <div className="bg-gray-100 flex items-center justify-center lg:ml-72 px-3 border-t shadow">
           <section className="container max-w-3xl min-h-screen mt-16 mb-5 flex flex-col items-center justify-center">
-            <h2 className="text-2xl text-gray-900 font-extrabold mb-10">
+            <h2 className="text-2xl text-gray-900 font-extrabold mb-10 text-center">
               Welcome to <span className="text-blue-600">thanosparavantis.com</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
