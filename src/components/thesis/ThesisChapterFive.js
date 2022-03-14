@@ -46,7 +46,7 @@ export default function ThesisChapterFive() {
                     caption="Figure 5.2 Example game state after a considerable number of rounds"
       />
       <ThesisParagraph>
-        In <ThesisInternalLink href="figure-5-2">Figure 5.2</ThesisInternalLink> we observe the state of a game after a considerable number of rounds. Both players are spread
+        In <ThesisInternalLink href="#figure-5-2">Figure 5.2</ThesisInternalLink> we observe the state of a game after a considerable number of rounds. Both players are spread
         across the map, therefore it is worth looking at how the game state is depicted in vector form:
       </ThesisParagraph>
       <ThesisParagraph justify={false}>
