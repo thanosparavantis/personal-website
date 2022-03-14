@@ -161,7 +161,7 @@ export default function ThesisChapterFive() {
                     caption="Figure 5.4 The map_troops matrix representation from the Game class"
       />
       <ThesisParagraph>
-        Looking at <ThesisInternalLink href="#figure-5-3">Figure 5.3</ThesisInternalLink> and <ThesisInternalLink href="figure-5-4">Figure 5.4</ThesisInternalLink> the tile at <code>(0, 3)</code> is owned by the blue player, however tile <code>(5, 4)</code> is not
+        Looking at <ThesisInternalLink href="#figure-5-3">Figure 5.3</ThesisInternalLink> and <ThesisInternalLink href="#figure-5-4">Figure 5.4</ThesisInternalLink> the tile at <code>(0, 3)</code> is owned by the blue player, however tile <code>(5, 4)</code> is not
         neighboring with any of the player’s tiles. Therefore, the move is not valid. After applying the <code>guide_move()</code>
         method, we end up with the closest possible valid move:
       </ThesisParagraph>
