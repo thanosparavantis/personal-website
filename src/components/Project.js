@@ -7,6 +7,25 @@ import useProjectTags from "../hooks/useProjectTags";
 export default function Project({project, expanded = false}) {
   const tags = useProjectTags(project)
 
+  const headerBlock = (
+    <div className="px-5 md:px-8 py-4 gap-3 border-b">
+      <h2 className="font-bold text-gray-900">
+        <FontAwesomeIcon icon={faCode} className="mr-3"/>
+        {project.name}
+      </h2>
+    </div>
+  )
+
+  const headerLinkBlock = (
+    <Link to={`/projects/${project.slug}`}
+          className="block px-5 md:px-8 py-4 border-b transition hover:bg-gray-50 active:bg-gray-100">
+      <h2 className="font-bold text-gray-900">
+        <FontAwesomeIcon icon={faCode} className="mr-3"/>
+        {project.name}
+      </h2>
+    </Link>
+  )
+
   const contentBlock = (
     <div className="px-5 md:px-8 pt-5 leading-relaxed">
       <div className="text-gray-600 whitespace-pre-line">
@@ -70,36 +89,13 @@ export default function Project({project, expanded = false}) {
     </div>
   )
 
-  if (expanded) {
-    return (
-      <div className="bg-white border rounded">
-        <div className="px-5 md:px-8 py-4 gap-3 border-b">
-          <h2 className="font-bold text-gray-900">
-            <FontAwesomeIcon icon={faCode} className="mr-3"/>
-            {project.name}
-          </h2>
-        </div>
-        {contributorsBlock}
-        {contentBlock}
-        {linksBlock}
-        {tagsBlock}
-      </div>
-    )
-  } else {
-    return (
-      <div className="bg-white border rounded">
-        <Link to={`/projects/${project.slug}`}
-              className="block px-5 md:px-8 py-4 border-b transition hover:bg-gray-50 active:bg-gray-100">
-          <h2 className="font-bold text-gray-900">
-            <FontAwesomeIcon icon={faCode} className="mr-3"/>
-            {project.name}
-          </h2>
-        </Link>
-        {contributorsBlock}
-        {contentBlock}
-        {linksBlock}
-        {tagsBlock}
-      </div>
-    )
-  }
+  return (
+    <div className="bg-white border rounded">
+      {expanded ? headerBlock : headerLinkBlock}
+      {contributorsBlock}
+      {contentBlock}
+      {linksBlock}
+      {tagsBlock}
+    </div>
+  )
 }
