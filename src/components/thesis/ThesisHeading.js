@@ -17,7 +17,7 @@ export default function ThesisHeading({tag = null, children}) {
     )
   } else {
     return (
-      <h1 className="text-lg text-gray-900 font-bold">
+      <h1 className="text-justify text-lg text-gray-900 font-bold">
         {children}
       </h1>
     )
