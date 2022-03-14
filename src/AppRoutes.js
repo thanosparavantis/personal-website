@@ -25,12 +25,12 @@ export default function AppRoutes() {
       <Route exact path="/projects" component={ProjectsPage}/>
       <Route exact path="/photos" component={PhotosPage}/>
       <Route exact path="/contact" component={ContactPage}/>
-      {/*<Route exact path="/thesis" component={ThesisPage}/>*/}
       {projects.map(project => (
         <Route exact path={`/projects/${project.slug}`} key={project.slug}>
           <ProjectPage project={project}/>
         </Route>
       ))}
+      <Route exact path="/projects/thesis/documentation" component={ThesisPage}/>
       {projectTags.map(tag => (
         <Route exact path={`/projects/tag/${tag}`} key={tag}>
           <ProjectsTagPage tag={tag}/>

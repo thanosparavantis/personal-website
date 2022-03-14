@@ -12,7 +12,8 @@ export default function useProjects() {
           tags: project.tags,
           repositoryLink: project.repositoryLink,
           websiteLink: project.websiteLink,
-          contributors: project.contributors
+          contributors: project.contributors,
+          hasDocumentation: project.hasDocumentation,
         }
       })
       .sort((pA, pB) => (pA.name > pB.name) ? 1 : ((pB.name > pA.name) ? -1 : 0))

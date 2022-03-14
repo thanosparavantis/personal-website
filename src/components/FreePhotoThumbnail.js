@@ -9,12 +9,14 @@ export default function FreePhotoThumbnail({photo}) {
 
   return (
     <Link to={`/photos/${photo.slug}`}
-          className="md:h-60 bg-gray-200 rounded shadow-lg hover:opacity-80 transition">
+          title={photo.name}
+          className="md:h-60 hover:opacity-80"
+    >
       <LazyLoadImage src={photoSrc}
                      title={photo.name}
                      alt={photo.name}
                      effect="blur"
-                     className="pointer-events-none inline-block rounded md:h-60 object-cover"
+                     className="md:h-60 rounded shadow-lg pointer-events-none inline-block rounded object-cover"
       />
     </Link>
   )
