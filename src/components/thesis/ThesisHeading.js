@@ -5,7 +5,7 @@ export default function ThesisHeading({tag = null, children}) {
   if (tag) {
     return (
       <h1 id={tag} className="group sticky top-0 bg-white bg-opacity-80 text-gray-900
-                              font-bold flex items-center justify-between h-14">
+                              text-justify font-bold flex items-center justify-between h-14">
         <span className="text-lg">
           {children}
         </span>
