@@ -1,3 +1,5 @@
+/analytics.js https://plausible.io/js/plausible.js 200
+/api/event https://plausible.io/api/event 200
 /wp* https://www.youtube.com/watch?v=dQw4w9WgXcQ 301
 /admin* https://www.youtube.com/watch?v=dQw4w9WgXcQ 301
 /projects/airport-ticket-system /projects/airline-reservation-system 301
