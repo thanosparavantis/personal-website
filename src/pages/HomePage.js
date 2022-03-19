@@ -3,19 +3,21 @@ import thanosParavantisImg from "../images/thanos_paravantis_speaking.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faGithub, faLinkedin, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
-import {
-  faAngleDoubleDown,
-  faChevronDown,
-  faCode,
-  faEnvelopeOpenText,
-  faQuestionCircle
-} from "@fortawesome/free-solid-svg-icons";
+import {faChevronDown, faCode, faEnvelopeOpenText, faQuestionCircle} from "@fortawesome/free-solid-svg-icons";
 import {faImages} from "@fortawesome/free-regular-svg-icons";
 import MobileNavigation from "../components/MobileNavigation";
 import DesktopNavigation from "../components/DesktopNavigation";
 import Footer from "../components/Footer";
+import useProjects from "../hooks/useProjects";
+import {useMemo} from "react";
+import useProjectTags from "../hooks/useProjectTags";
+import usePhotos from "../hooks/usePhotos";
 
 export default function HomePage() {
+  const projects = useProjects()
+  const tags = useProjectTags()
+  const photos = usePhotos()
+
   return (
     <>
       <MobileNavigation/>
@@ -26,7 +28,8 @@ export default function HomePage() {
       />
       <main>
         <div className="relative flex items-center justify-center lg:ml-72 px-3">
-          <section itemScope itemType="https://schema.org/Person" className="container max-w-3xl min-h-screen py-32 flex flex-col items-center justify-center text-center">
+          <section itemScope itemType="https://schema.org/Person"
+                   className="container max-w-3xl min-h-screen py-32 flex flex-col items-center justify-center text-center">
             <img src={thanosParavantisImg}
                  itemProp="image"
                  title="Thanos Paravantis"
@@ -111,14 +114,41 @@ export default function HomePage() {
               </a>
             </div>
           </section>
-          <FontAwesomeIcon icon={faChevronDown} size="lg" className="text-gray-900 absolute bottom-0 animate-bounce mb-1"/>
+          <FontAwesomeIcon icon={faChevronDown} size="lg"
+                           className="text-gray-900 absolute bottom-0 animate-bounce mb-1"/>
         </div>
         <div className="bg-gray-100 flex items-center justify-center lg:ml-72 px-3 border-t shadow">
           <section className="container max-w-3xl min-h-screen mt-16 mb-5 flex flex-col items-center justify-center">
-            <h2 className="text-2xl text-gray-900 font-extrabold mb-10 text-center">
+            <h2 className="text-2xl text-gray-900 font-extrabold text-center">
               Welcome to <span className="text-blue-600">thanosparavantis.com</span>
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <section className="flex flex-col md:flex-row justify-center text-center gap-12 mt-10 mb-20">
+              <div className="flex flex-col gap-3">
+                <div className="text-6xl text-green-600 font-bold font-mono">
+                  {projects.length}
+                </div>
+                <div className="font-bold text-gray-900">
+                  Open Source Projects
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-3">
+                <div className="text-6xl text-green-600 font-bold font-mono">
+                  {tags.length}
+                </div>
+                <div className="font-bold text-gray-900">
+                  Technology Categories
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-3">
+                <div className="text-6xl text-green-600 font-bold font-mono">
+                  {photos.length}
+                </div>
+                <div className="font-bold text-gray-900">
+                  Public Domain Photos
+                </div>
+              </div>
+            </section>
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <Link to="/about" className="h-36 flex flex-col gap-3 p-5 border rounded shadow bg-white
                                            border-gray-300 hover:border-gray-400 active:bg-gray-50">
                 <div className="flex items-center font-bold text-gray-900">
@@ -169,7 +199,7 @@ export default function HomePage() {
                   form.
                 </p>
               </Link>
-            </div>
+            </section>
           </section>
         </div>
         <div className="lg:ml-72">
