@@ -52,7 +52,7 @@ export default function AboutPage() {
             </div>
             <a href="https://www.unipi.gr/unipi/en/"
                target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit university website
               <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
@@ -80,7 +80,7 @@ export default function AboutPage() {
             </div>
             <a href="https://46lyk-athin.att.sch.gr/"
                target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit school website
               <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
@@ -108,7 +108,7 @@ export default function AboutPage() {
             </div>
             <a href="https://www.hau.gr/"
                target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit organization website
               <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
@@ -139,7 +139,7 @@ export default function AboutPage() {
             </p>
             <a href="https://www.uic.edu/"
                target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit university website
               <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
@@ -165,7 +165,7 @@ export default function AboutPage() {
             </p>
             <a href="https://www.worldbank.org/"
                target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit institution website
               <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
@@ -191,7 +191,7 @@ export default function AboutPage() {
             </p>
             <a href="https://logicea.com/"
                target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit company website
               <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
@@ -218,7 +218,7 @@ export default function AboutPage() {
             </p>
             <a href="https://www.mineplex.com/home/"
                target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit company website
               <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
@@ -251,7 +251,7 @@ export default function AboutPage() {
             </p>
             <a href="https://www.tedxuniversityofpiraeus.com/"
                target="noopener noreferrer"
-               className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
               Visit organization website
               <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
             </a>
@@ -287,10 +287,10 @@ export default function AboutPage() {
                 Since October 2020
               </p>
             </div>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row md:items-center items-start">
               <a href="https://www.qrz.com/db/SV1SQT"
                  target="noopener noreferrer"
-                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 Visit QRZ.com page
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
@@ -309,7 +309,7 @@ export default function AboutPage() {
             <div className="mt-2 flex flex-col md:flex-row">
               <a href="https://ictai.computer.org/"
                  target="noopener noreferrer"
-                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 Visit conference website
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
@@ -323,10 +323,10 @@ export default function AboutPage() {
             Created a YouTube video guide on "How to become a radio amateur" with more than 10,000 views,
             that went viral on amateur radio community in Greece, November 2020.
 
-            <div className="mt-2 flex flex-col md:flex-row">
+            <div className="mt-2 flex flex-col md:flex-row md:items-center items-start">
               <a href="https://www.youtube.com/watch?v=pQUzARlrJBY"
                  target="noopener noreferrer"
-                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 Watch video
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
@@ -336,7 +336,7 @@ export default function AboutPage() {
               <a
                 href="https://rfnews.gr/%CF%80%CF%89%CF%82-%CE%BD%CE%B1-%CE%B3%CE%AF%CE%BD%CE%B5%CF%84%CE%B5-%CF%81%CE%B1%CE%B4%CE%B9%CE%BF%CE%B5%CF%81%CE%B1%CF%83%CE%B9%CF%84%CE%AD%CF%87%CE%BD%CE%B7%CF%82-video-guide/"
                 target="noopener noreferrer"
-                className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 Read article on rfnews.gr
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
@@ -344,10 +344,10 @@ export default function AboutPage() {
           </div>
           <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
             Awarded 4th place in Crowdhackathon Agrifood, team "UNI3.14", April 2019.
-            <div className="mt-2 flex flex-col md:flex-row">
+            <div className="mt-2 flex flex-col md:flex-row md:items-center items-start">
               <a href="https://crowdhackathon.com/agrifood/"
                  target="noopener noreferrer"
-                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 Visit event website
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
@@ -356,7 +356,7 @@ export default function AboutPage() {
               </p>
               <a href="https://www.youtube.com/watch?v=UIgAHE7qk7g"
                  target="noopener noreferrer"
-                 className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 Watch our presentation
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>
@@ -364,11 +364,11 @@ export default function AboutPage() {
           </div>
           <div className="px-5 md:px-8 py-5 text-gray-900">
             Awarded 2nd place in a recycling competition organized by Municipality of Athens, April 2013.
-            <div className="mt-2 flex flex-col md:flex-row">
+            <div className="mt-2">
               <a
                 href="https://www.newsbomb.gr/ellada/story/326452/vraveytikan-oi-nikites-stis-megales-giortes-antapodotikis-anakyklosis"
                 target="noopener noreferrer"
-                className="inline-block underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
                 Read article on newsbomb.gr
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
               </a>

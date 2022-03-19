@@ -40,7 +40,7 @@ export default function Project({project, expanded = false}) {
         </div>
       </div>
 
-      <div className="px-5 md:px-8 pt-5 pb-3 flex md:gap-3 md:flex-row flex-col md:items-center">
+      <div className="px-5 md:px-8 pt-5 pb-3 flex md:gap-3 md:flex-row flex-col md:items-center items-start">
         {project.hasDocumentation && (
           <Link to={`/projects/${project.slug}/documentation`}
                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
