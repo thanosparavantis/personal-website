@@ -20,13 +20,18 @@ export default function ProjectsPage() {
       <Helmet>
         <body className="bg-gray-100"/>
       </Helmet>
-      <PageHeader title="Projects" description="Browse through a collection of open source computer science projects I have worked on."/>
+      <PageHeader title="Projects"
+                  description="Browse through a collection of open source computer science projects I have worked on."/>
       <main>
         <section className="flex flex-wrap gap-1 mb-5">
-          {tags.map(tag => <ProjectTag tag={tag} key={tag}/>)}
+          {tags.map(tag => (
+            <ProjectTag tag={tag} expand={true} key={tag}/>
+          ))}
         </section>
         <section className="grid grid-cols-flow gap-5 mb-5">
-          {projects.map(project => <Project project={project} key={project.slug}/>)}
+          {projects.map(project => (
+            <Project project={project} key={project.slug}/>
+          ))}
         </section>
       </main>
     </PageTemplate>

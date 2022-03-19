@@ -23,11 +23,15 @@ export default function ProjectsTagPage({tag}) {
       </Helmet>
       <PageHeader title={`Tag: ${tag}`} description={`The list of open source computer science projects including the ${tag} tag.`}/>
       <main>
-        <section className="text-gray-900 flex flex-wrap gap-1 mb-5">
-          {tags.map(otherTag => <ProjectTag tag={otherTag} active={otherTag === tag} key={otherTag}/>)}
+        <section className="flex flex-wrap gap-1 mb-5">
+          {tags.map(otherTag => (
+            <ProjectTag tag={otherTag} active={otherTag === tag} expand={true} key={otherTag}/>
+          ))}
         </section>
         <section className="grid grid-cols-flow gap-5 mb-5">
-          {projects.map(project => <Project project={project} key={project.slug}/>)}
+          {projects.map(project => (
+            <Project project={project} key={project.slug}/>
+          ))}
         </section>
       </main>
     </PageTemplate>

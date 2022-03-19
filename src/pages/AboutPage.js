@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import PageHeader from "../components/PageHeader";
 import PageTemplate from "../components/PageTemplate";
+import {Link} from "react-router-dom";
 
 export default function AboutPage() {
   return (
@@ -23,7 +24,8 @@ export default function AboutPage() {
         <body className="bg-gray-100"/>
       </Helmet>
       <main>
-        <PageHeader title="About" description="Portfolio of my educational background, work and volunteer experience, hobby projects and achievements."/>
+        <PageHeader title="About"
+                    description="Portfolio of my educational background, work and volunteer experience, hobby projects and achievements."/>
         <section className="mb-5 border rounded bg-white">
           <h2 className="px-5 md:px-8 py-5 border-b md:text-lg font-bold text-gray-900">
             <FontAwesomeIcon icon={faUserGraduate} className="mr-3"/>
@@ -50,12 +52,21 @@ export default function AboutPage() {
                 GPA 8.72 / 10
               </p>
             </div>
-            <a href="https://www.unipi.gr/unipi/en/"
-               target="noopener noreferrer"
-               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
-              Visit university website
-              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-            </a>
+            <div className="flex flex-col md:flex-row md:items-center items-start">
+              <Link to="/projects/thesis/documentation"
+                    className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                Read thesis documentation
+              </Link>
+              <p className="mx-3 hidden md:block">
+                &middot;
+              </p>
+              <a href="https://www.unipi.gr/unipi/en/"
+                 target="noopener noreferrer"
+                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                Visit university website
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+              </a>
+            </div>
           </div>
           <div className="px-5 md:px-8 py-5 border-b">
             <h3 className="mb-1 font-bold text-gray-900">
@@ -249,12 +260,23 @@ export default function AboutPage() {
               for the annual TEDx local event with the support of the University of Piraeus.
               Managed a team of two web developers and supervised the creation of a new website for the organization.
             </p>
-            <a href="https://www.tedxuniversityofpiraeus.com/"
-               target="noopener noreferrer"
-               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
-              Visit organization website
-              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-            </a>
+            <div className="flex flex-col md:flex-row md:items-center items-start">
+              <a href="https://www.tedxuniversityofpiraeus.com/"
+                 target="noopener noreferrer"
+                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                Visit organization website
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+              </a>
+              <p className="mx-3 hidden md:block">
+                &middot;
+              </p>
+              <a href="https://www.ted.com/tedx/events/45617"
+                 target="noopener noreferrer"
+                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
+                Visit TED.com event page
+                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+              </a>
+            </div>
           </div>
         </section>
         <section className="mb-5 border rounded bg-white">
@@ -287,14 +309,12 @@ export default function AboutPage() {
                 Since October 2020
               </p>
             </div>
-            <div className="flex flex-col md:flex-row md:items-center items-start">
-              <a href="https://www.qrz.com/db/SV1SQT"
-                 target="noopener noreferrer"
-                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
-                Visit QRZ.com page
-                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-              </a>
-            </div>
+            <a href="https://www.qrz.com/db/SV1SQT"
+               target="noopener noreferrer"
+               className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
+              Visit QRZ.com page
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
+            </a>
           </div>
         </section>
         <section className="mb-5 border rounded bg-white">
@@ -306,7 +326,7 @@ export default function AboutPage() {
             Participated in the 33rd IEEE International Conference on Tools with Artificial Intelligence
             Conference (ICTAI) virtually
             as Session Coordinator, chaired 8 sessions, November 2021.
-            <div className="mt-2 flex flex-col md:flex-row">
+            <div className="mt-2">
               <a href="https://ictai.computer.org/"
                  target="noopener noreferrer"
                  className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
@@ -322,7 +342,6 @@ export default function AboutPage() {
           <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
             Created a YouTube video guide on "How to become a radio amateur" with more than 10,000 views,
             that went viral on amateur radio community in Greece, November 2020.
-
             <div className="mt-2 flex flex-col md:flex-row md:items-center items-start">
               <a href="https://www.youtube.com/watch?v=pQUzARlrJBY"
                  target="noopener noreferrer"
