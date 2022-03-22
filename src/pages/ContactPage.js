@@ -8,6 +8,7 @@ import TextareaAutosize from "react-textarea-autosize";
 import {faFacebook, faGithub, faLinkedin, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import PageHeader from "../components/PageHeader";
 import PageTemplate from "../components/PageTemplate";
+import ExternalLink from "../components/ExternalLink";
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false)
@@ -98,10 +99,9 @@ export default function ContactPage() {
               Email Address
             </h3>
             <p className="text-gray-600 mb-5">
-              <a href="mailto:thanosparavantis@gmail.com"
-                 className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
+              <ExternalLink href="mailto:thanosparavantis@gmail.com">
                 thanosparavantis@gmail.com
-              </a>
+              </ExternalLink>
             </p>
             <h3 className="mb-1 font-bold text-gray-900">
               Social Media

@@ -22,5 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-src/_projects.json
 Thumbs.db
+src/_projects.json
+src/_photos.json
+src/images/full
+src/images/previews

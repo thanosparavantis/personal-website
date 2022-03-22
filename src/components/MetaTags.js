@@ -10,7 +10,7 @@ export default function MetaTags({title: pageTitle, description, canonicalUrl = 
   }, [pageTitle])
 
   const image = useMemo(() => {
-    return "https://www.thanosparavantis.com" + (photoSrc || "/preview.jpg")
+    return "https://www.thanosparavantis.com" + (photoSrc || "/previews.jpg")
   }, [])
 
   return (

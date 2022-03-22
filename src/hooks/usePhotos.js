@@ -1,4 +1,4 @@
-import photos from "../photos.json"
+import photos from "../_photos.json"
 import {useMemo} from "react";
 
 export default function usePhotos() {

@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronLeft, faChevronRight, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
+import {faChevronLeft, faChevronRight, faDownload, faExternalLinkAlt, faSave} from "@fortawesome/free-solid-svg-icons";
 import {useMemo} from "react";
 import {Link} from "react-router-dom";
 import useArrowPhotos from "../hooks/useArrowPhotos";
@@ -39,10 +39,11 @@ export default function FreePhotoPreview({photo}) {
       <div className="mt-5">
         <a href={photoFullSrc}
            target="_blank"
+           download={photo.filename}
            className="block font-bold text-white rounded border focus:outline-none
                       text-center py-3 bg-green-600 hover:bg-green-700 active:bg-green-800">
-          <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-3" size="sm"/>
           Download photo
+          <FontAwesomeIcon icon={faDownload} className="ml-3"/>
         </a>
       </div>
     </>

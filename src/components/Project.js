@@ -1,8 +1,10 @@
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCode, faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
+import {faCode} from "@fortawesome/free-solid-svg-icons";
 import ProjectTag from "./ProjectTag";
 import useProjectTags from "../hooks/useProjectTags";
+import ExternalLink from "./ExternalLink";
+import InternalLink from "./InternalLink";
 
 export default function Project({project, expanded = false}) {
   const tags = useProjectTags(project)
@@ -42,10 +44,9 @@ export default function Project({project, expanded = false}) {
 
       <div className="px-5 md:px-8 pt-5 pb-3 flex md:gap-3 md:flex-row flex-col md:items-center items-start">
         {project.hasDocumentation && (
-          <Link to={`/projects/${project.slug}/documentation`}
-                className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
+          <InternalLink href={`/projects/${project.slug}/documentation`}>
             Read documentation
-          </Link>
+          </InternalLink>
         )}
         {(project.websiteLink || project.repositoryLink) && project.hasDocumentation && (
           <p className="md:block hidden">
@@ -53,13 +54,9 @@ export default function Project({project, expanded = false}) {
           </p>
         )}
         {project.websiteLink && (
-          <a href={project.websiteLink}
-             rel="noopener noreferrer"
-             target="_blank"
-             className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
+          <ExternalLink href={project.websiteLink}>
             Visit project website
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-          </a>
+          </ExternalLink>
         )}
         {project.websiteLink && project.repositoryLink && (
           <p className="md:block hidden">
@@ -67,13 +64,9 @@ export default function Project({project, expanded = false}) {
           </p>
         )}
         {project.repositoryLink && (
-          <a href={project.repositoryLink}
-             rel="noopener noreferrer"
-             target="_blank"
-             className="underline text-blue-600 hover:text-blue-800 active:text-green-700">
+          <ExternalLink href={project.repositoryLink}>
             Visit project repository
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" size="sm"/>
-          </a>
+          </ExternalLink>
         )}
       </div>
 
