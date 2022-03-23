@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import PageTemplate from "../components/PageTemplate";
 import {Helmet} from "react-helmet";
+import {useEffect} from "react";
 
 export default function NotFoundPage() {
   useEffect(() => {
