@@ -12,10 +12,10 @@ const photosExportPath = "./src/_photos.json"
 fs.readdirSync(photosSourceFullPath).forEach(filename => {
   console.log(`Found photo: ${filename}`)
 
-  const baseFileName = filename.replaceAll(".jpg", "")
-  const slug = baseFileName.replaceAll("_", "-")
+  const baseFileName = filename.replace(/.jpg/g, "")
+  const slug = baseFileName.replace(/_/g, "-")
 
-  let name = baseFileName.replaceAll("_", " ")
+  let name = baseFileName.replace(/_/g, " ")
   name = name.charAt(0).toUpperCase() + name.slice(1)
 
   photos.push({
