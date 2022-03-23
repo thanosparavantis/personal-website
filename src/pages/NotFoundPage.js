@@ -7,6 +7,10 @@ import PageTemplate from "../components/PageTemplate";
 import {Helmet} from "react-helmet";
 
 export default function NotFoundPage() {
+  useEffect(() => {
+    plausible("404",{ props: { path: document.location.pathname } })
+  }, [])
+
   return (
     <PageTemplate>
       <MetaTags
