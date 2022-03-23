@@ -3,12 +3,13 @@ const fs = require("fs")
 console.log("Starting content export")
 
 const photos = []
-const photosPath = "./content/photos/previews"
+const photosSourceFullPath = "./content/photos/full"
+const photosSourcePreviewsPath = "./content/photos/previews"
+const photosTargetFullPath = "./src/images/full"
+const photosTargetPreviewsPath = "./src/images/previews"
 const photosExportPath = "./src/_photos.json"
 
-fs.cpSync("./content/photos/", "./src/images/", {recursive: true})
-
-fs.readdirSync(photosPath).forEach(filename => {
+fs.readdirSync(photosSourceFullPath).forEach(filename => {
   console.log(`Found photo: ${filename}`)
 
   const baseFileName = filename.replaceAll(".jpg", "")
@@ -22,6 +23,11 @@ fs.readdirSync(photosPath).forEach(filename => {
     "name": name,
     "filename": filename,
   })
+})
+
+fs.readdirSync(photosSourceFullPath).forEach(filename => {
+  fs.writeFileSync(`${photosTargetFullPath}/${filename}`, fs.readFileSync(`${photosSourceFullPath}/${filename}`))
+  fs.writeFileSync(`${photosTargetPreviewsPath}/${filename}`, fs.readFileSync(`${photosSourcePreviewsPath}/${filename}`))
 })
 
 console.log(`Exporting photos to file: ${photosExportPath}`)
