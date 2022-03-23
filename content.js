@@ -9,6 +9,19 @@ const photosTargetFullPath = "./src/images/full"
 const photosTargetPreviewsPath = "./src/images/previews"
 const photosExportPath = "./src/_photos.json"
 
+if (!fs.existsSync(photosTargetFullPath)) {
+  fs.mkdirSync(photosTargetFullPath)
+}
+
+if (!fs.existsSync(photosTargetPreviewsPath)) {
+  fs.mkdirSync(photosTargetPreviewsPath)
+}
+
+fs.readdirSync(photosSourceFullPath).forEach(filename => {
+  fs.writeFileSync(`${photosTargetFullPath}/${filename}`, fs.readFileSync(`${photosSourceFullPath}/${filename}`))
+  fs.writeFileSync(`${photosTargetPreviewsPath}/${filename}`, fs.readFileSync(`${photosSourcePreviewsPath}/${filename}`))
+})
+
 fs.readdirSync(photosSourceFullPath).forEach(filename => {
   console.log(`Found photo: ${filename}`)
 
@@ -23,11 +36,6 @@ fs.readdirSync(photosSourceFullPath).forEach(filename => {
     "name": name,
     "filename": filename,
   })
-})
-
-fs.readdirSync(photosSourceFullPath).forEach(filename => {
-  fs.writeFileSync(`${photosTargetFullPath}/${filename}`, fs.readFileSync(`${photosSourceFullPath}/${filename}`))
-  fs.writeFileSync(`${photosTargetPreviewsPath}/${filename}`, fs.readFileSync(`${photosSourcePreviewsPath}/${filename}`))
 })
 
 console.log(`Exporting photos to file: ${photosExportPath}`)
