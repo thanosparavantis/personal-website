@@ -1,5 +1,4 @@
-// const fs = require("fs")
-import fs from "fs"
+const fs = require("fs")
 
 console.log("Starting content export")
 
