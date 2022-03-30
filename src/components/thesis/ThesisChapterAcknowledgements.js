@@ -1,5 +1,6 @@
 import ThesisHeading from "./ThesisHeading";
 import ThesisParagraph from "./ThesisParagraph";
+import ExternalLink from "../ExternalLink";
 
 export default function ThesisChapterAcknowledgements() {
   return (
@@ -17,8 +18,9 @@ export default function ThesisChapterAcknowledgements() {
         I would like to thank my professor Dr. Dionisios Sotiropoulos for accepting my original proposition for the
         subject and guiding me during this time. I would also like to thank my parents John and Maria, for
         motivating me to keep up the hard work and bearing with me during the quarantine. Lastly, I want to express
-        my gratitude for SethBling, an American YouTuber for publishing the video "MarI/O – Machine Learning for
-        Video Games" which was my original inspiration for the subject of this project.
+        my gratitude for SethBling, an American YouTuber for publishing the video <ExternalLink
+        href="https://www.youtube.com/watch?v=qv6UVOQ0F44">"MarI/O – Machine Learning for
+        Video Games"</ExternalLink> which was my original inspiration for the subject of this project.
       </ThesisParagraph>
     </section>
   )

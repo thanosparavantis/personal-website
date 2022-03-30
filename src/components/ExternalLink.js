@@ -9,7 +9,7 @@ export default function ExternalLink({href, children}) {
        className="underline text-blue-600 hover:text-blue-800 active:text-green-700"
     >
       {children}
-      <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" className="ml-2"/>
+      <FontAwesomeIcon icon={faExternalLinkAlt} size="xs" className="ml-2"/>
     </a>
   )
 }

@@ -9,6 +9,7 @@ import figure_2_5 from "../../images/thesis/figure_2_5.png";
 import figure_2_6 from "../../images/thesis/figure_2_6.png";
 import ThesisFigure from "./ThesisFigure";
 import ThesisBulletList from "./ThesisUnorderedList";
+import ExternalLink from "../ExternalLink";
 
 export default function ThesisChapterTwo() {
   return (
@@ -54,10 +55,13 @@ export default function ThesisChapterTwo() {
           to the vast availability of third-party libraries. The syntax in Python is straightforward with no strict
           rules
           to follow. This allows for rapid development of prototypes that help leverage more work at the task and hand,
-          instead of devoting extra time on setting up the core functionality. This project heavily depends on the
-          neat-python library [5]. This library provides the basic tools and functions in order to setup the concepts
+          instead of devoting extra time on setting up the core functionality. This project heavily depends on
+          the <ExternalLink
+          href="https://neat-python.readthedocs.io/en/latest/index.html">neat-python</ExternalLink> library [5]. This
+          library provides the basic tools and functions in order to setup the concepts
           defined in the NEAT algorithm. Furthermore, we use
-          the <code>numpy</code> and <code>matplotlib</code> libraries
+          the <ExternalLink href="https://numpy.org/"><code>numpy</code></ExternalLink> and <ExternalLink
+          href="https://matplotlib.org/"><code>matplotlib</code></ExternalLink> libraries
           which provide excellent
           tools for vector operations and graphs. We put forward the basic concepts of our board game by creating base
           classes: <code>Game</code>, <code>GameMap</code>, <code>GamePlayer</code>, <code>GameResult</code> and <code>StateParser</code>.
@@ -122,7 +126,8 @@ export default function ThesisChapterTwo() {
         </ThesisBulletList>
         <ThesisParagraph>
           When the attacker chooses to send all their troops to a tile belonging to nature, this is a special case of
-          <em>tile hopping</em>. Because the tile is uncontested, all troops will simply switch from one tile to another.
+          <em>tile hopping</em>. Because the tile is uncontested, all troops will simply switch from one tile to
+          another.
           Players
           can use this type of attack to move freely on the map without conquering extra tiles by leaving troops
           behind.

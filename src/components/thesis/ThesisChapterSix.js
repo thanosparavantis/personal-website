@@ -80,7 +80,7 @@ export default function ThesisChapterSix() {
           red
           player is absent, and the end goal for blue is to take over the entire map as soon as possible. There is no
           competition for blue, therefore it is only a matter of learning how to play game. The initial state for all
-          neural networks in the population is depicted in <ThesisInternalLink href="#figure-6-1">Figure 6.1</ThesisInternalLink> .
+          neural networks in the population is depicted in <ThesisInternalLink href="#figure-6-1">Figure 6.1</ThesisInternalLink>.
         </ThesisParagraph>
         <ThesisFigure src={figure_6_1} width="465" height="419" tag="figure-6-1"
                       caption="Figure 6.1 The initial state of the first training case"
