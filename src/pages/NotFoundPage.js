@@ -9,7 +9,7 @@ import {useEffect} from "react";
 
 export default function NotFoundPage() {
   useEffect(() => {
-    plausible("404",{ props: { path: document.location.pathname } })
+    window.plausible("404",{ props: { path: document.location.pathname } })
   }, [])
 
   return (
