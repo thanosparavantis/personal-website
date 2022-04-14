@@ -124,7 +124,7 @@ export default function HomePage() {
             </h2>
             <section className="hidden md:flex justify-center text-center gap-12 mb-20">
               <div className="flex flex-col gap-3">
-                <div className="text-6xl text-green-600 font-bold font-mono">
+                <div className="text-6xl text-green-600 font-bold">
                   {projects.length}
                 </div>
                 <div className="font-bold text-gray-900">
@@ -132,7 +132,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center gap-3">
-                <div className="text-6xl text-green-600 font-bold font-mono">
+                <div className="text-6xl text-green-600 font-bold">
                   {tags.length}
                 </div>
                 <div className="font-bold text-gray-900">
@@ -140,7 +140,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center gap-3">
-                <div className="text-6xl text-green-600 font-bold font-mono">
+                <div className="text-6xl text-green-600 font-bold">
                   {photos.length}
                 </div>
                 <div className="font-bold text-gray-900">

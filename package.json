@@ -17,8 +17,7 @@
     "react-scripts": "4.0.3",
     "react-snap": "^1.23.0",
     "react-textarea-autosize": "^8.3.3",
-    "string-similarity-js": "^2.1.4",
-    "tailwindcss-target-variant": "^0.1.0"
+    "string-similarity-js": "^2.1.4"
   },
   "scripts": {
     "start": "node content.js && craco start",
