@@ -236,14 +236,14 @@ export default function ContactPage() {
             <div className="px-5 md:px-8 py-3 border-t flex items-center justify-center text-center">
               {loading ? (
                 <button className="w-full shadow text-white font-bold rounded py-3 text-sm md:text-base
-                                 bg-yellow-500 cursor-not-allowed"
+                                 bg-amber-500 cursor-not-allowed"
                         disabled>
                   <FontAwesomeIcon icon={faSpinner} spin className="mr-3"/>
                   Sending...
                 </button>
               ) : (
                 <button className="w-full shadow text-white font-bold rounded py-3 text-sm md:text-base
-                                       bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700">
+                                       bg-amber-500 hover:bg-amber-600 active:bg-amber-700">
                   <FontAwesomeIcon icon={faPaperPlane} className="mr-3"/>
                   Send
                 </button>

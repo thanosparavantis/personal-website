@@ -6,11 +6,11 @@ import useArrowPhotos from "../hooks/useArrowPhotos";
 
 export default function FreePhotoPreview({photo}) {
   const photoPreviewSrc = useMemo(() => {
-    return require(`../images/previews/${photo.filename}`).default
+    return require(`../images/previews/${photo.filename}`)
   }, [photo])
 
   const photoFullSrc = useMemo(() => {
-    return require(`../images/full/${photo.filename}`).default
+    return require(`../images/full/${photo.filename}`)
   }, [photo])
 
   const [prevPhoto, nextPhoto] = useArrowPhotos(photo)
@@ -41,7 +41,7 @@ export default function FreePhotoPreview({photo}) {
            target="_blank"
            download={photo.filename}
            className="block font-bold text-white rounded border focus:outline-none
-                      text-center py-3 bg-green-600 hover:bg-green-700 active:bg-green-800">
+                      text-center py-3 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800">
           Download photo
           <FontAwesomeIcon icon={faDownload} className="ml-3"/>
         </a>

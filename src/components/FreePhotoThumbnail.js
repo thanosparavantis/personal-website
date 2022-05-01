@@ -4,7 +4,7 @@ import {useMemo} from "react";
 
 export default function FreePhotoThumbnail({photo}) {
   const photoSrc = useMemo(() => {
-    return require(`../images/previews/${photo.filename}`).default
+    return require(`../images/previews/${photo.filename}`)
   }, [photo])
 
   return (

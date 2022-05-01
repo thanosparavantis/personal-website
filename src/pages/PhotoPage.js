@@ -39,7 +39,7 @@ export default function PhotoPage({photo}) {
           <div className="mt-5">
             <Link to="/photos"
                   className="block font-bold text-white rounded border focus:outline-none
-                             text-center py-3 bg-green-600 hover:bg-green-700 active:bg-green-800">
+                             text-center py-3 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800">
               <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
               View all photos
             </Link>

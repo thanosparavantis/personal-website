@@ -212,6 +212,27 @@ export default function AboutPage() {
             <FontAwesomeIcon icon={faHandsHelping} className="mr-3"/>
             Volunteer experience
           </h2>
+          <div className="px-5 md:px-8 py-5 border-b">
+            <h3 className="mb-1 font-bold text-gray-900">
+              Member
+            </h3>
+            <div className="mb-2 flex flex-col md:flex-row text-gray-700">
+              <p>
+                July 2020 - Present
+              </p>
+              <p className="mx-3 hidden md:block">
+                &middot;
+              </p>
+              <p>
+                Panhellenic CB Club of Radio Users
+              </p>
+            </div>
+            <div className="flex flex-col md:flex-row md:items-center items-start">
+              <ExternalLink href="https://www.tedxuniversityofpiraeus.com/">
+                Visit organization website
+              </ExternalLink>
+            </div>
+          </div>
           <div className="px-5 md:px-8 py-5">
             <h3 className="mb-1 font-bold text-gray-900">
               IT Manager

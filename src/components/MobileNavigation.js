@@ -24,8 +24,8 @@ export default function MobileNavigation() {
 
   return (
     <>
-      <nav className="lg:hidden flex items-center justify-center bg-green-600
-                    shadow-lg h-20 border-b-8 border-green-700 z-10">
+      <nav className="lg:hidden flex items-center justify-center bg-emerald-600
+                    shadow-lg h-20 border-b-8 border-emerald-700 z-10">
         <div className="container max-w-3xl text-white flex justify-between">
           <Link to="/" className="flex items-center font-bold h-20 px-5">
             <img src={thanosParavantisImg}
@@ -50,7 +50,7 @@ export default function MobileNavigation() {
           style={{height: "calc(100vh - 5rem)"}}>
           <NavLink to="/"
                    exact={true}
-                   activeClassName="text-green-600"
+                   activeClassName="text-emerald-600"
                    className="h-20 flex flex-shrink-0 items-center px-5 bg-white border-b"
                    onClick={toggleOpenState}
           >
@@ -61,7 +61,7 @@ export default function MobileNavigation() {
           </NavLink>
           <NavLink to="/about"
                    exact={true}
-                   activeClassName="text-green-600"
+                   activeClassName="text-emerald-600"
                    className="h-20 flex flex-shrink-0 items-center px-5 bg-white border-b"
                    onClick={toggleOpenState}
           >
@@ -71,7 +71,7 @@ export default function MobileNavigation() {
             About
           </NavLink>
           <NavLink to="/projects"
-                   activeClassName="text-green-600"
+                   activeClassName="text-emerald-600"
                    className="h-20 flex flex-shrink-0 items-center px-5 bg-white border-b"
                    onClick={toggleOpenState}
           >
@@ -81,7 +81,7 @@ export default function MobileNavigation() {
             Projects
           </NavLink>
           <NavLink to="/photos"
-                   activeClassName="text-green-600"
+                   activeClassName="text-emerald-600"
                    className="h-20 flex flex-shrink-0 items-center px-5 bg-white border-b"
                    onClick={toggleOpenState}
           >
@@ -92,7 +92,7 @@ export default function MobileNavigation() {
           </NavLink>
           <NavLink to="/contact"
                    exact={true}
-                   activeClassName="text-green-600"
+                   activeClassName="text-emerald-600"
                    className="h-20 flex flex-shrink-0 items-center px-5 bg-white border-b"
                    onClick={toggleOpenState}
           >

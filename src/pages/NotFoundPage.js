@@ -5,12 +5,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import PageTemplate from "../components/PageTemplate";
 import {Helmet} from "react-helmet";
-import {useEffect} from "react";
 
 export default function NotFoundPage() {
-  useEffect(() => {
-    window.plausible("404",{ props: { path: document.location.pathname } })
-  }, [])
 
   return (
     <PageTemplate>
@@ -38,7 +34,7 @@ export default function NotFoundPage() {
               The requested page could not be found.
             </p>
             <Link to="/" className="px-8 py-3 text-white uppercase font-bold shadow-lg transition
-                                    text-center bg-green-600 hover:bg-green-700 active:bg-green-800">
+                                    text-center bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800">
               Back to Home
               <FontAwesomeIcon icon={faArrowRight} className="ml-5"/>
             </Link>
