@@ -129,7 +129,7 @@ export default function AboutPage() {
                 University of Illinois Chicago
               </p>
             </div>
-            <p className="mb-3 leading-relaxed">
+            <p className="mb-3 leading-7">
               State legislators database development, Dr. Alexandra Filindra.
             </p>
             <ExternalLink href="https://www.uic.edu/">
@@ -151,7 +151,7 @@ export default function AboutPage() {
                 World Bank Group, Washington D.C.
               </p>
             </div>
-            <p className="mb-3 leading-relaxed">
+            <p className="mb-3 leading-7">
               A one-month internship working for the Information and Technology Services for Financial
               Engineering unit.
             </p>
@@ -174,7 +174,7 @@ export default function AboutPage() {
                 Logicea, Athens, Greece
               </p>
             </div>
-            <p className="mb-3 leading-relaxed">
+            <p className="mb-3 leading-7">
               A three month internship program supported by the University of Piraeus.
               Full time position with hands-on experience on developing Spring microservices.
             </p>
@@ -197,7 +197,7 @@ export default function AboutPage() {
                 Mineplex, Georgia USA
               </p>
             </div>
-            <p className="mb-3 leading-relaxed">
+            <p className="mb-3 leading-7">
               A part time position in one of the largest gaming communities in Minecraft at the time.
               Major contributor in a mini-game project that was released
               to the public after having finished an extensive development cycle.
@@ -248,7 +248,7 @@ export default function AboutPage() {
                 TEDxUniversityofPiraeus, Athens, Greece
               </p>
             </div>
-            <p className="mb-3 leading-relaxed">
+            <p className="mb-3 leading-7">
               Responsible for coordinating all IT related work in preparation
               for the annual TEDx local event with the support of the University of Piraeus.
               Managed a team of two web developers and supervised the creation of a new website for the organization.
@@ -307,9 +307,10 @@ export default function AboutPage() {
             Achievements and conferences
           </h2>
           <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
-            Participated in the 33rd IEEE International Conference on Tools with Artificial Intelligence
-            Conference (ICTAI) virtually
-            as Session Coordinator, chaired 8 sessions, November 2021.
+            <p className="leading-7">
+              Participated in the 33rd IEEE International Conference on Tools with Artificial Intelligence
+              Conference (ICTAI) virtually as Session Coordinator, chaired 8 sessions, November 2021.
+            </p>
             <div className="mt-2">
               <ExternalLink href="https://ictai.computer.org/">
                 Visit conference website
@@ -317,12 +318,16 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
-            Awarded with the "Employee of the month" title in World Bank Group on the Information and
-            Technology Services for Financial Engineering unit, January 2021.
+            <p className="leading-7">
+              Awarded with the "Employee of the month" title in World Bank Group on the Information and
+              Technology Services for Financial Engineering unit, January 2021.
+            </p>
           </div>
           <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
-            Created a YouTube video guide on "How to become a radio amateur" with more than 10,000 views,
-            that went viral on amateur radio community in Greece, November 2020.
+            <p className="leading-7">
+              Created a YouTube video guide on "How to become a radio amateur" with more than 10,000 views,
+              that went viral on amateur radio community in Greece, November 2020.
+            </p>
             <div className="mt-2 flex flex-col md:flex-row md:items-center items-start">
               <ExternalLink href="https://www.youtube.com/watch?v=pQUzARlrJBY">
                 Watch video
@@ -337,7 +342,9 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
-            Awarded 4th place in Crowdhackathon Agrifood, team "UNI3.14", April 2019.
+            <p className="leading-7">
+              Awarded 4th place in Crowdhackathon Agrifood, team "UNI3.14", April 2019.
+            </p>
             <div className="mt-2 flex flex-col md:flex-row md:items-center items-start">
               <ExternalLink href="https://crowdhackathon.com/agrifood/">
                 Visit event website
@@ -351,7 +358,9 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="px-5 md:px-8 py-5 text-gray-900">
-            Awarded 2nd place in a recycling competition organized by Municipality of Athens, April 2013.
+            <p className="leading-7">
+              Awarded 2nd place in a recycling competition organized by Municipality of Athens, April 2013.
+            </p>
             <div className="mt-2">
               <ExternalLink
                 href="https://www.newsbomb.gr/ellada/story/326452/vraveytikan-oi-nikites-stis-megales-giortes-antapodotikis-anakyklosis">

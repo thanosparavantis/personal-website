@@ -25,9 +25,9 @@ export default function DesktopNavigation() {
       </div>
       <NavLink to="/"
                exact={true}
-               activeClassName="bg-emerald-800 hover:bg-emerald-800"
+               activeClassName="bg-emerald-800"
                className="flex items-center flex-shrink-0 px-8 h-20 font-bold
-                          text-white hover:bg-emerald-700 active:bg-emerald-800">
+                          text-white active:bg-emerald-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faHome}/>
         </div>
@@ -35,27 +35,27 @@ export default function DesktopNavigation() {
       </NavLink>
       <NavLink to="/about"
                exact={true}
-               activeClassName="bg-emerald-800 hover:bg-emerald-800"
+               activeClassName="bg-emerald-800"
                className="flex items-center flex-shrink-0 px-8 h-20 font-bold
-                          text-white hover:bg-emerald-700 active:bg-emerald-800">
+                          text-white active:bg-emerald-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faQuestionCircle}/>
         </div>
         About
       </NavLink>
       <NavLink to="/projects"
-               activeClassName="bg-emerald-800 hover:bg-emerald-800"
+               activeClassName="bg-emerald-800"
                className="flex items-center flex-shrink-0 px-8 h-20 font-bold
-                          text-white hover:bg-emerald-700 active:bg-emerald-800">
+                          text-white active:bg-emerald-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faCode}/>
         </div>
         Projects
       </NavLink>
       <NavLink to="/photos"
-               activeClassName="bg-emerald-800 hover:bg-emerald-800"
+               activeClassName="bg-emerald-800"
                className="flex items-center flex-shrink-0 px-8 h-20 font-bold
-                          text-white hover:bg-emerald-700 active:bg-emerald-800">
+                          text-white active:bg-emerald-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faImages}/>
         </div>
@@ -63,9 +63,9 @@ export default function DesktopNavigation() {
       </NavLink>
       <NavLink to="/contact"
                exact={true}
-               activeClassName="bg-emerald-800 hover:bg-emerald-800"
+               activeClassName="bg-emerald-800"
                className="flex items-center flex-shrink-0 px-8 h-20 font-bold
-                          text-white hover:bg-emerald-700 active:bg-emerald-800">
+                          text-white active:bg-emerald-800">
         <div className="w-8">
           <FontAwesomeIcon icon={faEnvelopeOpenText}/>
         </div>
