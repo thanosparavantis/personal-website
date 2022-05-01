@@ -1,7 +1,9 @@
 import React from "react";
-import "./index.css";
 import App from "./App";
 import {hydrate, render} from "react-dom";
+import "./styles/index.css";
+import "./styles/fonts.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const root = document.getElementById("root");
 

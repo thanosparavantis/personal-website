@@ -27,7 +27,7 @@ export default function NotFoundPage() {
             />
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h1 className="font-extrabold tracking-wider mb-5 text-7xl text-gray-900">
+            <h1 className="font-black tracking-wider mb-5 text-7xl text-gray-900">
               404
             </h1>
             <p className=" text-gray-700 mb-10">
