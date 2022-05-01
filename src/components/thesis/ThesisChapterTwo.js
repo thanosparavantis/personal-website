@@ -57,7 +57,7 @@ export default function ThesisChapterTwo() {
           to follow. This allows for rapid development of prototypes that help leverage more work at the task and hand,
           instead of devoting extra time on setting up the core functionality. This project heavily depends on
           the <ExternalLink
-          href="https://neat-python.readthedocs.io/en/latest/index.html">neat-python</ExternalLink> library [5]. This
+          href="https://neat-python.readthedocs.io/en/latest/index.html"><code>neat-python</code></ExternalLink> library [5]. This
           library provides the basic tools and functions in order to setup the concepts
           defined in the NEAT algorithm. Furthermore, we use
           the <ExternalLink href="https://numpy.org/"><code>numpy</code></ExternalLink> and <ExternalLink
