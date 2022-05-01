@@ -1,21 +1,14 @@
 import {BrowserRouter} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import AppRoutes from "./AppRoutes";
-import {Helmet} from "react-helmet";
+import AppRoutes from "./components/AppRoutes";
+import AppFonts from "./components/AppFonts";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-      <Helmet>
-        <link rel="preload" as="font" type="font/ttf" crossOrigin="anonymous" href={require("./fonts/Lato-Regular.ttf")}/>
-        <link rel="preload" as="font" type="font/ttf" crossOrigin="anonymous" href={require("./fonts/Lato-Italic.ttf")}/>
-        <link rel="preload" as="font" type="font/ttf" crossOrigin="anonymous" href={require("./fonts/Lato-Bold.ttf")}/>
-        <link rel="preload" as="font" type="font/ttf" crossOrigin="anonymous" href={require("./fonts/Lato-Black.ttf")}/>
-      </Helmet>
       <ScrollToTop/>
+      <AppFonts/>
       <AppRoutes/>
     </BrowserRouter>
-  );
+  )
 }
-
-export default App;

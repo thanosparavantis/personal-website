@@ -1,17 +1,17 @@
 import {Route, Switch} from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ProjectsPage from "./pages/ProjectsPage";
-import PhotosPage from "./pages/PhotosPage";
-import ContactPage from "./pages/ContactPage";
-import ThesisPage from "./pages/ThesisPage";
-import ProjectPage from "./pages/ProjectPage";
-import ProjectsTagPage from "./pages/ProjectsTagPage";
-import PhotoPage from "./pages/PhotoPage";
-import NotFoundPage from "./pages/NotFoundPage";
-import useProjects from "./hooks/useProjects";
-import useProjectTags from "./hooks/useProjectTags";
-import usePhotos from "./hooks/usePhotos";
+import HomePage from "../pages/HomePage";
+import AboutPage from "../pages/AboutPage";
+import ProjectsPage from "../pages/ProjectsPage";
+import PhotosPage from "../pages/PhotosPage";
+import ContactPage from "../pages/ContactPage";
+import ThesisPage from "../pages/ThesisPage";
+import ProjectPage from "../pages/ProjectPage";
+import ProjectsTagPage from "../pages/ProjectsTagPage";
+import PhotoPage from "../pages/PhotoPage";
+import NotFoundPage from "../pages/NotFoundPage";
+import useProjects from "../hooks/useProjects";
+import useProjectTags from "../hooks/useProjectTags";
+import usePhotos from "../hooks/usePhotos";
 
 export default function AppRoutes() {
   const projects = useProjects()

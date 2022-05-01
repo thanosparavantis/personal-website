@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronLeft, faChevronRight, faDownload, faExternalLinkAlt, faSave} from "@fortawesome/free-solid-svg-icons";
+import {faChevronLeft, faChevronRight, faDownload} from "@fortawesome/free-solid-svg-icons";
 import {useMemo} from "react";
 import {Link} from "react-router-dom";
 import useArrowPhotos from "../hooks/useArrowPhotos";
