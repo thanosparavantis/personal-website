@@ -9,7 +9,6 @@ import MobileNavigation from "../components/MobileNavigation";
 import DesktopNavigation from "../components/DesktopNavigation";
 import Footer from "../components/Footer";
 import useProjects from "../hooks/useProjects";
-import {useMemo} from "react";
 import useProjectTags from "../hooks/useProjectTags";
 import usePhotos from "../hooks/usePhotos";
 
