@@ -21,7 +21,7 @@ export default function VolunteerExperienceSection() {
             &middot;
           </p>
           <p>
-            TEDxUniversityofPiraeus, Athens, Greece
+            TEDxUniversityofPiraeus
           </p>
         </div>
         <p className="mb-3 leading-7 text-justify">
