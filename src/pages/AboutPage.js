@@ -228,8 +228,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="flex flex-col md:flex-row md:items-center items-start">
-              <ExternalLink href="https://www.tedxuniversityofpiraeus.com/">
-                Visit organization website
+              <ExternalLink href="https://pasixeracb.com/">
+                Visit club website
               </ExternalLink>
             </div>
           </div>
