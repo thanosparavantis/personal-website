@@ -1,5 +1,5 @@
 import MetaTags from "../components/MetaTags";
-import thanosParavantisImg from "../images/thanos_paravantis_speaking.png";
+import thanosParavantisImg from "../images/thanos_paravantis_april_2022.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faGithub, faLinkedin, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
@@ -33,18 +33,17 @@ export default function HomePage() {
                  itemProp="image"
                  title="Thanos Paravantis"
                  alt=""
-                 className="mb-10 h-52 md:h-72"
+                 className="mb-10 h-52 md:h-72 rounded-full shadow-lg p-2"
             />
-            <h1 itemProp="name" className="text-2xl font-bold mb-1 text-gray-900 uppercase mb-5">
+            <h1 itemProp="name" className="md:text-3xl text-2xl font-black text-gray-800 uppercase mb-5 tracking-wide">
               Thanos Paravantis
             </h1>
-            <h2 itemProp="description" className="max-w-md md:max-w-full text-gray-900">
+            <h2 itemProp="description" className="max-w-md md:max-w-full text-gray-900 leading-7">
               Born in Athens, Greece, Thanos Paravantis is a <span itemProp="jobTitle">Computer Scientist</span> <br
               className="hidden md:block"/> and Radio Amateur with a BSc in Computer Science
             </h2>
             <meta itemProp="email" content="thanosparavantis@gmail.com"/>
             <meta itemProp="callSign" content="SV1SQT"/>
-
             <div className="flex items-center justify-center gap-2 md:gap-6 mt-5">
               <a href="https://www.facebook.com/thanosparavantis/"
                  itemProp="sameAs"
@@ -113,7 +112,7 @@ export default function HomePage() {
               </a>
             </div>
           </section>
-          <FontAwesomeIcon icon={faChevronDown} size="lg"
+          <FontAwesomeIcon icon={faChevronDown} size="2x"
                            className="text-gray-900 absolute bottom-0 animate-bounce mb-1"/>
         </div>
         <div className="bg-gray-100 flex items-center justify-center lg:ml-72 px-3 border-t shadow">

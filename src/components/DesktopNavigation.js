@@ -6,7 +6,7 @@ import {faImages} from "@fortawesome/free-regular-svg-icons";
 
 export default function DesktopNavigation() {
   return (
-    <nav className="hidden lg:flex lg:flex-col py-10 overflow-auto
+    <nav className="hidden lg:flex lg:flex-col py-10 overflow-auto border-l-8 border-emerald-700
                     fixed top-0 left-0 h-screen w-72 bg-emerald-600 shadow-lg z-10">
       <div className="flex flex-col items-center text-center px-8 mb-10">
         <Link to="/" className="mb-8 rounded-full hover:opacity-90">
