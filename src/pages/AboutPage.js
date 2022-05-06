@@ -19,9 +19,9 @@ export default function AboutPage() {
         <body className="bg-gray-100"/>
       </Helmet>
       <main>
-        <header className="relative mt-5 mb-5 h-52">
+        <header className="relative mt-5 mb-5">
           <div className="absolute rounded w-full h-full opacity-90 bg-transparent
-                          bg-gradient-to-r from-gray-900 to-transparent"/>
+                          bg-gradient-to-r from-gray-900"/>
           <div className="left-[8%] absolute w-full h-full flex items-center">
             <h1 className="text-gray-100 font-black uppercase tracking-widest
                            text-4xl first-letter:text-5xl
@@ -30,7 +30,7 @@ export default function AboutPage() {
               About
             </h1>
           </div>
-          <img src={coverImg} width="744" height="208" alt="" className="rounded shadow h-52 object-cover"/>
+          <img src={coverImg} width="744" height="208" alt="" className="rounded shadow"/>
         </header>
         <EducationSection/>
         <WorkExperienceSection/>
