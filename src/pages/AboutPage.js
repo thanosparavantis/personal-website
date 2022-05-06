@@ -19,7 +19,7 @@ export default function AboutPage() {
         <body className="bg-gray-100"/>
       </Helmet>
       <main>
-        <header className="relative mt-5 mb-5">
+        <header className="relative mt-5 mb-5 h-52">
           <div className="absolute rounded w-full h-full opacity-90 bg-transparent
                           bg-gradient-to-r from-gray-900 to-transparent"/>
           <div className="left-[8%] absolute w-full h-full flex items-center">
