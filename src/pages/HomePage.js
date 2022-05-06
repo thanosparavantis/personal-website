@@ -3,7 +3,13 @@ import thanosParavantisImg from "../images/thanos_paravantis_april_2022.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faGithub, faLinkedin, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
-import {faChevronDown, faCode, faEnvelopeOpenText, faQuestionCircle} from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronDown,
+  faCode,
+  faEnvelopeOpenText,
+  faQuestionCircle,
+  faTurnDown
+} from "@fortawesome/free-solid-svg-icons";
 import {faImages} from "@fortawesome/free-regular-svg-icons";
 import MobileNavigation from "../components/MobileNavigation";
 import DesktopNavigation from "../components/DesktopNavigation";
@@ -45,11 +51,11 @@ export default function HomePage() {
             <meta itemProp="email" content="thanosparavantis@gmail.com"/>
             <meta itemProp="callSign" content="SV1SQT"/>
             <div className="flex items-center justify-center gap-2 md:gap-6 mt-5">
-              <a href="https://www.facebook.com/thanosparavantis/"
+              <a href="https://www.facebook.com/thanospersonal/"
                  itemProp="sameAs"
                  rel="noopener noreferrer"
                  target="_blank"
-                 title="Visit my Facebook Page"
+                 title="Visit my Facebook profile"
                  className="text-blue-600 p-2 hover:opacity-60">
                 <div className="hidden md:block">
                   <FontAwesomeIcon icon={faFacebook} size="3x"/>
@@ -115,18 +121,19 @@ export default function HomePage() {
           <FontAwesomeIcon icon={faChevronDown} size="2x"
                            className="text-gray-900 absolute bottom-0 animate-bounce mb-1"/>
         </div>
-        <div className="bg-gray-100 flex items-center justify-center lg:ml-72 px-3 border-t shadow">
+        <div className="bg-gradient-to-b from-gray-50 to-gray-200 border-t shadow
+                        flex items-center justify-center lg:ml-72 px-3">
           <section className="container max-w-3xl min-h-screen mt-16 mb-5 flex flex-col items-center justify-center">
             <h2 className="text-2xl text-gray-900 font-black text-center mb-10">
               Welcome to <span className="text-blue-600">thanosparavantis.com</span>
             </h2>
             <section className="hidden md:flex justify-center text-center gap-12 mb-20">
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 items-center">
                 <div className="text-6xl text-emerald-600 font-bold">
                   {projects.length}
                 </div>
                 <div className="font-bold text-gray-900">
-                  Open Source Projects
+                  Open source projects
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center gap-3">
@@ -134,7 +141,7 @@ export default function HomePage() {
                   {tags.length}
                 </div>
                 <div className="font-bold text-gray-900">
-                  Technology Categories
+                  Technology categories
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center gap-3">
@@ -142,7 +149,7 @@ export default function HomePage() {
                   {photos.length}
                 </div>
                 <div className="font-bold text-gray-900">
-                  Public Domain Photos
+                  Public domain photos
                 </div>
               </div>
             </section>

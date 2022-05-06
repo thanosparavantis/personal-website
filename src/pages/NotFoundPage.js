@@ -33,8 +33,8 @@ export default function NotFoundPage() {
             <p className=" text-gray-700 mb-10">
               The requested page could not be found.
             </p>
-            <Link to="/" className="px-8 py-3 text-white uppercase font-bold shadow-lg transition
-                                    text-center bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800">
+            <Link to="/" className="px-8 py-3 text-white uppercase focus:ring-2 focus:ring-offset-1
+                                    font-bold shadow-lg text-center bg-emerald-600 hover:bg-emerald-700">
               Back to Home
               <FontAwesomeIcon icon={faArrowRight} className="ml-5"/>
             </Link>

@@ -37,10 +37,10 @@ export default function PhotoPage({photo}) {
             {similarPhotos.map(photo => <FreePhotoThumbnail photo={photo} key={photo.slug}/>)}
           </div>
           <div className="mt-5">
-            <Link to="/photos"
-                  className="block font-bold text-white rounded border focus:outline-none
-                             text-center py-3 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800">
-              <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
+            <Link to="/photos" className="block font-bold text-white rounded border
+                                          text-center py-3 focus:outline-none focus:ring-2
+                                          bg-emerald-600 hover:bg-emerald-700">
+              <FontAwesomeIcon icon={faArrowLeft} className="mr-3" />
               View all photos
             </Link>
           </div>

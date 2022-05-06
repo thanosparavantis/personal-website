@@ -14,7 +14,7 @@ export default function Footer() {
         &copy; {year} Thanos Paravantis
       </div>
       <div className="flex flex-wrap gap-3">
-        <a href="https://www.facebook.com/thanosparavantis/"
+        <a href="https://www.facebook.com/thanospersonal/"
            rel="noopener noreferrer"
            target="_blank"
            className="text-blue-600 hover:opacity-60">

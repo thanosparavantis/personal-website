@@ -40,8 +40,8 @@ export default function FreePhotoPreview({photo}) {
         <a href={photoFullSrc}
            target="_blank"
            download={photo.filename}
-           className="block font-bold text-white rounded border focus:outline-none
-                      text-center py-3 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800">
+           className="block font-bold text-white rounded border focus:outline-none focus:ring-2
+                      text-center py-3 bg-emerald-600 hover:bg-emerald-700">
           Download photo
           <FontAwesomeIcon icon={faDownload} className="ml-3"/>
         </a>

@@ -32,10 +32,9 @@ export default function ProjectPage({project}) {
           <div className="flex flex-col gap-5">
             {similarProjects.map(similarProject => <Project project={similarProject} key={similarProject.slug}/>)}
 
-            <Link to="/projects"
-                  className="block font-bold text-white rounded border focus:outline-none
-                             text-center py-3 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800">
-              <FontAwesomeIcon icon={faArrowLeft} className="mr-3" size="sm"/>
+            <Link to="/projects" className="block font-bold text-gray-100 focus:outline-none focus:ring-2
+                                            rounded border text-center py-3 bg-emerald-600 hover:bg-emerald-700">
+              <FontAwesomeIcon icon={faArrowLeft} className="mr-3" />
               View all projects
             </Link>
           </div>

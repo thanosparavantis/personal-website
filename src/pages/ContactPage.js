@@ -96,7 +96,7 @@ export default function ContactPage() {
           </h2>
           <address className="px-5 md:px-8 py-5 not-italic">
             <h3 className="mb-1 font-bold text-gray-900">
-              Email Address
+              Email address
             </h3>
             <p className="text-gray-600 mb-5">
               <ExternalLink href="mailto:thanosparavantis@gmail.com">
@@ -104,13 +104,13 @@ export default function ContactPage() {
               </ExternalLink>
             </p>
             <h3 className="mb-1 font-bold text-gray-900">
-              Social Media
+              Social media
             </h3>
             <div className="-ml-2 flex">
-              <a href="https://www.facebook.com/thanosparavantis/"
+              <a href="https://www.facebook.com/thanospersonal/"
                  rel="noopener noreferrer"
                  target="_blank"
-                 title="Visit my Facebook Page"
+                 title="Visit my Facebook profile"
                  className="text-blue-600 p-2 hover:opacity-60">
 
                 <FontAwesomeIcon icon={faFacebook} size="2x"/>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                     htmlFor="full-name"
                     className="block text-gray-900 font-bold cursor-pointer mb-2 text-sm md:text-base"
                   >
-                    Full Name
+                    Full name
                   </label>
                   <input
                     type="text"
@@ -184,7 +184,7 @@ export default function ContactPage() {
                     htmlFor="email"
                     className="block text-gray-900 font-bold cursor-pointer mb-2 text-sm md:text-base"
                   >
-                    Email Address
+                    Email address
                   </label>
                   <input
                     type="text"
@@ -216,7 +216,7 @@ export default function ContactPage() {
                     onChange={handleMessageChange}
                     onFocus={resetStatus}
                     className="w-full px-3 py-2 border rounded text-gray-800 leading-normal
-                                   text-sm border-gray-400 resize-none focus:outline-none focus:ring-2"
+                               text-sm border-gray-400 resize-none focus:outline-none focus:ring-2"
                   />
                 </div>
               </div>
@@ -235,15 +235,15 @@ export default function ContactPage() {
             </div>
             <div className="px-5 md:px-8 py-3 border-t flex items-center justify-center text-center">
               {loading ? (
-                <button className="w-full shadow text-white font-bold rounded py-3 text-sm md:text-base
-                                 bg-amber-500 cursor-not-allowed"
+                <button className="w-full shadow text-white font-bold rounded py-3
+                                   bg-amber-500 cursor-not-allowed"
                         disabled>
                   <FontAwesomeIcon icon={faSpinner} spin className="mr-3"/>
                   Sending...
                 </button>
               ) : (
-                <button className="w-full shadow text-white font-bold rounded py-3 text-sm md:text-base
-                                       bg-amber-500 hover:bg-amber-600 active:bg-amber-700">
+                <button className="w-full shadow text-gray-100 font-bold rounded py-3
+                                   focus:ring-2 focus:ring-offset-1 bg-amber-500 hover:bg-amber-600">
                   <FontAwesomeIcon icon={faPaperPlane} className="mr-3"/>
                   Send
                 </button>
