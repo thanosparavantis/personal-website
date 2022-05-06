@@ -3,13 +3,7 @@ import thanosParavantisImg from "../images/thanos_paravantis_april_2022.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faGithub, faLinkedin, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
-import {
-  faChevronDown,
-  faCode,
-  faEnvelopeOpenText,
-  faQuestionCircle,
-  faTurnDown
-} from "@fortawesome/free-solid-svg-icons";
+import {faChevronDown, faCode, faEnvelopeOpenText, faQuestionCircle} from "@fortawesome/free-solid-svg-icons";
 import {faImages} from "@fortawesome/free-regular-svg-icons";
 import MobileNavigation from "../components/MobileNavigation";
 import DesktopNavigation from "../components/DesktopNavigation";
