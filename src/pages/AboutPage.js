@@ -30,7 +30,7 @@ export default function AboutPage() {
               About
             </h1>
           </div>
-          <img src={coverImg} width="744" height="208" alt="" className="rounded shadow"/>
+          <img src={coverImg} width="744" height="208" alt="" className="rounded shadow h-52 object-cover"/>
         </header>
         <EducationSection/>
         <WorkExperienceSection/>
