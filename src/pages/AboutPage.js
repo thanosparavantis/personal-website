@@ -22,7 +22,7 @@ export default function AboutPage() {
         <header className="relative mt-5 mb-5">
           <div className="absolute rounded w-full h-full opacity-90 bg-transparent
                           bg-gradient-to-r from-gray-900"/>
-          <div className="left-[8%] absolute w-full h-full flex items-center">
+          <div className="pl-[8%] absolute w-full h-full flex items-center">
             <h1 className="text-gray-100 font-black uppercase tracking-widest
                            text-4xl first-letter:text-5xl
                            sm:text-5xl sm:first-letter:text-6xl
