@@ -29,12 +29,16 @@ export default function HomePage() {
         <div className="relative flex items-center justify-center lg:ml-72 px-3">
           <section itemScope itemType="https://schema.org/Person"
                    className="container max-w-3xl min-h-screen py-32 flex flex-col items-center justify-center text-center">
-            <img src={thanosParavantisImg}
-                 itemProp="image"
-                 title="Thanos Paravantis"
-                 alt=""
-                 className="mb-10 h-52 md:h-72 rounded-full shadow-lg p-2"
-            />
+            <div className="w-52 h-52 md:w-72 md:h-72 mb-10">
+              <img src={thanosParavantisImg}
+                   itemProp="image"
+                   title="Thanos Paravantis"
+                   alt=""
+                   width="272"
+                   height="272"
+                   className="w-52 h-52 md:w-auto md:h-auto rounded-full shadow-lg p-2"
+              />
+            </div>
             <h1 itemProp="name" className="md:text-3xl text-2xl font-black text-gray-800 uppercase mb-5 tracking-wide">
               Thanos Paravantis
             </h1>

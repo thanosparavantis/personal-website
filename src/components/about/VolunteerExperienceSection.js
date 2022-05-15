@@ -47,6 +47,12 @@ export default function VolunteerExperienceSection() {
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
           <p>
+            Callsign: 18SV1364
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
             July 2020 - Present
           </p>
           <p className="mx-3 hidden md:block">

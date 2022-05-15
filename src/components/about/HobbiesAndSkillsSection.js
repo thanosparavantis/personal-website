@@ -31,7 +31,7 @@ export default function HobbiesAndSkillsSection() {
             &middot;
           </p>
           <p>
-            Since October 2020
+            October 2020 - Present
           </p>
         </div>
         <ExternalLink href="https://www.qrz.com/db/SV1SQT">

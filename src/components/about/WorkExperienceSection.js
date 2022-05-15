@@ -11,6 +11,30 @@ export default function WorkExperienceSection() {
       </h2>
       <div className="px-5 md:px-8 py-5 border-b">
         <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
+          Computer Programmer
+        </h3>
+        <div className="mb-2 flex flex-col md:flex-row text-gray-700">
+          <p>
+            January 2022 - Present
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Hellenic Army
+          </p>
+        </div>
+        <p className="mb-3 leading-7 text-justify">
+          Mandatory military conscription of 12 months, undergone a three week basic training,
+          and a three week specialist training. Now serving at the Information Technology Support Center
+          of the Hellenic Army (KEPYES).
+        </p>
+        <ExternalLink href="http://army.gr/el/organosi/monades-ypiresies/kentro-pliroforikis-ypostirixis-ellinikoy-stratoy-kepyes">
+          Visit department website
+        </ExternalLink>
+      </div>
+      <div className="px-5 md:px-8 py-5 border-b">
+        <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
           Research Associate
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
