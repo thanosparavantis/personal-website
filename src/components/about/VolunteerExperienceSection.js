@@ -43,7 +43,7 @@ export default function VolunteerExperienceSection() {
       </div>
       <div className="px-5 md:px-8 py-5">
         <h3 className="mb-1 font-bold text-gray-900">
-          Member
+          President
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
           <p>
@@ -53,19 +53,19 @@ export default function VolunteerExperienceSection() {
             &middot;
           </p>
           <p>
-            July 2020 - Present
+            May 2022 - Present
           </p>
           <p className="mx-3 hidden md:block">
             &middot;
           </p>
           <p>
-            Panhellenic CB Club of Radio Users
+            Pan-Hellenic Club of CB Radio Users
           </p>
         </div>
         <p className="mb-3 leading-7 text-justify">
-          Active member of the club, with the goal of promoting the usefulness of the citizen's band in Greece.
-          This 11 meter band is license free, meaning that anyone can setup a base station, and operate in predefined
-          channels on frequencies ranging from 26-27 MHz.
+          The club promotes the use of the citizen's band in Greece.
+          This alternative way of communicating with people is independent of mobile and internet services.
+          Anyone can setup a license free station and operate on frequency channels ranging from 26 to 27 MHz.
         </p>
         <div className="flex flex-col md:flex-row md:items-center items-start">
           <ExternalLink href="https://pasixeracb.com/">
