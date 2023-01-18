@@ -15,7 +15,7 @@ export default function WorkExperienceSection() {
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
           <p>
-            January 2022 - Present
+            March 2022 - January 2023
           </p>
           <p className="mx-3 hidden md:block">
             &middot;
