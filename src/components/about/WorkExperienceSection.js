@@ -25,9 +25,8 @@ export default function WorkExperienceSection() {
           </p>
         </div>
         <p className="mb-3 leading-7 text-justify">
-          Mandatory military conscription of 12 months, undergone a three week basic training,
-          and a three week specialist training. Served at the Information Technology Support Center
-          of the Hellenic Army (KEPYES).
+          Mandatory military conscription of 12 months, undergone a three week basic bootcamp and a three week specialist training.
+          Served at the Information Technology Support Center of the Hellenic Army (KEPYES).
         </p>
         <ExternalLink href="http://army.gr/el/organosi/monades-ypiresies/kentro-pliroforikis-ypostirixis-ellinikoy-stratoy-kepyes">
           Visit department website
