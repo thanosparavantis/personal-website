@@ -11,7 +11,7 @@ export default function WorkExperienceSection() {
       </h2>
       <div className="px-5 md:px-8 py-5 border-b">
         <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
-          Computer Programmer
+          Software Engineer - Analyst
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
           <p>
@@ -26,7 +26,7 @@ export default function WorkExperienceSection() {
         </div>
         <p className="mb-3 leading-7 text-justify">
           Mandatory military conscription of 12 months, undergone a three week basic training,
-          and a three week specialist training. Now serving at the Information Technology Support Center
+          and a three week specialist training. Served at the Information Technology Support Center
           of the Hellenic Army (KEPYES).
         </p>
         <ExternalLink href="http://army.gr/el/organosi/monades-ypiresies/kentro-pliroforikis-ypostirixis-ellinikoy-stratoy-kepyes">
@@ -71,8 +71,8 @@ export default function WorkExperienceSection() {
           </p>
         </div>
         <p className="mb-3 leading-7 text-justify">
-          A one-month internship working for the Information and Technology Services for Financial
-          Engineering unit.
+          Short  Term  Consultant  working  for  the  Information  Technology  Services  for  Financial  Engineering  unit.
+          Performed data analytics on Excel using Power Query with large chunks of XML data. 
         </p>
         <ExternalLink href="https://www.worldbank.org/">
           Visit institution website
