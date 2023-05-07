@@ -11,7 +11,7 @@ export default function VolunteerExperienceSection() {
       </h2>
       <div className="px-5 md:px-8 py-5 border-b">
         <h3 className="mb-1 font-bold text-gray-900">
-          President
+          Chairman
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
           <p>
@@ -38,6 +38,32 @@ export default function VolunteerExperienceSection() {
         <div className="flex flex-col md:flex-row md:items-center items-start">
           <ExternalLink href="https://pasixeracb.com/">
             Visit club website
+          </ExternalLink>
+        </div>
+      </div>
+      <div className="px-5 md:px-8 py-5 border-b">
+        <h3 className="mb-1 font-bold text-gray-900">
+          Council Member & Delegate of Greece
+        </h3>
+        <div className="mb-2 flex flex-col md:flex-row text-gray-700">
+          <p>
+            December 2022 - Present
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            European Citizens Band Federation
+          </p>
+        </div>
+        <p className="mb-3 leading-7 text-justify">
+          The federation promotes the legal vesting of the citizen's band in all European countries
+          and member states come together with delegates to discuss and exchanges ideas that will advance
+          communications on the citizen's band.
+        </p>
+        <div className="flex flex-col md:flex-row md:items-center items-start">
+          <ExternalLink href="http://ecbf.eu/">
+            Visit organization website
           </ExternalLink>
         </div>
       </div>
