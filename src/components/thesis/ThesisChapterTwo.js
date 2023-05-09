@@ -125,9 +125,8 @@ export default function ThesisChapterTwo() {
           <li>If the destination tile is part of nature, it becomes part of the attacker’s territory undefended.</li>
         </ThesisBulletList>
         <ThesisParagraph>
-          When the attacker chooses to send all their troops to a tile belonging to nature, this is a special case of
-          <em>tile hopping</em>. Because the tile is uncontested, all troops will simply switch from one tile to
-          another.
+          When the attacker chooses to send all their troops to a tile belonging to nature, this is a special case of <em>tile hopping</em>.
+          Because the tile is uncontested, all troops will simply switch from one tile to another.
           Players
           can use this type of attack to move freely on the map without conquering extra tiles by leaving troops
           behind.
