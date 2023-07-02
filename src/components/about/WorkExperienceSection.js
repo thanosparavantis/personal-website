@@ -11,6 +11,31 @@ export default function WorkExperienceSection() {
       </h2>
       <div className="px-5 md:px-8 py-5 border-b">
         <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
+          Junior Software Engineer
+        </h3>
+        <div className="mb-2 flex flex-col md:flex-row text-gray-700">
+          <p>
+            June 2023 - Present
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Viva Wallet
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Maroussi, Attiki, Greece
+          </p>
+        </div>
+        <ExternalLink href="https://www.vivawallet.com/">
+          Visit neobank website
+        </ExternalLink>
+      </div>
+      <div className="px-5 md:px-8 py-5 border-b">
+        <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
           Software Engineer - Analyst
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
@@ -23,6 +48,12 @@ export default function WorkExperienceSection() {
           <p>
             Hellenic Army
           </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Athens, Attiki, Greece
+          </p>
         </div>
         <p className="mb-3 leading-7 text-justify">
           Mandatory military conscription of 12 months, undergone a three week basic bootcamp and a three week specialist training.
@@ -30,28 +61,6 @@ export default function WorkExperienceSection() {
         </p>
         <ExternalLink href="http://army.gr/el/organosi/monades-ypiresies/kentro-pliroforikis-ypostirixis-ellinikoy-stratoy-kepyes">
           Visit department website
-        </ExternalLink>
-      </div>
-      <div className="px-5 md:px-8 py-5 border-b">
-        <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
-          Research Associate
-        </h3>
-        <div className="mb-2 flex flex-col md:flex-row text-gray-700">
-          <p>
-            October 2021 - Present
-          </p>
-          <p className="mx-3 hidden md:block">
-            &middot;
-          </p>
-          <p>
-            University of Illinois Chicago
-          </p>
-        </div>
-        <p className="mb-3 leading-7 text-justify">
-          State legislators database development, Dr. Alexandra Filindra.
-        </p>
-        <ExternalLink href="https://www.uic.edu/">
-          Visit university website
         </ExternalLink>
       </div>
       <div className="px-5 md:px-8 py-5 border-b">
@@ -66,7 +75,13 @@ export default function WorkExperienceSection() {
             &middot;
           </p>
           <p>
-            World Bank Group, Washington D.C.
+            World Bank Group
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Athens, Attiki, Greece
           </p>
         </div>
         <p className="mb-3 leading-7 text-justify">
@@ -89,7 +104,13 @@ export default function WorkExperienceSection() {
             &middot;
           </p>
           <p>
-            Logicea, Athens, Greece
+            Logicea
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Chalandri, Attiki, Greece
           </p>
         </div>
         <p className="mb-3 leading-7 text-justify">
@@ -112,7 +133,13 @@ export default function WorkExperienceSection() {
             &middot;
           </p>
           <p>
-            Mineplex, Georgia USA
+            Mineplex
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Athens, Attiki, Greece
           </p>
         </div>
         <p className="mb-3 leading-7 text-justify">

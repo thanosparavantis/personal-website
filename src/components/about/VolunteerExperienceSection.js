@@ -15,19 +15,19 @@ export default function VolunteerExperienceSection() {
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
           <p>
-            Callsign: 18SV1364
-          </p>
-          <p className="mx-3 hidden md:block">
-            &middot;
-          </p>
-          <p>
-            May 2022 - Present
+            May 2022 - July 2023
           </p>
           <p className="mx-3 hidden md:block">
             &middot;
           </p>
           <p>
             Pan-Hellenic Club of CB Radio Users
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Callsign: 18SV1364
           </p>
         </div>
         <p className="mb-3 leading-7 text-justify">
