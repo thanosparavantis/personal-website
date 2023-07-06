@@ -30,6 +30,11 @@ export default function WorkExperienceSection() {
             Maroussi, Attiki, Greece
           </p>
         </div>
+        <p className="mb-3 leading-7 text-justify">
+          Development, extension and maintenance of the core banking services provided by Viva Wallet.
+          Working with the C# .NET framework, Microsoft SQL database,
+          xUnit testing suite, Redis, RabbitMQ, GitHub and Atlassian.
+        </p>
         <ExternalLink href="https://www.vivawallet.com/">
           Visit neobank website
         </ExternalLink>
