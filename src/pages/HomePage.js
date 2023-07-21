@@ -123,7 +123,7 @@ export default function HomePage() {
                         flex items-center justify-center lg:ml-72 px-3">
           <section className="container max-w-3xl min-h-screen mt-16 mb-5 flex flex-col items-center justify-center">
             <h2 className="text-2xl text-gray-900 font-black text-center mb-10">
-              Welcome to <span className="text-blue-600">thanosparavantis.com</span>
+              Welcome to <span className="text-blue-600">thanos.dev</span>
             </h2>
             <section className="hidden md:flex justify-center text-center gap-12 mb-20">
               <div className="flex flex-col gap-3 items-center">
