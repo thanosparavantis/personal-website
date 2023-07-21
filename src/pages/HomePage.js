@@ -46,7 +46,7 @@ export default function HomePage() {
               Born in Athens, Greece, Thanos Paravantis is a <span itemProp="jobTitle">Computer Scientist</span> <br
               className="hidden md:block"/> and Radio Amateur with a BSc in Computer Science
             </h2>
-            <meta itemProp="email" content="thanosparavantis@gmail.com"/>
+            <meta itemProp="email" content="thanos@paravantis.org"/>
             <meta itemProp="callSign" content="SV1SQT"/>
             <div className="flex items-center justify-center gap-2 md:gap-6 mt-5">
               <a href="https://www.facebook.com/thanospersonal/"

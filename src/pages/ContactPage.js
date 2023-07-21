@@ -99,8 +99,8 @@ export default function ContactPage() {
               Email address
             </h3>
             <p className="text-gray-600 mb-5">
-              <ExternalLink href="mailto:thanosparavantis@gmail.com">
-                thanosparavantis@gmail.com
+              <ExternalLink href="mailto:thanos@paravantis.org">
+                thanos@paravantis.org
               </ExternalLink>
             </p>
             <h3 className="mb-1 font-bold text-gray-900">
