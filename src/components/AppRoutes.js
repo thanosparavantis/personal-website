@@ -43,6 +43,5 @@ export default function AppRoutes() {
       ))}
       <Route path="*" component={NotFoundPage}/>
     </Switch>
-
   )
 }
