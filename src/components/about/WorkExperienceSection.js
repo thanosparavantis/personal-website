@@ -11,7 +11,7 @@ export default function WorkExperienceSection() {
       </h2>
       <div className="px-5 md:px-8 py-5 border-b">
         <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
-          Junior Software Engineer
+          Software Engineer
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
           <p>
