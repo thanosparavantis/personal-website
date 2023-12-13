@@ -47,7 +47,7 @@ export default function VolunteerExperienceSection() {
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
           <p>
-            December 2022 - Present
+            December 2022 - December 2023
           </p>
           <p className="mx-3 hidden md:block">
             &middot;
