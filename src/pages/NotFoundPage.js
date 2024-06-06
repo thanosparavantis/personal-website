@@ -12,7 +12,7 @@ export default function NotFoundPage() {
     <PageTemplate>
       <MetaTags
         title="404 Not Found"
-        description="Born in Athens, Greece, Thanos Paravantis is a Computer Scientist and Radio Amateur with a BSc in Computer Science."
+        description="Born in Athens, Greece, Thanos Paravantis is a Software Engineer and Radio Amateur with a BSc in Computer Science."
       />
       <Helmet>
         <body className="bg-gray-100"/>

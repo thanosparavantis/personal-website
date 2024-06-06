@@ -36,7 +36,7 @@ export default function Project({project, expanded = false}) {
         </div>
       )}
 
-      <div className="px-5 md:px-8 pt-5 leading-7 text-justify text-gray-600 whitespace-pre-line">
+      <div className="px-5 md:px-8 pt-5 leading-7 text-gray-600 whitespace-pre-line">
         {project.description}
       </div>
 

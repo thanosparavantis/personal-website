@@ -34,7 +34,7 @@ export default function ThesisChapterFive() {
         the encoded values are zero, since there are no troops present on grey tiles.
         Considering the size of the map, the neural network receives a vector that holds 36 values:
       </ThesisParagraph>
-      <ThesisParagraph justify={false}>
+      <ThesisParagraph center={true}>
         <code>
           [0.05 0.0 0.0 0.0 &hellip; 0.0 -0.05]
         </code>
@@ -49,7 +49,7 @@ export default function ThesisChapterFive() {
         In <ThesisInternalLink href="#figure-5-2">Figure 5.2</ThesisInternalLink> we observe the state of a game after a considerable number of rounds. Both players are spread
         across the map, therefore it is worth looking at how the game state is depicted in vector form:
       </ThesisParagraph>
-      <ThesisParagraph justify={false}>
+      <ThesisParagraph center={true}>
         <code>
           [0.95 1.0 1.0 1.0 &hellip; -1.0 0.0 -1.0 &hellip; 0.0]
         </code>

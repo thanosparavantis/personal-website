@@ -2,12 +2,12 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBriefcase} from "@fortawesome/free-solid-svg-icons";
 import ExternalLink from "../ExternalLink";
 
-export default function WorkExperienceSection() {
+export default function ProfessionalExperienceSection() {
   return (
     <section className="mb-5 border rounded bg-white">
       <h2 className="px-5 md:px-8 py-5 border-b md:text-lg font-bold text-gray-900">
         <FontAwesomeIcon icon={faBriefcase} className="mr-3"/>
-        Work experience
+        Professional experience
       </h2>
       <div className="px-5 md:px-8 py-5 border-b">
         <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
@@ -21,7 +21,7 @@ export default function WorkExperienceSection() {
             &middot;
           </p>
           <p>
-            Viva Wallet
+            Viva.com
           </p>
           <p className="mx-3 hidden md:block">
             &middot;
@@ -30,13 +30,13 @@ export default function WorkExperienceSection() {
             Maroussi, Attiki, Greece
           </p>
         </div>
-        <p className="mb-3 leading-7 text-justify">
-          Development, extension and maintenance of the core banking services provided by Viva Wallet.
-          Working with the C# .NET framework, Microsoft SQL database,
-          xUnit testing suite, Redis, RabbitMQ, GitHub and Atlassian.
+        <p className="mb-3 leading-7">
+          Development, extension and maintenance of the core banking services for Viva Wallet.
+          Utilized the C# .NET framework, Microsoft SQL database, xUnit testing suite, Redis,
+          RabbitMQ, GitHub and Atlassian tools.
         </p>
-        <ExternalLink href="https://www.vivawallet.com/">
-          Visit neobank website
+        <ExternalLink href="https://www.viva.com/">
+          Visit fintech website
         </ExternalLink>
       </div>
       <div className="px-5 md:px-8 py-5 border-b">
@@ -60,9 +60,10 @@ export default function WorkExperienceSection() {
             Athens, Attiki, Greece
           </p>
         </div>
-        <p className="mb-3 leading-7 text-justify">
-          Mandatory military conscription of 12 months, undergone a three week basic bootcamp and a three week specialist training.
-          Served at the Information Technology Support Center of the Hellenic Army (KEPYES).
+        <p className="mb-3 leading-7">
+          Mandatory military service at the IT Center of the Hellenic Army (KEPYES).
+          Maintenance and ad-hoc development in Java EE and Angular for the
+          “Hellenic Army’s Command and Control System”.
         </p>
         <ExternalLink href="http://army.gr/el/organosi/monades-ypiresies/kentro-pliroforikis-ypostirixis-ellinikoy-stratoy-kepyes">
           Visit department website
@@ -89,9 +90,9 @@ export default function WorkExperienceSection() {
             Athens, Attiki, Greece
           </p>
         </div>
-        <p className="mb-3 leading-7 text-justify">
-          Short  Term  Consultant  working  for  the  Information  Technology  Services  for  Financial  Engineering  unit.
-          Performed data analytics on Excel using Power Query with large chunks of XML data. 
+        <p className="mb-3 leading-7">
+          Short-Term Consultant for the IT Services for Financial Engineering unit.
+          Conducted data analysis on a large dataset using Excel and Power Query.
         </p>
         <ExternalLink href="https://www.worldbank.org/">
           Visit institution website
@@ -118,9 +119,10 @@ export default function WorkExperienceSection() {
             Chalandri, Attiki, Greece
           </p>
         </div>
-        <p className="mb-3 leading-7 text-justify">
-          A three month internship program supported by the University of Piraeus.
-          Full time position with hands-on experience on developing Spring microservices.
+        <p className="mb-3 leading-7">
+          Three-month internship program through the University of Piraeus.
+          Hands-on experience in developing Java Spring microservices for a
+          mobile application operated by Wind Hellas Telecommunications.
         </p>
         <ExternalLink href="https://logicea.com/">
           Visit company website
@@ -147,10 +149,9 @@ export default function WorkExperienceSection() {
             Athens, Attiki, Greece
           </p>
         </div>
-        <p className="mb-3 leading-7 text-justify">
-          A part time position in one of the largest gaming communities in Minecraft at the time.
-          Major contributor in a mini-game project that was released
-          to the public after having finished an extensive development cycle.
+        <p className="mb-3 leading-7">
+          Part time position at one of the largest gaming networks in Minecraft.
+          Developed a mini-game project using Minecraft APIs in Java.
         </p>
         <ExternalLink href="https://www.mineplex.com/home/">
           Visit company website

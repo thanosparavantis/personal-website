@@ -30,7 +30,7 @@ export default function VolunteerExperienceSection() {
             Callsign: 18SV1364
           </p>
         </div>
-        <p className="mb-3 leading-7 text-justify">
+        <p className="mb-3 leading-7">
           The club promotes the use of the citizen's band in Greece.
           This alternative way of communicating with people is independent of mobile and internet services.
           Anyone can setup a license free station and operate on frequency channels ranging from 26 to 27 MHz.
@@ -56,7 +56,7 @@ export default function VolunteerExperienceSection() {
             European Citizens Band Federation
           </p>
         </div>
-        <p className="mb-3 leading-7 text-justify">
+        <p className="mb-3 leading-7">
           The federation promotes the legal vesting of the citizen's band in all European countries
           and member states come together with delegates to discuss and exchanges ideas that will advance
           communications on the citizen's band.
@@ -73,7 +73,7 @@ export default function VolunteerExperienceSection() {
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
           <p>
-            October 2020 - September 2021
+            October 2020 - October 2021
           </p>
           <p className="mx-3 hidden md:block">
             &middot;
@@ -82,10 +82,10 @@ export default function VolunteerExperienceSection() {
             TEDxUniversityofPiraeus
           </p>
         </div>
-        <p className="mb-3 leading-7 text-justify">
-          Responsible for coordinating all IT related work in preparation
-          for the annual TEDx local event with the support of the University of Piraeus.
-          Managed a team of two web developers and supervised the creation of a new website for the organization.
+        <p className="mb-3 leading-7">
+          Supervised a team of two coordinators in creating a new website for the organization.
+          Collaborated closely with the finance and partnerships teams to achieve common goals.
+          Managed IT-related matters in preparation for the annual event.
         </p>
         <div className="flex flex-col md:flex-row md:items-center items-start">
           <ExternalLink href="https://www.tedxuniversityofpiraeus.com/">

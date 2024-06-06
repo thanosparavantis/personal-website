@@ -10,7 +10,7 @@ export default function AchievementsAndConferencesSection() {
         Achievements and conferences
       </h2>
       <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
-        <p className="leading-7 text-justify">
+        <p className="leading-7">
           Participated in the 33rd IEEE International Conference on Tools with Artificial Intelligence
           Conference (ICTAI) virtually as Session Coordinator, chaired 8 sessions, November 2021.
         </p>
@@ -21,13 +21,13 @@ export default function AchievementsAndConferencesSection() {
         </div>
       </div>
       <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
-        <p className="leading-7 text-justify">
+        <p className="leading-7">
           Awarded with the "Employee of the month" title in World Bank Group on the Information and
           Technology Services for Financial Engineering unit, January 2021.
         </p>
       </div>
       <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
-        <p className="leading-7 text-justify">
+        <p className="leading-7">
           Created a YouTube video guide on "How to become a radio amateur" with more than 10,000 views,
           that went viral on amateur radio community in Greece, November 2020.
         </p>
@@ -45,7 +45,7 @@ export default function AchievementsAndConferencesSection() {
         </div>
       </div>
       <div className="px-5 md:px-8 py-5 text-gray-900 border-b">
-        <p className="leading-7 text-justify">
+        <p className="leading-7">
           Awarded 4th place in Crowdhackathon Agrifood, team "UNI3.14", April 2019.
         </p>
         <div className="mt-2 flex flex-col md:flex-row md:items-center items-start">
@@ -61,7 +61,7 @@ export default function AchievementsAndConferencesSection() {
         </div>
       </div>
       <div className="px-5 md:px-8 py-5 text-gray-900">
-        <p className="leading-7 text-justify">
+        <p className="leading-7">
           Awarded 2nd place in a recycling competition organized by Municipality of Athens, April 2013.
         </p>
         <div className="mt-2">

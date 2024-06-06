@@ -22,8 +22,8 @@ export default function HomePage() {
       <MobileNavigation/>
       <DesktopNavigation/>
       <MetaTags
-        title="Computer Scientist"
-        description="Born in Athens, Greece, Thanos Paravantis is a Computer Scientist and Radio Amateur with a BSc in Computer Science."
+        title="Software Engineer"
+        description="Born in Athens, Greece, Thanos Paravantis is a Software Engineer and Radio Amateur with a BSc in Computer Science."
       />
       <main>
         <div className="relative flex items-center justify-center lg:ml-72 px-3">
@@ -43,7 +43,7 @@ export default function HomePage() {
               Thanos Paravantis
             </h1>
             <h2 itemProp="description" className="max-w-md md:max-w-full text-gray-900 leading-7">
-              Born in Athens, Greece, Thanos Paravantis is a <span itemProp="jobTitle">Computer Scientist</span> <br
+              Born in Athens, Greece, Thanos Paravantis is a <span itemProp="jobTitle">Software Engineer</span> <br
               className="hidden md:block"/> and Radio Amateur with a BSc in Computer Science
             </h2>
             <meta itemProp="email" content="thanos@paravantis.org"/>
@@ -161,7 +161,7 @@ export default function HomePage() {
                   <p>About</p>
                 </div>
                 <p className="text-sm leading-relaxed text-gray-600">
-                  Portfolio of my educational background, work and volunteer experience, hobby projects and
+                  Portfolio of my educational background, professional and volunteer experience, hobby projects and
                   achievements.
                 </p>
               </Link>
