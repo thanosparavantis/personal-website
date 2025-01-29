@@ -11,6 +11,35 @@ export default function ProfessionalExperienceSection() {
       </h2>
       <div className="px-5 md:px-8 py-5 border-b">
         <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
+          Backend Engineer
+        </h3>
+        <div className="mb-2 flex flex-col md:flex-row text-gray-700">
+          <p>
+            July 2024 - Present
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Plum Fintech
+          </p>
+          <p className="mx-3 hidden md:block">
+            &middot;
+          </p>
+          <p>
+            Athens, Attiki, Greece
+          </p>
+        </div>
+        <p className="mb-3 leading-7">
+          Development of Individual Savings Account (ISA) products for the UK, working for the Wealth Management unit.
+          Providing 2nd level support for Operations and Customer Success teams.
+        </p>
+        <ExternalLink href="https://withplum.com/">
+          Visit fintech website
+        </ExternalLink>
+      </div>
+      <div className="px-5 md:px-8 py-5 border-b">
+        <h3 className="mb-1 font-bold flex-col md:flex-row text-gray-900">
           Software Engineer
         </h3>
         <div className="mb-2 flex flex-col md:flex-row text-gray-700">
